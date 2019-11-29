@@ -5,11 +5,13 @@
 
           $('html').niceScroll({
                
-               cursorcolor:"#ccc",
+               cursorcolor:"#51bcba",
                zindex: "10",
                cursorborder: false,
+               cursorminheight: 64, 
                cursordragontouch: true,
                scrollspeed:100,
+               railpadding: { top: 0, right: 0, left: 0, bottom: -50 }, 
                autohidemode:false, 
                smoothscroll:true,
                horizrailenabled: false,
