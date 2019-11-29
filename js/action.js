@@ -11,6 +11,7 @@
                cursorminheight: 64, 
                cursordragontouch: true,
                scrollspeed:100,
+               mousescrollstep: 45, // 鼠標滾輪的滾動速度 (像素)
                railpadding: { top: 0, right: 0, left: 0, bottom: -50 }, 
                autohidemode:false, 
                smoothscroll:true,
