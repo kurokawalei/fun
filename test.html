@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"><!-- Bootstrap CSS -->
+	<meta content="index,follow" name="robots">
+	<title>【中部吃喝玩樂】中部必吃美食、最夯打卡景點、特色住宿推薦還有熱門電影贈票、抽獎活動，通通都在FUN中台灣</title>
+	<meta content="中部必吃美食這麼多，哪家才是最推薦?讓鴻團長的餐桌告訴你！想來張美美的網美照嗎?中部文青、熱門打卡景點推薦；來去住一晚，讓野姜花胡蝶告訴你特色中部住宿以及親子旅館推薦！更多中部好吃好玩，都在1111FUN中台灣！" name="description">
+	<meta content="台中住宿推薦,中部旅遊景點,台中旅遊景點,中部旅行,中部一日遊,台中美食,彰化美食,台中夜市,台中住宿,夜市必吃" name="keywords">
+	<meta content="website" property="og:type">
+	<meta content="zh_TW" property="og:locale">
+	<meta content="FUN中台灣" property="og:site_name">
+	<meta content="【中部吃喝玩樂】中部必吃美食、最夯打卡景點、特色住宿推薦還有熱門電影贈票、抽獎活動，通通都在FUN中台灣" property="og:title">
+	<meta content="中部必吃美食這麼多，哪家才是最推薦?讓鴻團長的餐桌告訴你！想來張美美的網美照嗎?中部文青、熱門打卡景點推薦；來去住一晚，讓野姜花胡蝶告訴你特色中部住宿以及親子旅館推薦！更多中部好吃好玩，都在1111FUN中台灣！" property="og:description">
+	<meta content="https://central.1111.com.tw/fun/" property="og:url">
+	<meta content="https://central.1111.com.tw/fun/images/facebookicon.jpg" property="og:image">
+	<meta content="【中部吃喝玩樂】中部必吃美食、最夯打卡景點、特色住宿推薦還有熱門電影贈票、抽獎活動，通通都在FUN中台灣" itemprop="name">
+	<meta content="https://central.1111.com.tw/fun/images/facebookicon.jpg" itemprop="image">
+	<meta content="中部必吃美食這麼多，哪家才是最推薦?讓鴻團長的餐桌告訴你！想來張美美的網美照嗎?中部文青、熱門打卡景點推薦；來去住一晚，讓野姜花胡蝶告訴你特色中部住宿以及親子旅館推薦！更多中部好吃好玩，都在1111FUN中台灣！" itemprop="description">
+	<meta content="【中部吃喝玩樂】中部必吃美食、最夯打卡景點、特色住宿推薦還有熱門電影贈票、抽獎活動，通通都在FUN中台灣" name="twitter:title">
+	<meta content="中部必吃美食這麼多，哪家才是最推薦?讓鴻團長的餐桌告訴你！想來張美美的網美照嗎?中部文青、熱門打卡景點推薦；來去住一晚，讓野姜花胡蝶告訴你特色中部住宿以及親子旅館推薦！更多中部好吃好玩，都在1111FUN中台灣！" name="twitter:description">
+	<meta content="https://central.1111.com.tw/fun/" name="twitter:url">
+	<meta content="1111中台灣人力銀行" name="author">
+	<meta content="1111中台灣人力銀行" name="copyright">
+	<link href="https://central.1111.com.tw/fun/" rel="canonical">
+   
+    <!--
+    <link rel="shortcut icon" href="../fun/images/favicon.ico"/>
+    <link rel="bookmark" href="../fun/images/favicon.ico"/>
+     -->
+       
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/owl.carousel.css" rel="stylesheet">
+	<link href="css/owl.theme.default.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/fontawesome-all.css" rel="stylesheet">
+	<link href="css/animate.css" rel="stylesheet">
+
+
+
+
+	
+</head>
+
+<body >
+            
+            
+                帳號:
+			<input class="con" type="text">
+			<br>
+			密碼:
+			<input class="password" type="password">
+			<br>
+			<input type="button" class="btn" value="送出">
+				
+	
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="js/jquery.min.js"></script> 
+	<script src="js/popper.min.js"></script> 
+	<script src="js/bootstrap.min.js"></script> 
+	<script src="js/owl.carousel.min.js"></script> 
+	<script src="js/wow.min.js"></script> 
+	<script src="js/jquery.nicescroll.js"></script> 
+	<script src="js/jquery.marquee.min.js"></script> 
+	<script src="js/action.js"></script>
+
+<script>
+    
+    var send = document.querySelector('.btn');
+    
+    send.addEventListener('click',login ,false);
+    
+    function login(){
+     
+        var name = document.querySelector('.con').value;
+        var password = document.querySelector('.password').value;
+        var space = { };
+        
+        space.email = name;
+        space.password = password;
+        
+        // console.log(space);
+      
+        //js的ajax起手式
+        var xhr = new XMLHttpRequest();
+        
+        xhr.open('post','https://hexschool-tutorial.herokuapp.com/api/signup',true);
+        
+        //宣告格式
+        xhr.setRequestHeader('Content-type','application/json');
+        
+        //將格式轉為文件
+        var data = JSON.stringify(space);
+        xhr.send(data);
+        
+        
+        //如果loading完成後
+        xhr.onload = function() { 
+      
+        var callbackData = JSON.parse(xhr.responseText);
+        console.log(callbackData);
+        var veriStr = callbackData.message;
+        if(veriStr =="帳號註冊成功"){
+            
+            alert('帳號註冊成功！！');
+        }else{
+            
+            alert("帳號註冊失敗！");
+        }
+            
+        }
+        
+        
+    }
+        
+    
+    
+    
+
+    
+    </script>
+
+	
+
+</body>
+</html>

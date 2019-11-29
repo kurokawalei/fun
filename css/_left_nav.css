@@ -1,0 +1,90 @@
+nav#left_fixed_nav {
+  height: inherit;
+  padding: 15px; }
+  nav#left_fixed_nav h1 {
+    margin: 0; }
+  nav#left_fixed_nav > ul a {
+    color: #434343;
+    font-size: 1.1rem;
+    position: relative;
+    text-decoration: none;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease; }
+    nav#left_fixed_nav > ul a:hover:before {
+      content: '';
+      height: 1px;
+      width: 100%;
+      background: #e6b422;
+      left: 0;
+      top: 0;
+      -webkit-transition: all 0.5s ease;
+      -o-transition: all 0.5s ease;
+      transition: all 0.5s ease;
+      position: absolute;
+      opacity: 1; }
+    nav#left_fixed_nav > ul a:hover:after {
+      content: '';
+      height: 1px;
+      width: 100%;
+      background: #e6b422;
+      right: 0;
+      bottom: 0;
+      -webkit-transition: all 0.5s ease;
+      -o-transition: all 0.5s ease;
+      transition: all 0.5s ease;
+      position: absolute;
+      opacity: 1; }
+    nav#left_fixed_nav > ul a:hover {
+      color: #e6b422;
+      -webkit-transition: all 0.5s ease;
+      -o-transition: all 0.5s ease;
+      transition: all 0.5s ease; }
+    nav#left_fixed_nav > ul a i {
+      margin-right: 30px;
+      width: 20px; }
+  nav#left_fixed_nav ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none; }
+    nav#left_fixed_nav ul li {
+      margin-bottom: 8px;
+      position: relative; }
+      nav#left_fixed_nav ul li ul {
+        padding-left: 50px;
+        margin: 5px 0;
+        display: none; }
+        nav#left_fixed_nav ul li ul a {
+          font-size: 0.9rem;
+          color: #9c9999;
+          display: block;
+          padding-left: 30px; }
+    nav#left_fixed_nav ul i.fas.fa-chevron-down {
+      position: absolute;
+      right: 15px;
+      top: 5px;
+      color: #c2c1c1; }
+    nav#left_fixed_nav ul a:before {
+      content: '';
+      height: 1px;
+      width: 0;
+      background: masterColor;
+      left: 0;
+      top: 0;
+      -webkit-transition: all 0.5s ease;
+      -o-transition: all 0.5s ease;
+      transition: all 0.5s ease;
+      position: absolute;
+      opacity: 1; }
+    nav#left_fixed_nav ul a:after {
+      content: '';
+      height: 1px;
+      width: 0;
+      background: masterColor;
+      right: 0;
+      -webkit-transition: all 0.5s ease;
+      -o-transition: all 0.5s ease;
+      transition: all 0.5s ease;
+      bottom: 0;
+      position: absolute;
+      opacity: 0; }

@@ -1,0 +1,6 @@
+@charset "UTF-8";
+/*內頁*/
+.inside-main-block {
+  margin: 0 35px; }
+  .inside-main-block .title {
+    text-align: center; }

@@ -1,0 +1,225 @@
+@import "system";
+
+/*電影頁面*/
+
+
+.inside-main-block {
+    
+    h1 {
+    font-size: inherit;
+    display: inline-block;
+    font-weight: inherit;
+    line-height: inherit;
+    }
+    
+    h2 {
+    font-size: $font*1.2;
+    display: inline-block;
+    font-weight: inherit;
+    line-height: inherit;
+    color: #eb6100;
+    margin: 30px 0 15px 0;
+        
+    }
+    
+    i {
+        color: #fff;
+        margin-right: 10px;
+    }
+}
+
+
+
+.nav-list {
+    
+	  margin: 30px 0;
+    
+    ul {
+     
+        
+      @include ulstyle();
+      text-align: right;
+        
+      @include mob() {
+          
+         text-align: center;
+
+        }
+      
+        li { 
+          
+            display: inline-block;
+            
+            @include mob { 
+                
+                width: 33.33%;
+            }
+            @include sm-mob{
+            
+                width: 50%;
+        }
+      
+                a {
+                    margin: 0 5px;
+                    background: $b-color;
+                    color: #fff;
+                    display: block;
+                    padding: 0 5px;
+                    text-decoration: none;
+                    transition: all 0.5s ease;
+                    
+                    @include mob {
+                        
+                          padding: 5px 0;
+                          margin-bottom: 5px;
+                    }
+                      
+                    
+                    &:hover {
+                        
+                        background: $master-color;
+                        color: #fff;
+                        transition: all 0.5s ease;
+                    }
+                    
+                    }
+            
+        }
+        
+    }
+    
+}
+
+
+
+
+
+.activity-title {
+    display: inline-block;
+    background: #f00;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 8px;
+}
+
+
+
+.slide-images-box {
+    
+    ul {
+        @include ulstyle();
+    }
+    
+    
+    .owl-theme .owl-dots .owl-dot span {
+        
+        width: 10px;
+        height: 10px;
+        border-color: transparent;
+    }
+    
+    .owl-theme .owl-controls {
+    
+    margin-top: 0;
+    position: absolute;
+    width: 100%;
+    bottom: 5px;
+    text-align: right;
+    right: 30px;
+        
+    }
+    
+    
+    .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+     
+         background:#eb6100;
+    }
+  
+    
+}
+
+
+
+    .problem-list {
+        
+    border-top: #ccc solid 1px;
+    border-bottom: #ccc solid 1px;
+        
+        &.vis {
+            
+             border-top: $else-color solid 1px;
+             border-bottom: $else-color solid 1px;
+        }
+        
+     
+   
+    margin-bottom: 15px;
+    padding: 10px 0 6px 0;
+        
+        
+        
+        input[type=checkbox].checkbix+label>span {
+            
+            border-color: #333;
+        }
+        
+        input[type=checkbox].checkbix:checked+label>span {
+            
+            background:$else-color;
+        }
+}
+  
+#step4 {
+    
+    
+    p {
+        
+        font-size: $font*0.9;
+    }
+}
+
+.form-btn {
+    margin-top: 15px;
+    background: #fff;
+    border: #ccc solid 1px;
+    border-radius: 50px;
+    width: 100px;
+    line-height: 100px;
+    height: 100px;
+    font-size: $font*0.9;
+    text-align: center;
+    display: block;
+    color: #333;
+    text-decoration: none;
+    transition: all 0.5s ease;
+    
+    &:hover {
+        
+        text-decoration: none;
+        color: $else-color;
+        transition: all 0.5s ease;
+    }
+}
+
+
+
+#step1 , #step2 ,#step3 ,#step4 ,#step5 ,#step6 {
+    
+    margin-bottom: 40px;
+    
+    
+    p {
+        
+        font-size: $font*0.9;
+        color: #666;
+    }
+    
+    @include mob {
+        
+        margin-bottom: 0px;
+    }
+    
+    
+	
+}
+
