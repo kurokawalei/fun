@@ -6,7 +6,7 @@
           $('html').niceScroll({
                
                cursorcolor:"#51bcba",
-               zindex: "10",
+               zindex: "9",
                cursorborder: false,
                cursorminheight: 64, 
                cursordragontouch: true,
