@@ -1070,6 +1070,7 @@ a#gotop {
 }
 
 .hot-link-title {
+    
     color: #7d7d7d;
 
     span {
@@ -1324,6 +1325,7 @@ div#sm-weather-box {
 
 
 figure.theweather-images {
+    
     position: absolute;
     z-index: -1;
     top: 80px;
@@ -1334,30 +1336,6 @@ figure.theweather-images {
     display: none;
     transition: all 0.5s ease;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1599,6 +1577,7 @@ figure.theweather-images {
     }
 
     header#header {
+        
         position: fixed;
         top: -120vh;
         left: 0;
@@ -1805,16 +1784,18 @@ figure.theweather-images {
 
     .collection-box li {
         margin: 8px 0;
-    }
-
-    .collection-box li span {
+        
+        span {
         position: absolute;
         left: 15px;
         top: -2px;
         cursor: pointer;
-        z-index: 5;
+        z-index: 5; 
+            
+        }
     }
 
+  
     h2.titlestart {
         font-size: 1.3rem;
         padding-left: 20px;
@@ -1831,6 +1812,7 @@ figure.theweather-images {
     }
 
     .hot-link-title {
+        
         text-align: center;
         color: $master-color;
         margin-top: 35px;
@@ -1894,6 +1876,7 @@ figure.theweather-images {
 
 
     #weather-box {
+        
         position: absolute;
         width: 90%;
         top: 50%;
@@ -1901,7 +1884,6 @@ figure.theweather-images {
         transform: translate(-50%, -50%);
         height: 85vh;
     }
-
 
 
     .happen,
@@ -1936,6 +1918,7 @@ figure.theweather-images {
 
     }
 
+    
     .area-weather {
 
         font-size: 1.4rem;
@@ -1966,10 +1949,14 @@ figure.theweather-images {
     }
 
     footer {
+        
         padding: 5px 15px 5px 15px;
     }
 
 }
+
+
+
 
 
 @media (max-width:351px) {
