@@ -20,8 +20,6 @@
            
            });
 
-      
-
 	           $('#lg-bn-box ul').owlCarousel({
 	               margin: 0,
 	               responsiveClass: true,
@@ -32,16 +30,14 @@
 	               nav: false,
 	                 animateIn: 'bounceIn',
 	                 animateOut: 'fadeOut',
-                    loop: true,
-                    responsive:{
+                     loop: true,
+                     responsive:{
                         
                 0:{ items:1},
                 768:{items:1, dots: true},
                 1000:{items:1, mouseDrag:false}
             }
-	              
-	              
-
+	        
 	           })
                
                
@@ -122,16 +118,13 @@ three.hover(function(){
             nav:false,
             responsiveClass:true,
 	        loop:true,
-	        autoplay:false,
-	       
+	        autoplay:false,  
             responsive:{
                 0:{ items:2},
                 768:{items:3},
                 1000:{items:6,loop:false, dots: false, mouseDrag:false}
             }
         })
-
-
 
 
       
@@ -154,8 +147,7 @@ three.hover(function(){
                 $('i.fas.fa-cloud-sun').click(function(){
                     
                     $('#weather').fadeIn(300);
-                    
-                    
+                  
                     
                 })
  
@@ -169,28 +161,23 @@ three.hover(function(){
 		$('#gotop').removeClass('vis');
 	}
       
-	else{
+	else {
         
 		$('#gotop').addClass('vis');    
 	}
       
         
 });
-                
-                
-                
-	        
-               
+              
          //gotop      	
 		$('#gotop').click(function(e) {
+          
           $('html,body').animate({'scrollTop':'0'},1000)
         });
                
                
              
         //移除收藏  
-
-
 
                
            var xd = $('.collection-box li').find('span').append('<i class="fas fa-times"></i>');
@@ -245,21 +232,16 @@ three.hover(function(){
             })
 
 
-
-
-
           
             $('.collection-total a').hover(function(){
                 
-             $(this).popover('show');
+              $(this).popover('show');
                 
             },function(){
                 
-             $(this).popover('hide');
+              $(this).popover('hide');
                 
             })
-
-
 
 
                
@@ -272,12 +254,11 @@ three.hover(function(){
             $(this).text(text);
         }
     });
+
             
     $('ul').contents().filter(function() {
     return this.nodeType === 3;
 	}).remove();
-
-
 
 
 //選單開合
@@ -292,13 +273,14 @@ mm.click(
   //展
   $(this).parent('li').find('.an').slideDown(250);
  }
+    
 );
 
 
 
 //天氣切換
 
-$('#weather-box>i').click(function(){
+$('#weather-box>i').click(function() {
     
    $('#weather').fadeOut(500);
    $('#sm-weather-box').addClass('animated fadeInRight').fadeIn(500);  
@@ -307,7 +289,7 @@ $('#weather-box>i').click(function(){
 
 
 
-$('.delete').click(function(){
+$('.delete').click(function() {
    
     
  $(this).parents('li').css('display','none');
@@ -317,6 +299,7 @@ $('.delete').click(function(){
              
 
 function momo(){
+    
 $('#add-allstroke').modal({
 })
 
