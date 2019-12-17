@@ -56,12 +56,12 @@
 
 
 #select-place {
-    
-    
-        background: transparent;
-        border: none;
-   
-    
+
+
+    background: transparent;
+    border: none;
+
+
 }
 
 
@@ -108,11 +108,11 @@ h1.col-auto.edit-h1 {
 
     @include mob() {
 
-         margin-bottom: 10px;
-    text-align: center;
-    display: block;
-    width: 100%;
-    margin-right: 0;
+        margin-bottom: 10px;
+        text-align: center;
+        display: block;
+        width: 100%;
+        margin-right: 0;
     }
 }
 
@@ -353,6 +353,8 @@ h1.col-auto.edit-h1 {
 }
 
 #rightmain {
+
+
     max-height: 625px;
 
     @include xl() {
@@ -379,6 +381,10 @@ div#add-stroke a {
 
     @include mob() {
 
+        margin-left: 10px;
+    }
+
+    @include xl-pad() {
         margin-left: 10px;
     }
 
@@ -560,9 +566,6 @@ input.flatpickr.flatpickr-input {
 
 
 
-
-
-
 #ascrail2001:before {
     content: '';
     width: 100%;
@@ -584,9 +587,8 @@ input.flatpickr.flatpickr-input {
 
 
 #select-day-box ul {
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
+    
+   @include ulstyle()
 
     a {
 
@@ -680,6 +682,7 @@ a#select-palace {
 }
 
 .style {
+    
     padding: 0;
     margin: 0;
     list-style-type: none;
@@ -759,12 +762,12 @@ div#database {
     padding-bottom: 10px;
     margin-bottom: 30px;
     padding-right: 40px;
-    
+
     @include sm-mob() {
-        
-         padding-right: 0px;
+
+        padding-right: 0px;
     }
-    
+
 
 
 }
@@ -775,6 +778,14 @@ div#database {
     @include mob() {
         padding-right: 0;
     }
+
+    @include xl-pad() {
+
+        background: #fffdf6;
+        padding-right: 0px;
+    }
+
+
 
     .col-md-4.col-6 {
 
@@ -791,11 +802,18 @@ div#database {
     position: relative;
     margin-bottom: 30px;
     margin-top: 30px;
-    
-    @include mob(){
-        
+
+    @include mob() {
+
         margin-bottom: 15px;
         margin-top: 15px;
+    }
+
+    @include xl-pad() {
+
+        margin-bottom: 10px;
+        margin-top: 10px;
+
     }
 
     p {
@@ -835,12 +853,12 @@ div#database {
 
 
 #pagebox {
-    
+
     transform: translateY(-30px);
-    
-    @include mob(){
-       margin-bottom: 30px;
-        
+
+    @include mob() {
+        margin-bottom: 30px;
+
         transform: translateY(0px);
     }
 
@@ -936,7 +954,7 @@ form#addform2 {
 }
 
 input.flatpickr-input {
-    @include mob(){
+    @include mob() {
         width: 100%;
     }
 }
@@ -946,25 +964,20 @@ form#addform3 {
 
     padding: 0 10px;
     margin: 0 auto;
-  
     min-height: 350px;
     position: relative;
-    
-    
-    
-    background:linear-gradient(-45deg, transparent 35px, #fffbbe 0)
-                    bottom right;
+    background: linear-gradient(-45deg, transparent 35px, #fffbbe 0) bottom right;
     background-repeat: no-repeat;
 
-    
-    
-  
-    
-    
-    @include mob(){
-        
+
+
+
+
+
+    @include mob() {
+
         width: 100%;
-         background-size: cover;
+        background-size: cover;
     }
 
     .modal-footer {
@@ -983,25 +996,25 @@ form#addform3 {
     .add-list-main .row {
 
         margin-bottom: 10px;
-        
-        @include mob(){
-            
+
+        @include mob() {
+
             margin-top: 10px;
         }
-        
+
     }
 
 
     &:after {
-        
+
         content: url(../images/box_down.png);
         position: absolute;
         right: 0;
         bottom: 0;
         width: 48px;
-    height: 50px;
+        height: 50px;
     }
- 
+
 
 }
 
@@ -1029,14 +1042,14 @@ form#addform3 {
 
 .add-list-main {
 
-       padding: 25px;
-    
-    @include mob(){
-        
+    padding: 25px;
+
+    @include mob() {
+
         padding: 0 15px
     }
-    
-    
+
+
 
     .form-check {
 
@@ -1054,7 +1067,6 @@ form#addform3 {
         color: #727171;
 
     }
-
 
 }
 
@@ -1088,6 +1100,7 @@ form#addform3 {
     height: 480px;
 
 }
+
 
 #route-plan {
 
@@ -1150,13 +1163,13 @@ a#close {
 
 
 ul.pagination.justify-content-end {
-    
-    @include mob(){
-        
-        justify-content: center !important;
-            margin-bottom: 0;
 
-    
+    @include mob() {
+
+        justify-content: center !important;
+        margin-bottom: 0;
+
+
     }
 }
 
@@ -1169,17 +1182,17 @@ ul.pagination.justify-content-end {
     .list-btn {
 
         position: fixed;
-        right: 0;
+        right: 20px;
         text-align: center;
         z-index: 6;
-        top: 87px;
-       
+        bottom: 15px;
+
 
         a {
 
             background: #51bcba;
             color: #fff;
-            padding: 10px;
+            padding: 5px 10px;
             display: block;
             text-decoration: none;
             border-radius: 15px;
@@ -1207,12 +1220,11 @@ ul.pagination.justify-content-end {
         }
 
 
-
     }
 
 
-
     #edit-main {
+
         padding: 25px 50px 25px 15px;
         background-image: none;
         background: #fff;
@@ -1241,13 +1253,15 @@ ul.pagination.justify-content-end {
 
     .step-images {
         text-align: left;
+
+        span {
+
+            right: inherit;
+            left: 55px;
+            z-index: 1;
+        }
     }
 
-    .step-images span {
-        right: inherit;
-        left: 55px;
-        z-index: 1;
-    }
 
     .stroke-box:before {
 
@@ -1258,6 +1272,22 @@ ul.pagination.justify-content-end {
             height: 100%;
         }
 
+    }
+
+    ul.pagination.justify-content-end {
+
+
+
+        padding-right: 0;
+
+        justify-content: center !important;
+
+
+    }
+
+    #rightmain {
+
+        max-height: inherit;
     }
 
 
@@ -1316,17 +1346,17 @@ ul.pagination.justify-content-end {
 
     }
 
-    
-    
+
+
     .list-btn {
-           
-    position: fixed;
-    right: 5px;
-    text-align: center;
-    z-index: 6;
-    top: inherit;
-    bottom: 20px;
-        
+
+        position: fixed;
+        right: 5px;
+        text-align: center;
+        z-index: 6;
+        top: inherit;
+        bottom: 20px;
+
     }
 
 

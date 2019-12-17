@@ -990,6 +990,9 @@ div#add-stroke a {
   @media (max-width: 769px) {
     div#add-stroke a {
       margin-left: 10px; } }
+  @media (min-width: 992px) and (max-width: 1200px) {
+    div#add-stroke a {
+      margin-left: 10px; } }
 
 .stone-box ul {
   padding: 0 8px;
@@ -1238,6 +1241,10 @@ div#database {
   @media (max-width: 769px) {
     .database-list {
       padding-right: 0; } }
+  @media (min-width: 992px) and (max-width: 1200px) {
+    .database-list {
+      background: #fffdf6;
+      padding-right: 0px; } }
   .database-list .col-md-4.col-6 {
     padding: 5px; }
 
@@ -1252,6 +1259,10 @@ div#database {
     .box {
       margin-bottom: 15px;
       margin-top: 15px; } }
+  @media (min-width: 992px) and (max-width: 1200px) {
+    .box {
+      margin-bottom: 10px;
+      margin-top: 10px; } }
   .box p {
     text-align: center; }
   .box .col-5 {
@@ -1472,14 +1483,14 @@ a#close {
 @media (max-width: 1199px) {
   .list-btn {
     position: fixed;
-    right: 0;
+    right: 20px;
     text-align: center;
     z-index: 6;
-    top: 87px; }
+    bottom: 15px; }
     .list-btn a {
       background: #51bcba;
       color: #fff;
-      padding: 10px;
+      padding: 5px 10px;
       display: block;
       text-decoration: none;
       border-radius: 15px; }
@@ -1512,16 +1523,25 @@ a#close {
     height: 560px; }
   .step-images {
     text-align: left; }
-  .step-images span {
-    right: inherit;
-    left: 55px;
-    z-index: 1; }
+    .step-images span {
+      right: inherit;
+      left: 55px;
+      z-index: 1; }
   .stroke-box:before {
     left: 40px; } }
   @media (max-width: 1199px) and (max-width: 769px) {
     .stroke-box:before {
       left: 25px;
       height: 100%; } }
+
+@media (max-width: 1199px) {
+  ul.pagination.justify-content-end {
+    padding-right: 0;
+    -webkit-box-pack: center !important;
+    -ms-flex-pack: center !important;
+    justify-content: center !important; }
+  #rightmain {
+    max-height: inherit; } }
 
 @media (max-width: 769px) {
   #rightmain {
