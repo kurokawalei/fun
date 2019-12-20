@@ -1,18 +1,57 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--Created using XmlSitemapGenerator.org - Free HTML, RSS and XML sitemap generator-->
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
- <url>
-<loc>https://kurokawalei.github.io</loc>
-<changefreq>always</changefreq>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://kurokawalei.github.io/fun/</loc>
+  <lastmod>2019-12-20T06:06:08+00:00</lastmod>
+  <priority>1.00</priority>
 </url>
-  
+<url>
+  <loc>https://kurokawalei.github.io/fun/index.html</loc>
+  <lastmod>2019-12-20T06:06:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://kurokawalei.github.io/fun/movie-module.html</loc>
+  <lastmod>2019-12-20T06:06:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://kurokawalei.github.io/fun/active-module.html</loc>
+  <lastmod>2019-12-20T06:06:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://kurokawalei.github.io/fun/activity-list.html</loc>
+  <lastmod>2019-12-20T06:06:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://kurokawalei.github.io/fun/food-list.html</loc>
+  <lastmod>2019-12-20T06:06:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://kurokawalei.github.io/fun/trip-list.html</loc>
+  <lastmod>2019-12-20T06:06:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://kurokawalei.github.io/fun/stay-list.html</loc>
+  <lastmod>2019-12-20T06:06:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://kurokawalei.github.io/fun/inside.html</loc>
+  <lastmod>2019-12-20T06:06:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
 </urlset>
-<!--<guid value="afafc09d-8edc-4ee8-9b68-200f40d2a8d9" />-->
-<!--Created using XmlSitemapGenerator.org - Free HTML, RSS and XML sitemap generator-->
-
-
-
-
-
-
-
