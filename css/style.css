@@ -16,6 +16,9 @@ ol.breadcrumb {
   ol.breadcrumb a {
     color: #999; }
 
+input.form-control.form-control-sm.col-9 {
+  border-radius: 25px 0 0 25px; }
+
 .search-ui-box {
   margin: 0 35px;
   background: url(../images/blue_background.jpg);
