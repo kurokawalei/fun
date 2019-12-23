@@ -2946,13 +2946,20 @@ figure.theweather-images {
     padding-left: 0; }
   #weather-box {
     position: absolute;
-    width: 90%;
+    width: 100%;
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    height: 85vh; }
+    height: 100vh; }
+    #weather-box .row {
+      top: 50%;
+      position: absolute;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      width: 100%; }
   .happen,
   .data {
     font-size: 1rem;
@@ -2984,9 +2991,9 @@ figure.theweather-images {
     letter-spacing: 0px;
     margin: 10px; }
   #weather-box i {
-    top: -37px;
-    right: 10px;
-    color: #fff; }
+    top: 25px;
+    right: 25px;
+    color: #666; }
   #weather-box .row .col-md {
     margin: 15px auto; }
   span.temperature {
