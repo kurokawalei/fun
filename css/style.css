@@ -2885,6 +2885,8 @@ figure.theweather-images {
     margin: 50px 0; }
     #sitemap ul.col-md-3 {
       margin-bottom: 15px; }
+    #sitemap .col-md-4.align-self-center {
+      text-align: center; }
   #news-box ul li {
     border-bottom: #ccc dashed 1px;
     padding: 5px 0;
