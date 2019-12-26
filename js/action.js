@@ -5,7 +5,7 @@
 
           $('html').niceScroll({
                
-               cursorcolor:"#51bcba",
+               cursorcolor:"#ccc",
                zindex: "9",
                cursorborder: false,
                cursorminheight: 64, 
@@ -101,6 +101,7 @@ two.hover(function(){
 },function(){
      $(this).find('a img').attr('src','images/menu_icon_3.png');
 });
+
 three.hover(function(){
     
     $(this).find('a img').attr('src','images/menu_icon_5_h.png');
@@ -247,7 +248,7 @@ three.hover(function(){
                
     var len = 50; 
                
-    $('.bn-main').each(function(i){
+    $('.bn-main').each(function(i) { 
         if($(this).text().length>len){
             $(this).attr("title",$(this).text());
             var text=$(this).text().substring(0,len-1)+"...";
@@ -330,3 +331,11 @@ $('#sm-weather-box-info').hover(function(){
         }
     });
 
+
+//搜尋
+
+  function allsearch() {
+        if (document.searchform.keys.value == "") { alert("請輸入關鍵字"); }
+        else { searchform.submit(); }
+        return false;
+    }

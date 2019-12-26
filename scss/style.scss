@@ -5,7 +5,7 @@
 @import "inside";
 @import "movielist";
 @import "stroke";
-
+@import "search";
 
 html {
     width: 100%;
@@ -1939,7 +1939,7 @@ figure.theweather-images {
 
     #weather-box i {
 
-          top: 25px;
+    top: 35px;
     right: 25px;
     color: #666;
 

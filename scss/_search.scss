@@ -1,0 +1,89 @@
+@import "system";
+
+/*搜尋結果頁面*/
+
+.search-main {
+    
+     @include ulstyle();
+    
+    
+    li {
+        
+        margin-bottom: 25px;
+        
+       
+        & > .row {
+            
+            
+            .col-12 img {
+                
+                width: 100%;
+                height: auto;
+            }
+            
+        }
+        
+        
+        .title {
+            
+          
+           padding: 15px 0;
+            
+            .area {
+                
+                    display: inline-block;
+                    
+                    
+             
+            }
+            
+        }
+        .info {
+            
+            margin: 15px 0;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 2; //行數
+            -webkit-box-orient: vertical;
+            white-space: normal;
+        }
+        
+        a.join-btn , a.read-btn {
+            padding: 8px ;
+        }
+        
+      
+        
+    }
+    
+    
+      
+        .loading {
+            flex: 100%;
+        }
+    
+}
+
+.input-main {
+    font-size:$font*1.2;
+    text-align: center;
+    margin: 15px 0 25px 0;
+    
+    @include mob() {
+        
+         font-size:$font;
+         padding: 0 15px;
+    }
+    
+}
+
+input.form-control.form-control-sm.col-md-9.col-7:focus {
+    
+    background: #eee;
+   
+}
+
+
+

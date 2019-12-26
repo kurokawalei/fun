@@ -21,7 +21,6 @@
     <meta content="1111中台灣人力銀行" name="author">
     <meta content="1111中台灣人力銀行" name="copyright">
     <link href="https://central.1111.com.tw/fun/" rel="canonical">
-
     <!--
     <link rel="shortcut icon" href="../fun/images/favicon.ico"/>
     <link rel="bookmark" href="../fun/images/favicon.ico"/>
@@ -36,12 +35,10 @@
     <link href="css/animate.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
     <!--直接引用Google Fonts API-->
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,400,700,900&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,400,500,600,700,900&display=swap" rel="stylesheet">
 </head>
 
 <body>
-
 
     <section class="container-fluid" id="warp">
 
@@ -168,14 +165,14 @@
 
         <main id="main">
 
-            <aside id="top-block" >
+            <aside id="top-block">
                 <div class="row">
                     <a class="d-lg-none sm-menu" href="javascript:;"><i class="fas fa-bars"></i></a>
-                    <form class="col-xl-2 col-lg col-md-3 align-self-center" id="search-form" name="search-form">
+                    <form class="col-xl-2 col-lg col-md-3 align-self-center" id="search-form" name="searchform" action="search.html" method="get">
                         <div class="row">
-                            <input class="form-control form-control-sm col-md-9 col-7" placeholder="請輸入關鍵字.." type="text">
+                            <input class="form-control form-control-sm col-md-9 col-7" placeholder="請輸入關鍵字.." type="text" name="keys">
 
-                            <a class="searchstyle col-3" href="#"><i class="fas fa-search"></i></a>
+                            <a class="searchstyle col-3" onclick="allsearch()"><i class="fas fa-search"></i></a>
 
                             <div class="col-2 align-self-center d-md-none">
                                 <i class="fas fa-cloud-sun"></i>
@@ -1460,12 +1457,12 @@
     <script src="js/jquery.nicescroll.js"></script>
     <script src="js/jquery.marquee.min.js"></script>
     <script src="js/lazyload.min.js"></script>
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="js/sweetalert.min.js"></script>
     <script src="js/action.js"></script>
     <script src="js/weather.js"></script>
     <script>
+        
         $(function() {
-
 
 
             $('.collection-total a').hover(function() {
@@ -1477,11 +1474,6 @@
                 $(this).popover('hide');
 
             })
-
-
-
-
-
 
 
 

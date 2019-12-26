@@ -27,10 +27,10 @@ ol.breadcrumb {
 
 }
 
-  input.form-control.form-control-sm.col-9 {
-        
-            border-radius: 25px 0 0 25px;
-    }
+input.form-control.form-control-sm.col-9 {
+
+    border-radius: 25px 0 0 25px;
+}
 
 
 .search-ui-box {
@@ -66,7 +66,9 @@ ol.breadcrumb {
         text-align: left;
         width: 100%;
 
-        &:active {}
+        &:active {
+            
+        }
 
 
     }
@@ -179,9 +181,9 @@ ol.breadcrumb {
 .list-main {
 
 
-
-
-    @include ulstyle() margin: 35px 35px;
+    @include ulstyle();
+    
+      margin: 35px 35px;
 
     & > li {
 
@@ -201,7 +203,9 @@ ol.breadcrumb {
             position: absolute;
         }
 
+        
         &:hover:after {
+            
             width: 80%;
             content: '';
             transition: all 0.5s ease;
@@ -237,6 +241,7 @@ ol.breadcrumb {
 }
 
 .day {
+    
     position: relative;
     font-size: $font*1.2;
     color: $b-color;
@@ -331,7 +336,6 @@ a.join-btn {
     display: inline-block;
     padding: 0 8px;
     font-weight: 300;
-
     text-decoration: none;
     margin-right: 10px;
 
@@ -398,6 +402,7 @@ aside.form-box {
 
 
     & input[type="checkbox"] + label span {
+        
         display: inline-block;
         width: 19px;
         height: 19px;
@@ -408,6 +413,7 @@ aside.form-box {
     }
 
     & input[type="checkbox"]:checked + label span {
+        
         background: url(../images/check_radio_sheet.png) -19px top no-repeat;
 
     }
@@ -423,8 +429,9 @@ aside.form-box {
     }
 
 
-
 }
+
+
 
 .close-btn {
 
@@ -497,6 +504,7 @@ input.btn.btn-outline-light.btn-lg {
     width: 15%;
 
     &:focus {
+        
         box-shadow: none;
     }
 
@@ -514,14 +522,20 @@ input.btn.btn-outline-light.btn-lg {
 
 
 
-@media (min-width:992px) and (max-width:1199px) {
 
 
+.list-main {
 
-    .list-main {
+    .col-md-4 {
 
-        .col-md-4 {
+        @include xl-pad() {
 
+            padding-right: 25px;
+
+        }
+
+        @include pad() {
+            
             padding-right: 25px;
 
         }
@@ -532,17 +546,10 @@ input.btn.btn-outline-light.btn-lg {
 
 
 
+
 @media (min-width:769px) and (max-width:993px) {
 
-    .list-main {
 
-        .col-md-4 {
-
-            padding-right: 25px;
-
-        }
-
-    }
 
     .search-ui-box {
 
@@ -598,21 +605,21 @@ input.btn.btn-outline-light.btn-lg {
 
 
         &:hover {
+            
             background-image: none;
         }
+        
     }
-
-
-
 
 
     .data-box {
+        
         margin-top: 15px;
     }
 
+   
 
     .loading {
-
 
         img {
 
@@ -624,15 +631,36 @@ input.btn.btn-outline-light.btn-lg {
     .close-btn {
         top: 15px;
         right: 25px;
+        
+        
+        i {
+           
+            @include mob() {
+                
+                right: 20px;
+                
+            }
+            
+        }
+        
     }
 
     form#search-typeform {
 
-
-
         & > .row:first-child {
 
             padding-left: 35px;
+        }
+        
+        
+        @include sm-mob() {
+            
+          & > .row:first-child {
+
+            padding-left: 5px;
+        }
+
+            
         }
 
 
@@ -641,9 +669,7 @@ input.btn.btn-outline-light.btn-lg {
     .tag-link {
 
 
-
-
-        li {
+        li  {
 
             margin-bottom: 0;
         }
@@ -655,39 +681,29 @@ input.btn.btn-outline-light.btn-lg {
 
         & > li {
 
-            &:hover:after {
+            &:hover:after { 
                 width: 0;
-
-
 
             }
 
-            img {
+            img { 
+                
                 width: 100%;
             }
 
         }
-
-
 
     }
 
 }
 
 
+
+
+
 @include sm-mob() {
-
-    form#search-typeform {
-
-
-        & > .row:first-child {
-
-            padding-left: 5px;
-        }
-
-
-    }
-
+    
+    
     .close-btn i {
 
         position: absolute;
@@ -696,8 +712,7 @@ input.btn.btn-outline-light.btn-lg {
         font-size: 2rem;
         color: #333;
         z-index: 10;
+        
     }
-
-
 
 }
