@@ -200,22 +200,54 @@ $('#add-allstroke').modal({
 
 //路線圖視窗
 
-$('.route').click(function(){
+$('.route').click(function(){ 
    
     
- $('#route-plan').addClass('animated fadeIn').css('display','block')
+ $('#route-plan').addClass('vis fadeIn animated');
+    
     
 })
-
 
 
 //關閉路線圖視窗
 
 $('#close').click(function(){
     
-   $('#route-plan').removeClass('animated fadeIn').css('display','none');
+   $('#route-plan').addClass('fadeOut animated').removeClass('vis');
+    
+    
+  setTimeout(function(){
+      
+      $('#route-plan').removeClass(); 
+      
+      
+  },1000)
     
 })
+
+
+
+
+//移除收藏
+
+$('.remove-icon').click(function(){
+    
+    var tt = $(this).parents('.col-md-4.col-6');
+    
+    tt.addClass('fadeOut animated');
+    
+    setTimeout(function(){
+        
+        tt.remove();
+        
+    },500)
+    
+    
+})
+
+
+
+
 
 new WOW().init();
 

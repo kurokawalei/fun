@@ -12,7 +12,7 @@
     line-height: inherit;
     }
     
-    h2 {
+    h2 , h3 {
     font-size: $font*1.2;
     display: inline-block;
     font-weight: inherit;
@@ -22,10 +22,55 @@
         
     }
     
+    
+    
     i {
         color: #fff;
         margin-right: 10px;
     }
+    
+}
+
+
+#sponsor {
+    
+    i {
+        color: #eb6100;
+        margin-right: 10px;
+    }
+    
+    .st-logo-info {
+        
+        
+        text-align: center;
+        font-size: $font;
+        font-weight: bold;
+        letter-spacing: 1px;
+        
+        @include mob(){
+            
+            margin-bottom: 15px;
+        }
+    }
+    
+    
+    ul {
+        
+        @include ulstyle();
+        
+        
+    }
+    
+    
+    .st-logo {
+        
+        @include mob() {
+            
+            text-align: center;
+        }
+        
+    }
+    
 }
 
 
@@ -91,9 +136,6 @@
 }
 
 
-
-
-
 .activity-title {
     display: inline-block;
     background: #f00;
@@ -107,8 +149,30 @@
 .slide-images-box {
     
     ul {
+        
         @include ulstyle();
+        
+       
+        
+        
+        img {
+            
+            max-width: 100%;
+            width: inherit !important;
+            margin: 0 auto;
+            display: block;
+            
+        }
+        
+        
+        .slide-title {
+            text-align: center;
+            font-size: $font;
+            margin-top: 10px;
+        }
     }
+    
+    
     
     
     .owl-theme .owl-dots .owl-dot span {
@@ -178,7 +242,9 @@
     }
 }
 
+
 .form-btn {
+    
     margin-top: 15px;
     background: #fff;
     border: #ccc solid 1px;
@@ -214,9 +280,10 @@
         color: #666;
     }
     
-    @include mob {
+    @include mob {    
         
-        margin-bottom: 0px;
+       margin-bottom: 0px;
+        
     }
     
     

@@ -204,7 +204,7 @@ input.form-control.form-control-sm.col-9 {
         text-decoration: none; }
 
 a.join-btn {
-  background: #51bcba;
+  background: #596473;
   color: #fff;
   display: inline-block;
   padding: 0 8px;
@@ -216,7 +216,7 @@ a.join-btn {
 
 a.read-btn {
   font-weight: 300;
-  background: #596473;
+  background: #51bcba;
   color: #fff;
   padding: 0 8px;
   text-decoration: none;
@@ -232,6 +232,11 @@ a.read-btn {
 
 .inside-top-block {
   padding: 15px 35px 15px 35px !important; }
+
+#areaform {
+  background: url(../images/designate-sunlight-head-board.jpg);
+  background-size: cover;
+  background-position: center; }
 
 aside.form-box {
   position: fixed;
@@ -662,7 +667,7 @@ input.btn.btn-outline-light.btn-lg {
   font-weight: inherit;
   line-height: inherit; }
 
-.inside-main-block h2 {
+.inside-main-block h2, .inside-main-block h3 {
   font-size: 1.5rem;
   display: inline-block;
   font-weight: inherit;
@@ -673,6 +678,28 @@ input.btn.btn-outline-light.btn-lg {
 .inside-main-block i {
   color: #fff;
   margin-right: 10px; }
+
+#sponsor i {
+  color: #eb6100;
+  margin-right: 10px; }
+
+#sponsor .st-logo-info {
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: bold;
+  letter-spacing: 1px; }
+  @media (max-width: 769px) {
+    #sponsor .st-logo-info {
+      margin-bottom: 15px; } }
+
+#sponsor ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none; }
+
+@media (max-width: 769px) {
+  #sponsor .st-logo {
+    text-align: center; } }
 
 .nav-list {
   margin: 30px 0; }
@@ -724,6 +751,15 @@ input.btn.btn-outline-light.btn-lg {
   padding: 0;
   margin: 0;
   list-style-type: none; }
+  .slide-images-box ul img {
+    max-width: 100%;
+    width: inherit !important;
+    margin: 0 auto;
+    display: block; }
+  .slide-images-box ul .slide-title {
+    text-align: center;
+    font-size: 1.25rem;
+    margin-top: 10px; }
 
 .slide-images-box .owl-theme .owl-dots .owl-dot span {
   width: 10px;
@@ -887,7 +923,7 @@ h1.col-auto.edit-h1 {
   font-size: 1rem;
   -webkit-box-shadow: #c3a791 3px 3px 0px 1px;
   box-shadow: #c3a791 3px 3px 0px 1px;
-  margin-right: 25px; }
+  margin-left: 50px; }
   @media (max-width: 769px) {
     .trip-data {
       margin-bottom: 10px;
@@ -949,6 +985,33 @@ h1.col-auto.edit-h1 {
 .stone-description {
   font-size: 0.875rem;
   color: #595757; }
+
+.remove-icon i {
+  color: #21b276;
+  font-size: 1.25rem; }
+
+a.plus-icon i {
+  color: #ea8677;
+  font-size: 1.25rem; }
+
+.map-icon {
+  display: inline-block;
+  -webkit-transform: translateY(2px);
+  -ms-transform: translateY(2px);
+  transform: translateY(2px); }
+  .map-icon span {
+    background: #81bdea;
+    width: 20px;
+    text-align: center;
+    height: 20px;
+    display: inline-block;
+    border-radius: 100px; }
+  .map-icon i {
+    color: #fff;
+    font-size: 0.8125rem;
+    -webkit-transform: translateY(-3px);
+    -ms-transform: translateY(-3px);
+    transform: translateY(-3px); }
 
 #start-box {
   margin-bottom: 35px;
@@ -1123,6 +1186,12 @@ input.flatpickr.flatpickr-input {
   content: url(../images/scroll_back.png);
   left: 0; }
 
+button#start {
+  background: #f00;
+  color: #fff;
+  margin: 0 auto;
+  display: block; }
+
 #select-day-box ul {
   padding: 0;
   margin: 0;
@@ -1200,10 +1269,26 @@ a#select-palace {
   .style li {
     display: inline-block;
     padding: 0 10px;
-    border-right: #575751 solid 1px; }
+    position: relative; }
+    .style li:after {
+      content: '';
+      width: 1px;
+      height: 65%;
+      position: absolute;
+      background: #000;
+      -webkit-transform: rotate(35deg) translateY(-50%);
+      -ms-transform: rotate(35deg) translateY(-50%);
+      transform: rotate(35deg) translateY(-50%);
+      left: -5px;
+      top: 50%; }
+    .style li:first-child:after {
+      display: none; }
   .style a {
     text-decoration: none;
     color: #575751; }
+    .style a:hover {
+      color: #fff;
+      background: cadetblue; }
 
 #database-search {
   padding-right: 10px;
@@ -1250,7 +1335,8 @@ div#database {
       padding-right: 0px; } }
 
 .database-list {
-  padding-right: 30px; }
+  padding-right: 30px;
+  min-height: 528px; }
   @media (max-width: 769px) {
     .database-list {
       padding-right: 0; } }
@@ -1283,6 +1369,9 @@ div#database {
   .box .col-7 {
     font-size: 0.9375rem;
     color: #595757; }
+    .box .col-7 a {
+      text-decoration: none;
+      color: #333; }
   .box:before {
     content: url(../images/Sticker.png);
     position: absolute;
@@ -1437,13 +1526,12 @@ form#addform3 {
   height: 480px; }
 
 #route-plan {
-  display: none;
+  z-index: -1;
   width: 100vw;
   position: fixed;
   -webkit-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
-  z-index: 11;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -1452,10 +1540,7 @@ form#addform3 {
   height: 100vh;
   background: rgba(0, 0, 0, 0.75); }
   #route-plan.vis {
-    opacity: 1;
-    -webkit-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease; }
+    z-index: 10; }
 
 .row.route-plan-info {
   background: #fff;
@@ -2072,7 +2157,8 @@ h2.titlestart {
     margin-left: 10px; }
 
 .master-title {
-  padding-left: 35px; }
+  padding-left: 35px;
+  margin-top: 30px; }
 
 .sm-more {
   color: #343434;

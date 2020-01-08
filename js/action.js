@@ -16,9 +16,15 @@
                autohidemode:false, 
                smoothscroll:true,
                horizrailenabled: false,
+            
              
            
            });
+
+
+
+
+
 
 	           $('#lg-bn-box ul').owlCarousel({
 	               margin: 0,
@@ -28,8 +34,8 @@
 	               items: 1,
 	               dots: true,
 	               nav: false,
-	                 animateIn: 'bounceIn',
-	                 animateOut: 'fadeOut',
+	                 animateIn: 'fadeInDown',
+	                 animateOut: 'fadeOutUp',
                      loop: true,
                      responsive:{
                         
@@ -59,10 +65,6 @@
 
 
 
-
-
-
-
   $('#leftmain').niceScroll({
                
       cursorcolor:"#dcdddd",
@@ -76,12 +78,8 @@
                autohidemode:false, 
                horizrailenabled: false,
              
-           
            });
-             
-
-
-   
+         
       var one = $('.ul-menu').find('li:first-child');
       var two = $('.ul-menu').find('li:nth-child(2)');
       var three = $('.ul-menu').find('li:nth-child(3)');
@@ -137,6 +135,7 @@ three.hover(function(){
             items:1,
             loop:true,
 	        autoplay:true,
+                autoHeight:true,
             autoplayTimeout:5000,
             autoplayHoverPause:true
 	       
@@ -173,7 +172,8 @@ three.hover(function(){
          //gotop      	
 		$('#gotop').click(function(e) {
           
-          $('html,body').animate({'scrollTop':'0'},1000)
+          $('html,body').animate({'scrollTop':'0'},1000);
+            
         });
                
                
@@ -339,3 +339,26 @@ $('#sm-weather-box-info').hover(function(){
         else { searchform.submit(); }
         return false;
     }
+
+
+ //判斷RWD
+      function isMobile() {
+
+        try {
+          document.createEvent("TouchEvent");
+          return true;
+        }
+
+        catch(e) {
+          return false;
+        }
+
+      }
+
+      if (isMobile()) {
+    
+           $('html').getNiceScroll().remove();
+
+      }
+  
+

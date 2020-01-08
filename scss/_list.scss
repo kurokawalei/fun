@@ -331,7 +331,7 @@ input.form-control.form-control-sm.col-9 {
 
 a.join-btn {
 
-    background: #51bcba;
+    background: #596473;
     color: #fff;
     display: inline-block;
     padding: 0 8px;
@@ -348,7 +348,8 @@ a.join-btn {
 
 a.read-btn {
     font-weight: 300;
-    background: #596473;
+  
+      background: #51bcba;
     color: #fff;
     padding: 0 8px;
     text-decoration: none;
@@ -376,6 +377,14 @@ a.read-btn {
 
     padding: 15px 35px 15px 35px !important;
 }
+
+#areaform {
+    
+    background: url(../images/designate-sunlight-head-board.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
 
 aside.form-box {
 
