@@ -1,6 +1,6 @@
 // JavaScript Document design by kuro
 
-
+$("img.lazyload").lazyload();
 
 
 $('html').niceScroll({
