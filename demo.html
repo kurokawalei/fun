@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+  
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    <!-- Bootstrap CSS -->
+    <meta content="index,follow" name="robots">
+    <title>【中部吃喝玩樂】中部必吃美食、最夯打卡景點、特色住宿推薦還有熱門電影贈票、抽獎活動，通通都在FUN中台灣</title>
+    <meta content="中部必吃美食這麼多，哪家才是最推薦?讓鴻團長的餐桌告訴你！想來張美美的網美照嗎?中部文青、熱門打卡景點推薦；來去住一晚，讓野姜花胡蝶告訴你特色中部住宿以及親子旅館推薦！更多中部好吃好玩，都在1111FUN中台灣！" name="description">
+    <meta content="台中住宿推薦,中部旅遊景點,台中旅遊景點,中部旅行,中部一日遊,台中美食,彰化美食,台中夜市,台中住宿,夜市必吃" name="keywords">
+    <meta content="website" property="og:type">
+    <meta content="zh_TW" property="og:locale">
+    <meta content="FUN中台灣" property="og:site_name">
+    <meta content="【中部吃喝玩樂】中部必吃美食、最夯打卡景點、特色住宿推薦還有熱門電影贈票、抽獎活動，通通都在FUN中台灣" property="og:title">
+    <meta content="中部必吃美食這麼多，哪家才是最推薦?讓鴻團長的餐桌告訴你！想來張美美的網美照嗎?中部文青、熱門打卡景點推薦；來去住一晚，讓野姜花胡蝶告訴你特色中部住宿以及親子旅館推薦！更多中部好吃好玩，都在1111FUN中台灣！" property="og:description">
+    <meta content="https://central.1111.com.tw/fun/" property="og:url">
+    <meta content="https://central.1111.com.tw/fun/images/facebookicon.jpg" property="og:image">
+    <meta content="【中部吃喝玩樂】中部必吃美食、最夯打卡景點、特色住宿推薦還有熱門電影贈票、抽獎活動，通通都在FUN中台灣" name="twitter:title">
+    <meta content="中部必吃美食這麼多，哪家才是最推薦?讓鴻團長的餐桌告訴你！想來張美美的網美照嗎?中部文青、熱門打卡景點推薦；來去住一晚，讓野姜花胡蝶告訴你特色中部住宿以及親子旅館推薦！更多中部好吃好玩，都在1111FUN中台灣！" name="twitter:description">
+    <meta content="https://central.1111.com.tw/fun/" name="twitter:url">
+    <meta content="1111中台灣人力銀行" name="author">
+    <meta content="1111中台灣人力銀行" name="copyright">
+    <link href="https://central.1111.com.tw/fun/" rel="canonical">
+    <!-- <link rel="shortcut icon" href="../fun/images/favicon.ico"/>
+    <link rel="bookmark" href="../fun/images/favicon.ico" />-->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/owl.carousel.css" rel="stylesheet">
+    <link href="css/owl.theme.default.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/fontawesome.min.css" rel="stylesheet">
+    <link href="css/fontawesome-all.min.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/flatpickr.min.css" rel="stylesheet">
+    <link href="css/flatpickr.material_blue.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <!--直接引用Google Fonts API-->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,400,700,900&display=swap" rel="stylesheet"></head>
+  
+ <body>
+   
+    <div class="wrap">
+     
+        {{message}}
+ 
+ 
+ 
+ <li v-for="item in colorbox" @click="mycol(item.color)">
+     
+     {{item.color}}
+     
+ </li>
+  
+       
+   </div>
+    
+ 
+      <script src="https://unpkg.com/vue"></script>
+      <!--
+       <script src="https://cdn.jsdelivr.net/npm/vue@2.6.0"></script>
+       -->
+       
+       
+  <script>
+      
+      var wrap =  new Vue({
+          
+          el:'.wrap',
+
+           data:{
+           message:'the power of dreams',       
+          
+           colorbox:[ 
+                  {color:'紅'} , 
+                  { color:'橙'},
+                  { color:'黃' } 
+              ]
+           
+          },
+          
+          methods:{
+              
+              mycol: function(color){
+              
+              alert('我點的顏色是' + color )
+              
+              
+          }
+              
+              
+              
+          }
+          
+      })
+     
+
+     
+     </script>
+     
+     
+     
+     
+</body>
+
+                
+     
+    
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+  
+    
+
+</html>

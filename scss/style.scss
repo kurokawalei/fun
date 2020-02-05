@@ -64,7 +64,18 @@ nav#left_fixed_nav {
 
     ul {
 
-        @include ulstyle() li {
+        @include ulstyle();
+        max-height:inherit;
+        overflow: hidden;
+
+        @include mob(){
+
+            max-height: initial;
+            
+        }
+
+        
+        li {
 
             margin-bottom: 8px;
             position: relative;
@@ -212,11 +223,12 @@ span.line-style {
 
 .collection-box li {
     position: relative;
+    padding-left: 12px;
 
     span {
 
         position: absolute;
-        left: -5px;
+        left: 0px;
         top: 0px;
         cursor: pointer;
         font-size: 0.8rem;
@@ -228,11 +240,11 @@ span.line-style {
 
         color: #343434;
         font-size: 0.85rem;
-        padding-left: 5px;
+        padding-left: 10px;
         text-overflow: ellipsis;
         white-space: nowrap;
         overflow: hidden;
-        display: inline-block;
+        display: block;
 
         &:hover {
 
@@ -645,7 +657,7 @@ figcaption.article-text {
 
 .article-tabs ul {
     
-  @include ulstyle()
+  @include ulstyle();
 
     li {
 

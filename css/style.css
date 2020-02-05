@@ -189,6 +189,14 @@ input.form-control.form-control-sm.col-9 {
   letter-spacing: 1px;
   color: #333;
   margin-top: 10px; }
+  @media (max-width: 769px) {
+    .info {
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      -o-text-overflow: ellipsis;
+      text-overflow: ellipsis;
+      display: -webkit-box; } }
 
 .tag-link {
   margin: 10px 0; }
@@ -828,7 +836,7 @@ input.btn.btn-outline-light.btn-lg {
 /*編輯行程*/
 #edit {
   background: url(../images/edit_background.jpg);
-  width: 100vw;
+  width: 100%;
   height: 100%;
   background-size: cover;
   background-repeat: repeat;
@@ -853,6 +861,57 @@ input.btn.btn-outline-light.btn-lg {
       background-size: cover;
       background-position: center;
       background-repeat: repeat; } }
+
+#list-box {
+  padding: 15px 60px;
+  background: url(../images/edit_background.jpg); }
+  @media (min-width: 768px) and (max-width: 991px) {
+    #list-box {
+      padding: 15px 30px; } }
+  @media (max-width: 769px) {
+    #list-box {
+      padding: 15px; } }
+  @media (max-width: 769px) {
+    #list-box > .container-fluid {
+      padding: 0; } }
+
+.viewbox {
+  border: #ccc solid 1px;
+  min-height: 1000px;
+  position: relative;
+  padding: 15px; }
+  .viewbox .begin {
+    margin-bottom: 20px; }
+  .viewbox .step-images {
+    text-align: center;
+    position: relative; }
+    .viewbox .step-images span {
+      right: inherit;
+      left: 50%; }
+    @media (max-width: 769px) {
+      .viewbox .step-images {
+        margin-bottom: 15px; } }
+  .viewbox .viewbox-list {
+    margin-bottom: 15px;
+    position: relative; }
+    .viewbox .viewbox-list:before {
+      content: '';
+      width: 2px;
+      height: 120%;
+      border-left: #d67f68 dashed 2px;
+      position: absolute;
+      left: 5%; }
+      @media (min-width: 768px) and (max-width: 991px) {
+        .viewbox .viewbox-list:before {
+          left: 3%; } }
+      @media (max-width: 769px) {
+        .viewbox .viewbox-list:before {
+          display: none; } }
+  .viewbox .stone-box {
+    margin-bottom: 0; }
+    @media (max-width: 769px) {
+      .viewbox .stone-box {
+        margin-bottom: 10px; } }
 
 #select-place {
   background: transparent;
@@ -935,6 +994,9 @@ h1.col-auto.edit-h1 {
 
 #stroke-info {
   margin: 10px 0; }
+  @media (max-width: 769px) {
+    #stroke-info .trip-data {
+      margin-left: 0; } }
 
 #edit-main {
   border-radius: 5px;
@@ -1029,6 +1091,10 @@ a.plus-icon i {
     @media (min-width: 1441px) {
       #start-box .row .col-xl-3 .step-images span {
         right: 80px; } }
+
+.print-main {
+  background: #fff;
+  position: relative; }
 
 @media (max-width: 769px) {
   .stone-images {
@@ -1768,7 +1834,12 @@ nav#left_fixed_nav {
   nav#left_fixed_nav ul {
     padding: 0;
     margin: 0;
-    list-style-type: none; }
+    list-style-type: none;
+    max-height: inherit;
+    overflow: hidden; }
+    @media (max-width: 769px) {
+      nav#left_fixed_nav ul {
+        max-height: initial; } }
     nav#left_fixed_nav ul li {
       margin-bottom: 8px;
       position: relative; }
@@ -1879,22 +1950,23 @@ span.line-style {
   /* IE6-9 */ }
 
 .collection-box li {
-  position: relative; }
+  position: relative;
+  padding-left: 12px; }
   .collection-box li span {
     position: absolute;
-    left: -5px;
+    left: 0px;
     top: 0px;
     cursor: pointer;
     font-size: 0.8rem; }
   .collection-box li a {
     color: #343434;
     font-size: 0.85rem;
-    padding-left: 5px;
+    padding-left: 10px;
     -o-text-overflow: ellipsis;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
-    display: inline-block; }
+    display: block; }
     .collection-box li a:hover {
       color: #e6b422;
       -webkit-transition: all 0.5s ease;

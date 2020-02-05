@@ -66,9 +66,7 @@ input.form-control.form-control-sm.col-9 {
         text-align: left;
         width: 100%;
 
-        &:active {
-            
-        }
+       
 
 
     }
@@ -301,6 +299,18 @@ input.form-control.form-control-sm.col-9 {
     letter-spacing: 1px;
     color: #333;
     margin-top: 10px;
+
+    @include mob(){
+
+       
+   
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    }
+
 }
 
 .tag-link {
@@ -384,6 +394,8 @@ a.read-btn {
     background-size: cover;
     background-position: center;
 }
+
+
 
 
 aside.form-box {

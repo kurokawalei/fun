@@ -6,17 +6,18 @@
 #edit {
 
     background: url(../images/edit_background.jpg);
-    width: 100vw;
+    width: 100%;
     height: 100%;
     background-size: cover;
     background-repeat: repeat;
     background-position: center;
 
+
     @include mob() {
         height: auto;
     }
 
-    & > .container-fluid {
+    &>.container-fluid {
         padding: 0 60px;
         max-height: 730px;
 
@@ -35,8 +36,6 @@
             max-height: inherit;
         }
 
-
-
     }
 
     @include xl() {
@@ -53,20 +52,134 @@
 }
 
 
+#list-box {
+
+    padding: 15px 60px;
+    background: url(../images/edit_background.jpg);
 
 
-#select-place {
+
+    @include pad() {
+
+        padding: 15px 30px;
 
 
-    background: transparent;
-    border: none;
+    }
 
+    @include mob() {
+
+        padding: 15px;
+
+
+
+    }
+
+
+
+    &>.container-fluid {
+
+        @include mob() {
+
+            padding: 0;
+        }
+
+    }
 
 }
 
 
 
 
+
+.viewbox {
+
+    border: #ccc solid 1px;
+    min-height: 1000px;
+    position: relative;
+    padding: 15px;
+
+    .begin {
+
+        margin-bottom: 20px;
+
+
+    }
+
+
+    .step-images {
+
+        text-align: center;
+        position: relative;
+
+        span {
+
+            right: inherit;
+            left: 50%;
+        }
+
+        @include mob() {
+            margin-bottom: 15px;
+        }
+
+
+    }
+
+
+
+
+
+    .viewbox-list {
+
+
+        margin-bottom: 15px;
+        position: relative;
+
+
+        &:before {
+
+            content: '';
+            width: 2px;
+            height: 120%;
+            border-left: #d67f68 dashed 2px;
+            position: absolute;
+            left: 5%;
+
+
+            @include pad() {
+
+                left: 3%;
+            }
+
+
+            @include mob() {
+                display: none;
+            }
+
+        }
+
+
+    }
+
+    .stone-box {
+        margin-bottom: 0;
+
+        @include mob() {
+            margin-bottom: 10px;
+        }
+    }
+
+
+}
+
+
+
+#select-place {
+
+    background: transparent;
+    border: none;
+
+
+}
 
 
 
@@ -179,6 +292,18 @@ h1.col-auto.edit-h1 {
 #stroke-info {
 
     margin: 10px 0;
+
+
+
+    .trip-data {
+
+        @include mob() {
+
+            margin-left: 0;
+        }
+    }
+
+
 }
 
 #edit-main {
@@ -253,62 +378,61 @@ h1.col-auto.edit-h1 {
 }
 
 .remove-icon i {
-    
+
     color: #21b276;
     font-size: $font;
-   
+
 }
 
 a.plus-icon i {
     color: #ea8677;
-      font-size: $font;
+    font-size: $font;
 }
 
-.map-icon  {
-    
+.map-icon {
+
     span {
-   
-    background: #81bdea;
-    width: 20px;
-    text-align: center;
-    height: 20px;
-    display: inline-block;
-    border-radius: 100px;
-    
-     }
-   
-	
-    
+
+        background: #81bdea;
+        width: 20px;
+        text-align: center;
+        height: 20px;
+        display: inline-block;
+        border-radius: 100px;
+
+    }
+
+
+
     i {
-        
+
         color: #fff;
         font-size: $font*0.65;
         transform: translateY(-3px);
     }
-    
-    
+
+
     display: inline-block;
     transform: translateY(2px);
-    
-    
-    
+
+
+
 }
 
 
 
 
 #start-box {
-    
+
     margin-bottom: 35px;
     position: relative;
-
 
 
     .row {
 
 
         .col-md-2 {
-            
+
 
             @include mob() {
 
@@ -319,8 +443,8 @@ a.plus-icon i {
 
 
         }
-        
-     
+
+
         .col-xl-3 {
 
 
@@ -349,6 +473,11 @@ a.plus-icon i {
 
 
 
+.print-main {
+
+    background: #fff;
+    position: relative;
+}
 
 
 
@@ -541,12 +670,12 @@ input.flatpickr.flatpickr-input {
     }
 
 
-    & > .row .col-md-4:first-child {
+    &>.row .col-md-4:first-child {
         text-align: right;
     }
 
 
-    & > .row .col-md-4:nth-child(2) {
+    &>.row .col-md-4:nth-child(2) {
 
         padding: 0;
 
@@ -558,7 +687,7 @@ input.flatpickr.flatpickr-input {
     }
 
 
-    & > .row .col-md-5 {
+    &>.row .col-md-5 {
 
         @include mob() {
 
@@ -568,7 +697,7 @@ input.flatpickr.flatpickr-input {
     }
 
 
-    & > .row .col-md-4 {
+    &>.row .col-md-4 {
 
         @include mob() {
 
@@ -635,8 +764,8 @@ button#start {
 
 
 #select-day-box ul {
-    
-   @include ulstyle()
+
+    @include ulstyle();
 
     a {
 
@@ -646,6 +775,7 @@ button#start {
         color: #fff;
         text-decoration: none;
         padding: 5px 0;
+
 
         @include mob() {
 
@@ -664,6 +794,8 @@ button#start {
             }
         }
     }
+
+
 }
 
 
@@ -730,7 +862,7 @@ a#select-palace {
 }
 
 .style {
-    
+
     padding: 0;
     margin: 0;
     list-style-type: none;
@@ -739,45 +871,45 @@ a#select-palace {
         display: inline-block;
         padding: 0 10px;
         position: relative;
-        
-        
+
+
         &:after {
-    content: '';
-    width: 1px;
-    height: 65%;
-    position: absolute;
-    background: #000;
-    transform: rotate(35deg) translateY(-50%);
-    left: -5px;
-    top: 50%;
-            
+            content: '';
+            width: 1px;
+            height: 65%;
+            position: absolute;
+            background: #000;
+            transform: rotate(35deg) translateY(-50%);
+            left: -5px;
+            top: 50%;
+
         }
-        
-        
+
+
         &:first-child:after {
             display: none;
         }
-      
-        
+
+
     }
 
-    
+
 
     a {
 
         text-decoration: none;
         color: #575751;
-        
-        
+
+
         &:hover {
-            color:#fff;
-            background:cadetblue;
-            
+            color: #fff;
+            background: cadetblue;
+
         }
     }
-    
-    
-    
+
+
+
 }
 
 
@@ -915,7 +1047,7 @@ div#database {
 
         font-size: 0.9375rem;
         color: #595757;
-        
+
         a {
             text-decoration: none;
             color: #333;
@@ -1202,9 +1334,9 @@ form#addform3 {
 
     &.vis {
 
-      z-index: 10;
-        
-        
+        z-index: 10;
+
+
     }
 }
 
@@ -1327,7 +1459,7 @@ ul.pagination.justify-content-end {
     }
 
 
-    .stroke-box > .row .col-md-4:first-child {
+    .stroke-box>.row .col-md-4:first-child {
 
         text-align: center;
     }

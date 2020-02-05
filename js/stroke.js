@@ -142,8 +142,6 @@ else{
             })
 
 
-
-
                
     var len = 50; 
                
@@ -224,7 +222,6 @@ $('#close').click(function(){
   },1000)
     
 })
-
 
 
 

@@ -27,15 +27,15 @@
      -->
     <meta name="google-site-verification" content="8IM9WnsbLq87HsYleprKLT-PMenJd1WgZC6iUHcpsko" />
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/owl.carousel.css" rel="stylesheet">
-    <link href="css/owl.theme.default.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <link href="css/fontawesome.min.css" rel="stylesheet">
-    <link href="css/fontawesome-all.min.css" rel="stylesheet">
-    <link href="css/animate.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-    <!--直接引用Google Fonts API-->
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,400,500,600,700,900&display=swap" rel="stylesheet">
+
+
+     <!--非同步-->
+    <link href="css/fontawesome-all.min.css" rel="stylesheet" async>
+    <link href="css/owl.carousel.min.css" rel="stylesheet" async>
+    <link href="css/animate.css" rel="stylesheet" async>
+
+    
 </head>
 
 <body>
@@ -121,15 +121,16 @@
                 </ul>
                 <div class="collection-box">
                     <ul>
+
+                        <!--
                         <li>
                             <span title="移除"></span> <a href="#">【台中．南區】小潛艇養生..</a>
                         </li>
-                        <li>
-                            <span title="移除"></span> <a href="#">【台中．南區】小潛艇養生..</a>
-                        </li>
-                        <li>
-                            <span title="移除"></span> <a href="#">【台中．南區】小潛艇養生..</a>
-                        </li>
+                    
+                    
+                    -->
+                    
+                       
                       
 
 
@@ -410,16 +411,16 @@
             </aside>
             <aside class="row article-list no-gutters">
 
-                <div class="col-md-4">
+                <div class="col-md-4" itemscope="" itemtype="http://schema.org/Event">
                     <div class="article-box">
                         <figure class="article-images">
 
-                            <a href="#" title="抓標題">
-                                <img class="img-fluid" src="images/actvice.jpg">
+                            <a href="#" title="抓標題" itemprop="url">
+                                <img class="img-fluid lazyload" src="images/actvice.jpg" data-src="images/actvice.jpg" itemprop="image">
                                 <!--隱藏內文-->
                                 <div class="article-main">
                                     <div class="row no-gutters">
-                                        <div class="col-12 article-words">
+                                        <div class="col-12 article-words" itemprop="description">
                                             台灣行旅遊網力促，靠天吃飯的農民恐血本無歸，民眾趕快扶老攜幼來採果！
                                         </div>
 
@@ -430,48 +431,56 @@
                     </div>
 
                     <figcaption class="article-text">
-                        <div class="article-ttitle">
-                            鳳梨滯銷價跌 即刻採果挺農民
+
+                        <div class="article-ttitle" itemprop="name">
+                           最新活動1
                         </div>
                         <div class="row">
 
                             <div class="article-tabs col-xl-8 col-lg-7 col-md-6 ">
-                                <ul>
-                                    <li>
+                                <ul><li>
                                         <a href="#">#台中</a>
-                                    </li>
-                                    <li>
+                                    </li><li>
                                         <a href="#">#體驗活動</a>
-                                    </li>
-                                </ul>
+                                    </li></ul>
                             </div>
 
 
                             <div class="col more-lnk">
 
                                 <a class="more" href="#">繼續閱讀</a>
-                                <a class="join" href="#">加入收藏</a>
+                                <a class="join" href="javascript:;">加入收藏</a>
 
                             </div>
 
                         </div>
 
+                        <span itemprop="location" itemscope="" itemtype="http://schema.org/Place" class="d-none"> 
+                            <span itemprop="name">抓地區</span>  
+                            <meta itemprop="addressLocality" content=""> 
+                            <meta itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress"> 
+                            <meta itemprop="addressRegion" content=""> 
+                            <meta itemprop="streetAddress" content=""> 
+                        </span> 
+                             
+                            <meta itemprop="endDate" content="抓結束時間">
+                            <meta itemprop="startDate" content="抓開始時間"> 
+                            <span itemprop="offers"></span>
+
                     </figcaption>
 
                 </div>
 
-
-                <div class="col-md-4">
+                <div class="col-md-4" itemscope="" itemtype="http://schema.org/Event">
                     <div class="article-box">
                         <figure class="article-images">
 
-                            <a href="#" title="抓標題">
-
-                                <img class="img-fluid" src="images/actvice.jpg">
+                            <a href="#" title="抓標題" itemprop="url">
+                                <img class="img-fluid lazyload" src="images/actvice.jpg" data-src="images/actvice.jpg" itemprop="image">
                                 <!--隱藏內文-->
                                 <div class="article-main">
                                     <div class="row no-gutters">
-                                        <div class="col-12 article-words">
+                                        <div class="col-12 article-words" itemprop="description">
                                             台灣行旅遊網力促，靠天吃飯的農民恐血本無歸，民眾趕快扶老攜幼來採果！
                                         </div>
 
@@ -481,52 +490,57 @@
                         </figure>
                     </div>
 
-
                     <figcaption class="article-text">
-                        <div class="article-ttitle">
-                            鳳梨滯銷價跌 即刻採果挺農民
+
+                        <div class="article-ttitle" itemprop="name">
+                           最新活動1
                         </div>
                         <div class="row">
 
                             <div class="article-tabs col-xl-8 col-lg-7 col-md-6 ">
-                                <ul>
-                                    <li>
+                                <ul><li>
                                         <a href="#">#台中</a>
-                                    </li>
-                                    <li>
+                                    </li><li>
                                         <a href="#">#體驗活動</a>
-                                    </li>
-                                </ul>
+                                    </li></ul>
                             </div>
 
 
                             <div class="col more-lnk">
 
                                 <a class="more" href="#">繼續閱讀</a>
-                                <a class="join" href="#">加入收藏</a>
+                                <a class="join" href="javascript:;">加入收藏</a>
 
                             </div>
 
                         </div>
 
+                        <span itemprop="location" itemscope="" itemtype="http://schema.org/Place" class="d-none"> 
+                            <span itemprop="name">抓地區</span>  
+                            <meta itemprop="addressLocality" content=""> 
+                            <meta itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress"> 
+                            <meta itemprop="addressRegion" content=""> 
+                            <meta itemprop="streetAddress" content=""> 
+                        </span> 
+                             
+                            <meta itemprop="endDate" content="抓結束時間">
+                            <meta itemprop="startDate" content="抓開始時間"> 
+                            <span itemprop="offers"></span>
 
                     </figcaption>
 
                 </div>
 
-
-
-                <div class="col-md-4">
+                <div class="col-md-4" itemscope="" itemtype="http://schema.org/Event">
                     <div class="article-box">
                         <figure class="article-images">
 
-                            <a href="#" title="抓標題">
-
-                                <img class="img-fluid" src="images/actvice.jpg">
+                            <a href="#" title="抓標題" itemprop="url">
+                                <img class="img-fluid lazyload" src="images/actvice.jpg" data-src="images/actvice.jpg" itemprop="image">
                                 <!--隱藏內文-->
                                 <div class="article-main">
                                     <div class="row no-gutters">
-                                        <div class="col-12 article-words">
+                                        <div class="col-12 article-words" itemprop="description">
                                             台灣行旅遊網力促，靠天吃飯的農民恐血本無歸，民眾趕快扶老攜幼來採果！
                                         </div>
 
@@ -536,40 +550,48 @@
                         </figure>
                     </div>
 
-
                     <figcaption class="article-text">
-                        <div class="article-ttitle">
-                            鳳梨滯銷價跌 即刻採果挺農民
-                        </div>
 
+                        <div class="article-ttitle" itemprop="name">
+                           最新活動1
+                        </div>
                         <div class="row">
 
                             <div class="article-tabs col-xl-8 col-lg-7 col-md-6 ">
-                                <ul>
-                                    <li>
+                                <ul><li>
                                         <a href="#">#台中</a>
-                                    </li>
-                                    <li>
+                                    </li><li>
                                         <a href="#">#體驗活動</a>
-                                    </li>
-                                </ul>
+                                    </li></ul>
                             </div>
 
 
                             <div class="col more-lnk">
 
                                 <a class="more" href="#">繼續閱讀</a>
-                                <a class="join" href="#">加入收藏</a>
+                                <a class="join" href="javascript:;">加入收藏</a>
 
                             </div>
 
-
                         </div>
 
+                        <span itemprop="location" itemscope="" itemtype="http://schema.org/Place" class="d-none"> 
+                            <span itemprop="name">抓地區</span>  
+                            <meta itemprop="addressLocality" content=""> 
+                            <meta itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress"> 
+                            <meta itemprop="addressRegion" content=""> 
+                            <meta itemprop="streetAddress" content=""> 
+                        </span> 
+                             
+                            <meta itemprop="endDate" content="抓結束時間">
+                            <meta itemprop="startDate" content="抓開始時間"> 
+                            <span itemprop="offers"></span>
 
                     </figcaption>
 
                 </div>
+
+            
 
 
             </aside>
@@ -612,7 +634,7 @@
                     </div>
                     <figcaption class="article-text">
                         <div class="article-ttitle">
-                            【彰化．田尾】A&G La fusione義式....
+                            1-【彰化．田尾】A&G La fusione義式....
                         </div>
                         <div class="row">
 
@@ -631,7 +653,7 @@
                             <div class="col more-lnk">
 
                                 <a class="more" href="#">繼續閱讀</a>
-                                <a class="join" href="#">加入收藏</a>
+                                <a class="join" href="javascript:;">加入收藏</a>
 
                             </div>
 
@@ -666,7 +688,7 @@
                     </div>
                     <figcaption class="article-text">
                         <div class="article-ttitle">
-                            【彰化．田尾】A&G La fusione義式....
+                            2-【彰化．田尾】A&G La fusione義式....
                         </div>
 
                         <div class="row">
@@ -686,7 +708,7 @@
                             <div class="col more-lnk">
 
                                 <a class="more" href="#">繼續閱讀</a>
-                                <a class="join" href="#">加入收藏</a>
+                                <a class="join" href="javascript:;">加入收藏</a>
 
                             </div>
 
@@ -721,7 +743,7 @@
                     </div>
                     <figcaption class="article-text">
                         <div class="article-ttitle">
-                            【彰化．田尾】A&G La fusione義式....
+                            3-【彰化．田尾】A&G La fusione義式....
                         </div>
 
                         <div class="row">
@@ -741,7 +763,7 @@
                             <div class="col more-lnk">
 
                                 <a class="more" href="#">繼續閱讀</a>
-                                <a class="join" href="#">加入收藏</a>
+                                <a class="join" href="javascript:;">加入收藏</a>
 
                             </div>
 
@@ -794,7 +816,7 @@
                     </div>
                     <figcaption class="article-text">
                         <div class="article-ttitle">
-                            【苗栗‧三義】360行文創園區...
+                            1-【苗栗‧三義】360行文創園區...
                         </div>
                         <div class="row">
 
@@ -813,7 +835,7 @@
                             <div class="col more-lnk">
 
                                 <a class="more" href="#">繼續閱讀</a>
-                                <a class="join" href="#">加入收藏</a>
+                                <a class="join" href="javascript:;">加入收藏</a>
 
                             </div>
 
@@ -822,6 +844,63 @@
 
                     </figcaption>
                 </div>
+
+                <div class="col-md-4">
+                   
+                    <div class="article-box" itemscope itemtype="http://schema.org/LocalBusiness">
+                        <figure class="article-images attractions">
+                            <a href="#" title="抓標題" itemprop="url">
+                                <span style="display: none;" itemprop="name">抓標題</span>
+                                <img class="img-fluid" itemprop="image" src="images/actvice_02.jpg">
+                                <!--隱藏內文-->
+                                <div class="article-main">
+                                    <div class="row no-gutters">
+                                        <div class="col-12 article-words" itemprop="description">
+                                            在三義木雕街，勝興車站，龍騰斷 橋，西湖渡假村這附近，有一個可 以滿足全家大小的旅行行程...
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </figure>
+                        <div itemprop="location" itemscope="" itemtype="http://schema.org/Place" style="display:none">
+                            <span itemprop="name">抓地區</span>
+                            <span itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress">
+                                <span itemprop="addressRegion"></span>
+                            </span>
+                        </div>
+                    </div>
+                    
+                    <figcaption class="article-text">
+                        <div class="article-ttitle">
+                            2-【苗栗‧三義】360行文創園區...
+                        </div>
+                        <div class="row">
+
+                            <div class="article-tabs col-xl-8 col-lg-7 col-md-6 ">
+                                <ul>
+                                    <li>
+                                        <a href="#">#台中</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">#體驗活動</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+
+                            <div class="col more-lnk">
+
+                                <a class="more" href="#">繼續閱讀</a>
+                                <a class="join" href="javascript:;">加入收藏</a>
+
+                            </div>
+
+                        </div>
+
+
+                    </figcaption>
+                </div>
+
 
                 <div class="col-md-4">
                     <div class="article-box" itemscope itemtype="http://schema.org/LocalBusiness">
@@ -848,62 +927,7 @@
                     </div>
                     <figcaption class="article-text">
                         <div class="article-ttitle">
-                            【苗栗‧三義】360行文創園區...
-                        </div>
-                        <div class="row">
-
-                            <div class="article-tabs col-xl-8 col-lg-7 col-md-6 ">
-                                <ul>
-                                    <li>
-                                        <a href="#">#台中</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">#體驗活動</a>
-                                    </li>
-                                </ul>
-                            </div>
-
-
-                            <div class="col more-lnk">
-
-                                <a class="more" href="#">繼續閱讀</a>
-                                <a class="join" href="#">加入收藏</a>
-
-                            </div>
-
-                        </div>
-
-
-                    </figcaption>
-                </div>
-
-
-                <div class="col-md-4">
-                    <div class="article-box" itemscope itemtype="http://schema.org/LocalBusiness">
-                        <figure class="article-images attractions">
-                            <a href="#" title="抓標題" itemprop="url">
-                                <span style="display: none;" itemprop="name">抓標題</span>
-                                <img class="img-fluid" itemprop="image" src="images/actvice_02.jpg">
-                                <!--隱藏內文-->
-                                <div class="article-main">
-                                    <div class="row no-gutters">
-                                        <div class="col-12 article-words" itemprop="description">
-                                            在三義木雕街，勝興車站，龍騰斷 橋，西湖渡假村這附近，有一個可 以滿足全家大小的旅行行程...
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </figure>
-                        <div itemprop="location" itemscope="" itemtype="http://schema.org/Place" style="display:none">
-                            <span itemprop="name">抓地區</span>
-                            <span itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress">
-                                <span itemprop="addressRegion"></span>
-                            </span>
-                        </div>
-                    </div>
-                    <figcaption class="article-text">
-                        <div class="article-ttitle">
-                            【苗栗‧三義】360行文創園區...
+                            3-【苗栗‧三義】360行文創園區...
                         </div>
                         
                         <div class="row">
@@ -923,7 +947,7 @@
                             <div class="col more-lnk">
 
                                 <a class="more" href="#">繼續閱讀</a>
-                                <a class="join" href="#">加入收藏</a>
+                                <a class="join" href="javascript:;">加入收藏</a>
 
                             </div>
 
@@ -976,8 +1000,7 @@
                     </div>
                     <figcaption class="article-text">
 
-                        <div class="article-ttitle">
-                            【苗栗‧三義】360行文創園區...
+                        <div class="article-ttitle">1-【台中‧北區】360行文創園區...
                         </div>
 
                         <div class="row">
@@ -997,7 +1020,7 @@
                             <div class="col more-lnk">
 
                                 <a class="more" href="#">繼續閱讀</a>
-                                <a class="join" href="#">加入收藏</a>
+                                <a class="join" href="javascript:;">加入收藏</a>
 
                             </div>
 
@@ -1032,7 +1055,7 @@
                     </div>
                     <figcaption class="article-text">
                         <div class="article-ttitle">
-                            【苗栗‧三義】360行文創園區...
+                            2-【台中‧北區】360行文創園區...
                         </div>
 
 
@@ -1053,7 +1076,7 @@
                             <div class="col more-lnk">
 
                                 <a class="more" href="#">繼續閱讀</a>
-                                <a class="join" href="#">加入收藏</a>
+                                <a class="join" href="javascript:;">加入收藏</a>
 
                             </div>
 
@@ -1089,7 +1112,7 @@
                     <figcaption class="article-text">
                        
                         <div class="article-ttitle">
-                            【苗栗‧三義】360行文創園區...
+                            3-【台中‧北區】360行文創園區...
                         </div>
 
 
@@ -1110,7 +1133,7 @@
                             <div class="col more-lnk">
 
                                 <a class="more" href="#">繼續閱讀</a>
-                                <a class="join" href="#">加入收藏</a>
+                                <a class="join" href="javascript:;">加入收藏</a>
 
                             </div>
 
@@ -1357,28 +1380,22 @@
 
                     <div id="area-box">
 
-
-
                         <select class="form-control" id="select" onmousedown="if(this.options.length>3){this.size=5}" onblur="this.size=1" onchange=" this.size=1;change()">
                             <option value=""  disabled hidden>選擇地區</option>
-                            
-                               <option value='17' selected>臺中市</option>
-                                  <option value='13'>彰化縣</option>
+                            <option value='17' selected>臺中市</option>
+                            <option value='13'>彰化縣</option>
                             <option value="1">南投縣</option>
                             <option value='0'>雲林縣</option>
                             <option value='21'>嘉義市</option>
                             <option value='20'>嘉義縣</option>
-                               <option value='7'>苗栗縣</option>
-                             <option value='23'>--------</option>
+                            <option value='7'>苗栗縣</option>
+                            <option value='23'>--------</option>
                             <option value='16'>基隆市</option>
                             <option value='9'>臺北市</option>
                             <option value='15'>新北市</option>
                             <option value='19'>桃園市</option>
                             <option value='14'>新竹市</option>
                             <option value='10'>新竹縣</option>
-                         
-                         
-                         
                             <option value='18'>臺南市</option>
                             <option value='12'>高雄市</option>
                             <option value='6'>屏東縣</option>
@@ -1389,10 +1406,7 @@
                             <option value='4'>金門縣</option>
                             <option value='2'>連江縣</option>
 
-
                         </select>
-
-
 
 
                         <div class="area-data"></div>
@@ -1404,9 +1418,6 @@
 
 
                     </div>
-
-
-
 
                 </div>
 
@@ -1462,29 +1473,39 @@
     <script src="js/sweetalert.min.js"></script>
     <script src="js/action.js"></script>
     <script src="js/weather.js"></script>
-    <script>
-        
-        $(function() {
-
-
-            $('.collection-total a').hover(function() {
-
-                $(this).popover('show');
-
-            }, function() {
-
-                $(this).popover('hide');
-
-            })
-
-
-
-        })
-
+   
+    <script type="application/ld+json">
+        [
+          {
+                  "@context": "http://schema.org/", 
+                  "@type": "WebSite ", 
+                  "name": "【中部吃喝玩樂】中部必吃美食、最夯打卡景點、特色住宿推薦還有熱門電影贈票、抽獎活動，通通都在FUN中台灣", 
+                  "url": "https://central.1111.com.tw/fun/",
+                  "description": "中部必吃美食這麼多，哪家才是最推薦?讓鴻團長的餐桌告訴你！想來張美美的網美照嗎?中部文青、熱門打卡景點推薦；來去住一晚，讓野姜花胡蝶告訴你特色中部住宿以及親子旅館推薦！更多中部好吃好玩，都在1111FUN中台灣！",
+                  "keywords" : ["台中住宿推薦","中部旅遊景點","台中旅遊景點","中部旅行","中部一日遊","台中美食","彰化美食"],
+                  "potentialAction": {
+                  
+        "@type": "SearchAction",
+        "target": "https://central.1111.com.tw/fun/seach.asp?keys={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+          },
+          {"@context" : "http://schema.org","@type" : "Organization","name":"fun中台灣",
+            "url" : "https://central.1111.com.tw/fun/","logo" : "https://central.1111.com.tw/fun/images/facebookicon.jpg","contactPoint" : [{ "@type" : "ContactPoint","telephone" : "+886-04-2203-1111","contactType" : "customer service","areaServed" : ["TW"],"availableLanguage" : ["Chinese"]} ] ,"sameAs" : [  "https://central.1111.com.tw/","https://www.facebook.com/central1111/"]
+          },{ 
+            "@context": "http://schema.org", 
+            "@type": "BreadcrumbList", 
+            "itemListElement": [ 
+                { "@type": "ListItem", "position": 1, "item": { "@id": "https://central.1111.com.tw/fun/", "name": "fun中台灣" } }  
+            ] 
+          }
+        ]
     </script>
 
 
-
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <!--直接引用Google Fonts API-->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,400,500,600,700,900&display=swap" rel="stylesheet">
 </body>
 
 </html>

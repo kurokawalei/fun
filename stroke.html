@@ -53,10 +53,13 @@
               <div class="trip-data">日期： 108/10/31
                 <span>－</span>108/11/4</div></div>
             <div class="col-lg-2 col-md-4 align-self-center">
-              <a href="javascript:window.print()" class="else-btn" title="列印">列印</a>
-              <a href="#" class="else-btn" title="儲存">儲存</a></div>
+            
+              <a href="stroke-inside.html" class="else-btn" title="查看行程">查看行程</a></div>
           </div>
         </div>
+
+
+
         <main id="edit-main">
           <!--天數切換--->
           <div id="select-day-box">
@@ -81,7 +84,9 @@
             </ul>
           </div>
           <div class="row">
+           
             <div class="col-xl-6 col-12" id="leftmain">
+             
               <div id="start-box">
                 <div class="row">
                   <div class="col-md-3 col-lg-3 col-xl-4">
@@ -100,7 +105,9 @@
                   </div>
                 </div>
               </div>
+              
               <div class="stroke-box-warp">
+               
                 <div class="stroke-box">
                   <div class="row">
                     <div class="col-md-3 col-lg-3 col-xl-4">
@@ -141,6 +148,10 @@
                     </div>
                   </div>
                 </div>
+
+
+             
+                
                 <div class="stroke-box">
                   <div class="row">
                     <div class="col-md-3 col-lg-3 col-xl-4">
@@ -262,11 +273,13 @@
                   </div>
                 </div>
               </div>
+              
               <div id="add-stroke">
                 <a href="#" title="新增行程" data-toggle="modal" data-target="#add-liststroke">
                   <i class="fas fa-plus-circle"></i>
                 </a>
               </div>
+              
             </div>
             <div class="list-btn d-xl-none">
               <a href="#">查看店家</a></div>
@@ -334,7 +347,7 @@
                         <div class="col-7 align-self-center">
                           <a href="#" title="抓標題" target="">神奇大柱子</a></div>
                         <div class="col-5 align-self-center">
-                          <a href="#" class="map-icon" title="查看景點位置">
+                          <a href="javascript:;" class="map-icon" title="查看景點位置" data-toggle="modal" data-target="#mapinfo">
                             <span>
                               <i class="fas fa-map-marker-alt"></i>
                             </span>
@@ -600,8 +613,6 @@
     </div>
     <!--路線圖-->
     
-    
-    
     <!--
     <div id="route-plan">
      
@@ -624,6 +635,8 @@
       
     </div>
     -->
+    
+    
     
     <!-- Modal -->
 <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -650,12 +663,7 @@
         </div>
       </div>
       
-      
-      
-      
-      
-      
-      
+   
       
       </div>
      
@@ -664,7 +672,18 @@
 </div>
     
     
+    <!--各別地圖-->
+  
+<div class="modal fade" id="mapinfo" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
     
+     <iframe height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src=http://maps.google.com.tw/maps?f=q&hl=zh-TW&geocode=&q=雪樂地&z=16&output=embed&></iframe>
+  
+      
+    </div>
+  </div>
+</div>
     
     
     
@@ -716,17 +735,17 @@
           
         $('#map-direction-01').tinyMap({
 
-          'center':['23.849647, 120.922398'],
+          'center': ['23.849647, 120.922398'],
           'zoom': 13,
           'direction': [{
             'from': '台中市北區中清路一段369號',
             'fromText': '起點:台中市北區中清路一段369號',
             'to': '秋紅谷',
             'toText': '終點:秋紅谷',
-            'waypoint': [      
-            '台中西悠飯店',
-            '文華高中'
-                
+            'waypoint': [
+              '台中西悠飯店',
+              '文華高中'
+
             ],
             'travel': 'driving',
             // 自訂路徑顏色

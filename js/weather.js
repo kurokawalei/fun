@@ -39,6 +39,7 @@ function waether() {
 
         }
 
+      
 
         //(日期抓7天-非變數)
         var day1 = str.records.locations[0].location[0].weatherElement[0].time[0].startTime;
@@ -157,7 +158,7 @@ function waether() {
             case '25':
             case '26':
 
-                $(winfo).attr('src', 'images/weather_01.png');
+                $(winfo).attr('src', 'images/weather_01.gif');
 
                 break;
 
@@ -170,7 +171,7 @@ function waether() {
             case '27':
             case '28':
 
-                $(winfo).attr('src', 'images/weather_02.png');
+                $(winfo).attr('src', 'images/weather_02.gif');
 
                 break;
 
@@ -186,7 +187,7 @@ function waether() {
             case '40':
             case '41':
 
-                $(winfo).attr('src', 'images/weather_03.png');
+                $(winfo).attr('src', 'images/weather_03.gif');
 
                 break;
 
@@ -202,13 +203,13 @@ function waether() {
             case '35':
             case '36':
 
-                $(winfo).attr('src', 'images/weather_04.png');
+                $(winfo).attr('src', 'images/weather_04.gif');
 
                 break;
 
             case '陰短暫雨':
 
-                $(winfo).attr('src', 'images/weather_05.png');
+                $(winfo).attr('src', 'images/weather_05.gif');
 
                 break;
 
@@ -221,7 +222,7 @@ function waether() {
             case '31':
             case '32':
 
-                $(winfo).attr('src', 'images/weather_06.png');
+                $(winfo).attr('src', 'images/weather_06.gif');
 
                 break;
 
@@ -357,7 +358,7 @@ function change() {
                 case '25':
                 case '26':
 
-                    $(winfo).attr('src', 'images/weather_01.png');
+                    $(winfo).attr('src', 'images/weather_01.gif');
 
                     break;
 
@@ -370,7 +371,7 @@ function change() {
                 case '27':
                 case '28':
 
-                    $(winfo).attr('src', 'images/weather_02.png');
+                    $(winfo).attr('src', 'images/weather_02.gif');
 
                     break;
 
@@ -386,7 +387,7 @@ function change() {
                 case '40':
                 case '41':
 
-                    $(winfo).attr('src', 'images/weather_03.png');
+                    $(winfo).attr('src', 'images/weather_03.gif');
 
                     break;
 
@@ -402,13 +403,13 @@ function change() {
                 case '35':
                 case '36':
 
-                    $(winfo).attr('src', 'images/weather_04.png');
+                    $(winfo).attr('src', 'images/weather_04.gif');
 
                     break;
 
                 case '陰短暫雨':
 
-                    $(winfo).attr('src', 'images/weather_05.png');
+                    $(winfo).attr('src', 'images/weather_05.gif');
 
                     break;
 
@@ -421,7 +422,7 @@ function change() {
                 case '31':
                 case '32':
 
-                    $(winfo).attr('src', 'images/weather_06.png');
+                    $(winfo).attr('src', 'images/weather_06.gif');
 
                     break;
 
@@ -540,7 +541,7 @@ function change() {
                 case '25':
                 case '26':
 
-                    $(winfo).attr('src', 'images/weather_01.png');
+                    $(winfo).attr('src', 'images/weather_01.gif');
 
                     break;
 
@@ -553,7 +554,7 @@ function change() {
                 case '27':
                 case '28':
 
-                    $(winfo).attr('src', 'images/weather_02.png');
+                    $(winfo).attr('src', 'images/weather_02.gif');
 
                     break;
 
@@ -569,7 +570,7 @@ function change() {
                 case '40':
                 case '41':
 
-                    $(winfo).attr('src', 'images/weather_03.png');
+                    $(winfo).attr('src', 'images/weather_03.gif');
 
                     break;
 
@@ -585,13 +586,13 @@ function change() {
                 case '35':
                 case '36':
 
-                    $(winfo).attr('src', 'images/weather_04.png');
+                    $(winfo).attr('src', 'images/weather_04.gif');
 
                     break;
 
                 case '陰短暫雨':
 
-                    $(winfo).attr('src', 'images/weather_05.png');
+                    $(winfo).attr('src', 'images/weather_05.gif');
 
                     break;
 
@@ -604,7 +605,7 @@ function change() {
                 case '31':
                 case '32':
 
-                    $(winfo).attr('src', 'images/weather_06.png');
+                    $(winfo).attr('src', 'images/weather_06.gif');
 
                     break;
 
@@ -724,7 +725,7 @@ function change() {
                 case '25':
                 case '26':
 
-                    $(winfo).attr('src', 'images/weather_01.png');
+                    $(winfo).attr('src', 'images/weather_01.gif');
 
                     break;
 
@@ -737,7 +738,7 @@ function change() {
                 case '27':
                 case '28':
 
-                    $(winfo).attr('src', 'images/weather_02.png');
+                    $(winfo).attr('src', 'images/weather_02.gif');
 
                     break;
 
@@ -753,7 +754,7 @@ function change() {
                 case '40':
                 case '41':
 
-                    $(winfo).attr('src', 'images/weather_03.png');
+                    $(winfo).attr('src', 'images/weather_03.gif');
 
                     break;
 
@@ -769,13 +770,13 @@ function change() {
                 case '35':
                 case '36':
 
-                    $(winfo).attr('src', 'images/weather_04.png');
+                    $(winfo).attr('src', 'images/weather_04.gif');
 
                     break;
 
                 case '陰短暫雨':
 
-                    $(winfo).attr('src', 'images/weather_05.png');
+                    $(winfo).attr('src', 'images/weather_05.gif');
 
                     break;
 
@@ -788,7 +789,7 @@ function change() {
                 case '31':
                 case '32':
 
-                    $(winfo).attr('src', 'images/weather_06.png');
+                    $(winfo).attr('src', 'images/weather_06.gif');
 
                     break;
 
@@ -910,7 +911,7 @@ function change() {
                 case '25':
                 case '26':
 
-                    $(winfo).attr('src', 'images/weather_01.png');
+                    $(winfo).attr('src', 'images/weather_01.gif');
 
                     break;
 
@@ -923,7 +924,7 @@ function change() {
                 case '27':
                 case '28':
 
-                    $(winfo).attr('src', 'images/weather_02.png');
+                    $(winfo).attr('src', 'images/weather_02.gif');
 
                     break;
 
@@ -939,7 +940,7 @@ function change() {
                 case '40':
                 case '41':
 
-                    $(winfo).attr('src', 'images/weather_03.png');
+                    $(winfo).attr('src', 'images/weather_03.gif');
 
                     break;
 
@@ -955,13 +956,13 @@ function change() {
                 case '35':
                 case '36':
 
-                    $(winfo).attr('src', 'images/weather_04.png');
+                    $(winfo).attr('src', 'images/weather_04.gif');
 
                     break;
 
                 case '陰短暫雨':
 
-                    $(winfo).attr('src', 'images/weather_05.png');
+                    $(winfo).attr('src', 'images/weather_05.gif');
 
                     break;
 
@@ -974,7 +975,7 @@ function change() {
                 case '31':
                 case '32':
 
-                    $(winfo).attr('src', 'images/weather_06.png');
+                    $(winfo).attr('src', 'images/weather_06.gif');
 
                     break;
 
@@ -1097,7 +1098,7 @@ function change() {
                 case '25':
                 case '26':
 
-                    $(winfo).attr('src', 'images/weather_01.png');
+                    $(winfo).attr('src', 'images/weather_01.gif');
 
                     break;
 
@@ -1110,7 +1111,7 @@ function change() {
                 case '27':
                 case '28':
 
-                    $(winfo).attr('src', 'images/weather_02.png');
+                    $(winfo).attr('src', 'images/weather_02.gif');
 
                     break;
 
@@ -1126,7 +1127,7 @@ function change() {
                 case '40':
                 case '41':
 
-                    $(winfo).attr('src', 'images/weather_03.png');
+                    $(winfo).attr('src', 'images/weather_03.gif');
 
                     break;
 
@@ -1142,13 +1143,13 @@ function change() {
                 case '35':
                 case '36':
 
-                    $(winfo).attr('src', 'images/weather_04.png');
+                    $(winfo).attr('src', 'images/weather_04.gif');
 
                     break;
 
                 case '陰短暫雨':
 
-                    $(winfo).attr('src', 'images/weather_05.png');
+                    $(winfo).attr('src', 'images/weather_05.gif');
 
                     break;
 
@@ -1161,7 +1162,7 @@ function change() {
                 case '31':
                 case '32':
 
-                    $(winfo).attr('src', 'images/weather_06.png');
+                    $(winfo).attr('src', 'images/weather_06.gif');
 
                     break;
 
@@ -1282,7 +1283,7 @@ function change() {
                 case '25':
                 case '26':
 
-                    $(winfo).attr('src', 'images/weather_01.png');
+                    $(winfo).attr('src', 'images/weather_01.gif');
 
                     break;
 
@@ -1295,7 +1296,7 @@ function change() {
                 case '27':
                 case '28':
 
-                    $(winfo).attr('src', 'images/weather_02.png');
+                    $(winfo).attr('src', 'images/weather_02.gif');
 
                     break;
 
@@ -1311,7 +1312,7 @@ function change() {
                 case '40':
                 case '41':
 
-                    $(winfo).attr('src', 'images/weather_03.png');
+                    $(winfo).attr('src', 'images/weather_03.gif');
 
                     break;
 
@@ -1327,13 +1328,13 @@ function change() {
                 case '35':
                 case '36':
 
-                    $(winfo).attr('src', 'images/weather_04.png');
+                    $(winfo).attr('src', 'images/weather_04.gif');
 
                     break;
 
                 case '陰短暫雨':
 
-                    $(winfo).attr('src', 'images/weather_05.png');
+                    $(winfo).attr('src', 'images/weather_05.gif');
 
                     break;
 
@@ -1346,7 +1347,7 @@ function change() {
                 case '31':
                 case '32':
 
-                    $(winfo).attr('src', 'images/weather_06.png');
+                    $(winfo).attr('src', 'images/weather_06.gif');
 
                     break;
 
@@ -1477,7 +1478,7 @@ function change() {
                 case '25':
                 case '26':
 
-                    $(winfo).attr('src', 'images/weather_01.png');
+                    $(winfo).attr('src', 'images/weather_01.gif');
 
                     break;
 
@@ -1490,7 +1491,7 @@ function change() {
                 case '27':
                 case '28':
 
-                    $(winfo).attr('src', 'images/weather_02.png');
+                    $(winfo).attr('src', 'images/weather_02.gif');
 
                     break;
 
@@ -1506,7 +1507,7 @@ function change() {
                 case '40':
                 case '41':
 
-                    $(winfo).attr('src', 'images/weather_03.png');
+                    $(winfo).attr('src', 'images/weather_03.gif');
 
                     break;
 
@@ -1522,13 +1523,13 @@ function change() {
                 case '35':
                 case '36':
 
-                    $(winfo).attr('src', 'images/weather_04.png');
+                    $(winfo).attr('src', 'images/weather_04.gif');
 
                     break;
 
                 case '陰短暫雨':
 
-                    $(winfo).attr('src', 'images/weather_05.png');
+                    $(winfo).attr('src', 'images/weather_05.gif');
 
                     break;
 
@@ -1541,7 +1542,7 @@ function change() {
                 case '31':
                 case '32':
 
-                    $(winfo).attr('src', 'images/weather_06.png');
+                    $(winfo).attr('src', 'images/weather_06.gif');
 
                     break;
 
@@ -1669,7 +1670,7 @@ function change() {
                 case '25':
                 case '26':
 
-                    $(winfo).attr('src', 'images/weather_01.png');
+                    $(winfo).attr('src', 'images/weather_01.gif');
 
                     break;
 
@@ -1682,7 +1683,7 @@ function change() {
                 case '27':
                 case '28':
 
-                    $(winfo).attr('src', 'images/weather_02.png');
+                    $(winfo).attr('src', 'images/weather_02.gif');
 
                     break;
 
@@ -1698,7 +1699,7 @@ function change() {
                 case '40':
                 case '41':
 
-                    $(winfo).attr('src', 'images/weather_03.png');
+                    $(winfo).attr('src', 'images/weather_03.gif');
 
                     break;
 
@@ -1714,13 +1715,13 @@ function change() {
                 case '35':
                 case '36':
 
-                    $(winfo).attr('src', 'images/weather_04.png');
+                    $(winfo).attr('src', 'images/weather_04.gif');
 
                     break;
 
                 case '陰短暫雨':
 
-                    $(winfo).attr('src', 'images/weather_05.png');
+                    $(winfo).attr('src', 'images/weather_05.gif');
 
                     break;
 
@@ -1733,7 +1734,7 @@ function change() {
                 case '31':
                 case '32':
 
-                    $(winfo).attr('src', 'images/weather_06.png');
+                    $(winfo).attr('src', 'images/weather_06.gif');
 
                     break;
 
@@ -1861,7 +1862,7 @@ function change() {
                 case '25':
                 case '26':
 
-                    $(winfo).attr('src', 'images/weather_01.png');
+                    $(winfo).attr('src', 'images/weather_01.gif');
 
                     break;
 
@@ -1874,7 +1875,7 @@ function change() {
                 case '27':
                 case '28':
 
-                    $(winfo).attr('src', 'images/weather_02.png');
+                    $(winfo).attr('src', 'images/weather_02.gif');
 
                     break;
 
@@ -1890,7 +1891,7 @@ function change() {
                 case '40':
                 case '41':
 
-                    $(winfo).attr('src', 'images/weather_03.png');
+                    $(winfo).attr('src', 'images/weather_03.gif');
 
                     break;
 
@@ -1906,13 +1907,13 @@ function change() {
                 case '35':
                 case '36':
 
-                    $(winfo).attr('src', 'images/weather_04.png');
+                    $(winfo).attr('src', 'images/weather_04.gif');
 
                     break;
 
                 case '陰短暫雨':
 
-                    $(winfo).attr('src', 'images/weather_05.png');
+                    $(winfo).attr('src', 'images/weather_05.gif');
 
                     break;
 
@@ -1925,7 +1926,7 @@ function change() {
                 case '31':
                 case '32':
 
-                    $(winfo).attr('src', 'images/weather_06.png');
+                    $(winfo).attr('src', 'images/weather_06.gif');
 
                     break;
 
@@ -2050,7 +2051,7 @@ function change() {
                 case '25':
                 case '26':
 
-                    $(winfo).attr('src', 'images/weather_01.png');
+                    $(winfo).attr('src', 'images/weather_01.gif');
 
                     break;
 
@@ -2063,7 +2064,7 @@ function change() {
                 case '27':
                 case '28':
 
-                    $(winfo).attr('src', 'images/weather_02.png');
+                    $(winfo).attr('src', 'images/weather_02.gif');
 
                     break;
 
@@ -2079,7 +2080,7 @@ function change() {
                 case '40':
                 case '41':
 
-                    $(winfo).attr('src', 'images/weather_03.png');
+                    $(winfo).attr('src', 'images/weather_03.gif');
 
                     break;
 
@@ -2095,13 +2096,13 @@ function change() {
                 case '35':
                 case '36':
 
-                    $(winfo).attr('src', 'images/weather_04.png');
+                    $(winfo).attr('src', 'images/weather_04.gif');
 
                     break;
 
                 case '陰短暫雨':
 
-                    $(winfo).attr('src', 'images/weather_05.png');
+                    $(winfo).attr('src', 'images/weather_05.gif');
 
                     break;
 
@@ -2114,7 +2115,7 @@ function change() {
                 case '31':
                 case '32':
 
-                    $(winfo).attr('src', 'images/weather_06.png');
+                    $(winfo).attr('src', 'images/weather_06.gif');
 
                     break;
 
@@ -2242,7 +2243,7 @@ function change() {
                 case '25':
                 case '26':
 
-                    $(winfo).attr('src', 'images/weather_01.png');
+                    $(winfo).attr('src', 'images/weather_01.gif');
 
                     break;
 
@@ -2255,7 +2256,7 @@ function change() {
                 case '27':
                 case '28':
 
-                    $(winfo).attr('src', 'images/weather_02.png');
+                    $(winfo).attr('src', 'images/weather_02.gif');
 
                     break;
 
@@ -2271,7 +2272,7 @@ function change() {
                 case '40':
                 case '41':
 
-                    $(winfo).attr('src', 'images/weather_03.png');
+                    $(winfo).attr('src', 'images/weather_03.gif');
 
                     break;
 
@@ -2287,13 +2288,13 @@ function change() {
                 case '35':
                 case '36':
 
-                    $(winfo).attr('src', 'images/weather_04.png');
+                    $(winfo).attr('src', 'images/weather_04.gif');
 
                     break;
 
                 case '陰短暫雨':
 
-                    $(winfo).attr('src', 'images/weather_05.png');
+                    $(winfo).attr('src', 'images/weather_05.gif');
 
                     break;
 
@@ -2306,7 +2307,7 @@ function change() {
                 case '31':
                 case '32':
 
-                    $(winfo).attr('src', 'images/weather_06.png');
+                    $(winfo).attr('src', 'images/weather_06.gif');
 
                     break;
 
@@ -2432,7 +2433,7 @@ function change() {
                 case '25':
                 case '26':
 
-                    $(winfo).attr('src', 'images/weather_01.png');
+                    $(winfo).attr('src', 'images/weather_01.gif');
 
                     break;
 
@@ -2445,7 +2446,7 @@ function change() {
                 case '27':
                 case '28':
 
-                    $(winfo).attr('src', 'images/weather_02.png');
+                    $(winfo).attr('src', 'images/weather_02.gif');
 
                     break;
 
@@ -2461,7 +2462,7 @@ function change() {
                 case '40':
                 case '41':
 
-                    $(winfo).attr('src', 'images/weather_03.png');
+                    $(winfo).attr('src', 'images/weather_03.gif');
 
                     break;
 
@@ -2477,13 +2478,13 @@ function change() {
                 case '35':
                 case '36':
 
-                    $(winfo).attr('src', 'images/weather_04.png');
+                    $(winfo).attr('src', 'images/weather_04.gif');
 
                     break;
 
                 case '陰短暫雨':
 
-                    $(winfo).attr('src', 'images/weather_05.png');
+                    $(winfo).attr('src', 'images/weather_05.gif');
 
                     break;
 
@@ -2496,7 +2497,7 @@ function change() {
                 case '31':
                 case '32':
 
-                    $(winfo).attr('src', 'images/weather_06.png');
+                    $(winfo).attr('src', 'images/weather_06.gif');
 
                     break;
 
@@ -2622,7 +2623,7 @@ function change() {
                 case '25':
                 case '26':
 
-                    $(winfo).attr('src', 'images/weather_01.png');
+                    $(winfo).attr('src', 'images/weather_01.gif');
 
                     break;
 
@@ -2635,7 +2636,7 @@ function change() {
                 case '27':
                 case '28':
 
-                    $(winfo).attr('src', 'images/weather_02.png');
+                    $(winfo).attr('src', 'images/weather_02.gif');
 
                     break;
 
@@ -2651,7 +2652,7 @@ function change() {
                 case '40':
                 case '41':
 
-                    $(winfo).attr('src', 'images/weather_03.png');
+                    $(winfo).attr('src', 'images/weather_03.gif');
 
                     break;
 
@@ -2667,13 +2668,13 @@ function change() {
                 case '35':
                 case '36':
 
-                    $(winfo).attr('src', 'images/weather_04.png');
+                    $(winfo).attr('src', 'images/weather_04.gif');
 
                     break;
 
                 case '陰短暫雨':
 
-                    $(winfo).attr('src', 'images/weather_05.png');
+                    $(winfo).attr('src', 'images/weather_05.gif');
 
                     break;
 
@@ -2686,7 +2687,7 @@ function change() {
                 case '31':
                 case '32':
 
-                    $(winfo).attr('src', 'images/weather_06.png');
+                    $(winfo).attr('src', 'images/weather_06.gif');
 
                     break;
 
@@ -2812,7 +2813,7 @@ function change() {
                 case '25':
                 case '26':
 
-                    $(winfo).attr('src', 'images/weather_01.png');
+                    $(winfo).attr('src', 'images/weather_01.gif');
 
                     break;
 
@@ -2825,7 +2826,7 @@ function change() {
                 case '27':
                 case '28':
 
-                    $(winfo).attr('src', 'images/weather_02.png');
+                    $(winfo).attr('src', 'images/weather_02.gif');
 
                     break;
 
@@ -2841,7 +2842,7 @@ function change() {
                 case '40':
                 case '41':
 
-                    $(winfo).attr('src', 'images/weather_03.png');
+                    $(winfo).attr('src', 'images/weather_03.gif');
 
                     break;
 
@@ -2857,13 +2858,13 @@ function change() {
                 case '35':
                 case '36':
 
-                    $(winfo).attr('src', 'images/weather_04.png');
+                    $(winfo).attr('src', 'images/weather_04.gif');
 
                     break;
 
                 case '陰短暫雨':
 
-                    $(winfo).attr('src', 'images/weather_05.png');
+                    $(winfo).attr('src', 'images/weather_05.gif');
 
                     break;
 
@@ -2876,7 +2877,7 @@ function change() {
                 case '31':
                 case '32':
 
-                    $(winfo).attr('src', 'images/weather_06.png');
+                    $(winfo).attr('src', 'images/weather_06.gif');
 
                     break;
 
@@ -3003,7 +3004,7 @@ function change() {
                 case '25':
                 case '26':
 
-                    $(winfo).attr('src', 'images/weather_01.png');
+                    $(winfo).attr('src', 'images/weather_01.gif');
 
                     break;
 
@@ -3016,7 +3017,7 @@ function change() {
                 case '27':
                 case '28':
 
-                    $(winfo).attr('src', 'images/weather_02.png');
+                    $(winfo).attr('src', 'images/weather_02.gif');
 
                     break;
 
@@ -3032,7 +3033,7 @@ function change() {
                 case '40':
                 case '41':
 
-                    $(winfo).attr('src', 'images/weather_03.png');
+                    $(winfo).attr('src', 'images/weather_03.gif');
 
                     break;
 
@@ -3048,13 +3049,13 @@ function change() {
                 case '35':
                 case '36':
 
-                    $(winfo).attr('src', 'images/weather_04.png');
+                    $(winfo).attr('src', 'images/weather_04.gif');
 
                     break;
 
                 case '陰短暫雨':
 
-                    $(winfo).attr('src', 'images/weather_05.png');
+                    $(winfo).attr('src', 'images/weather_05.gif');
 
                     break;
 
@@ -3067,7 +3068,7 @@ function change() {
                 case '31':
                 case '32':
 
-                    $(winfo).attr('src', 'images/weather_06.png');
+                    $(winfo).attr('src', 'images/weather_06.gif');
 
                     break;
 
@@ -3189,7 +3190,7 @@ function change() {
                 case '25':
                 case '26':
 
-                    $(winfo).attr('src', 'images/weather_01.png');
+                    $(winfo).attr('src', 'images/weather_01.gif');
 
                     break;
 
@@ -3202,7 +3203,7 @@ function change() {
                 case '27':
                 case '28':
 
-                    $(winfo).attr('src', 'images/weather_02.png');
+                    $(winfo).attr('src', 'images/weather_02.gif');
 
                     break;
 
@@ -3218,7 +3219,7 @@ function change() {
                 case '40':
                 case '41':
 
-                    $(winfo).attr('src', 'images/weather_03.png');
+                    $(winfo).attr('src', 'images/weather_03.gif');
 
                     break;
 
@@ -3234,13 +3235,13 @@ function change() {
                 case '35':
                 case '36':
 
-                    $(winfo).attr('src', 'images/weather_04.png');
+                    $(winfo).attr('src', 'images/weather_04.gif');
 
                     break;
 
                 case '陰短暫雨':
 
-                    $(winfo).attr('src', 'images/weather_05.png');
+                    $(winfo).attr('src', 'images/weather_05.gif');
 
                     break;
 
@@ -3253,7 +3254,7 @@ function change() {
                 case '31':
                 case '32':
 
-                    $(winfo).attr('src', 'images/weather_06.png');
+                    $(winfo).attr('src', 'images/weather_06.gif');
 
                     break;
 
@@ -3376,7 +3377,7 @@ function change() {
                 case '25':
                 case '26':
 
-                    $(winfo).attr('src', 'images/weather_01.png');
+                    $(winfo).attr('src', 'images/weather_01.gif');
 
                     break;
 
@@ -3389,7 +3390,7 @@ function change() {
                 case '27':
                 case '28':
 
-                    $(winfo).attr('src', 'images/weather_02.png');
+                    $(winfo).attr('src', 'images/weather_02.gif');
 
                     break;
 
@@ -3405,7 +3406,7 @@ function change() {
                 case '40':
                 case '41':
 
-                    $(winfo).attr('src', 'images/weather_03.png');
+                    $(winfo).attr('src', 'images/weather_03.gif');
 
                     break;
 
@@ -3421,13 +3422,13 @@ function change() {
                 case '35':
                 case '36':
 
-                    $(winfo).attr('src', 'images/weather_04.png');
+                    $(winfo).attr('src', 'images/weather_04.gif');
 
                     break;
 
                 case '陰短暫雨':
 
-                    $(winfo).attr('src', 'images/weather_05.png');
+                    $(winfo).attr('src', 'images/weather_05.gif');
 
                     break;
 
@@ -3440,7 +3441,7 @@ function change() {
                 case '31':
                 case '32':
 
-                    $(winfo).attr('src', 'images/weather_06.png');
+                    $(winfo).attr('src', 'images/weather_06.gif');
 
                     break;
 
@@ -3577,7 +3578,7 @@ function change() {
                 case '25':
                 case '26':
 
-                    $(winfo).attr('src', 'images/weather_01.png');
+                    $(winfo).attr('src', 'images/weather_01.gif');
 
                     break;
 
@@ -3590,7 +3591,7 @@ function change() {
                 case '27':
                 case '28':
 
-                    $(winfo).attr('src', 'images/weather_02.png');
+                    $(winfo).attr('src', 'images/weather_02.gif');
 
                     break;
 
@@ -3606,7 +3607,7 @@ function change() {
                 case '40':
                 case '41':
 
-                    $(winfo).attr('src', 'images/weather_03.png');
+                    $(winfo).attr('src', 'images/weather_03.gif');
 
                     break;
 
@@ -3622,13 +3623,13 @@ function change() {
                 case '35':
                 case '36':
 
-                    $(winfo).attr('src', 'images/weather_04.png');
+                    $(winfo).attr('src', 'images/weather_04.gif');
 
                     break;
 
                 case '陰短暫雨':
 
-                    $(winfo).attr('src', 'images/weather_05.png');
+                    $(winfo).attr('src', 'images/weather_05.gif');
 
                     break;
 
@@ -3641,7 +3642,7 @@ function change() {
                 case '31':
                 case '32':
 
-                    $(winfo).attr('src', 'images/weather_06.png');
+                    $(winfo).attr('src', 'images/weather_06.gif');
 
                     break;
 
@@ -3769,7 +3770,7 @@ function change() {
                 case '25':
                 case '26':
 
-                    $(winfo).attr('src', 'images/weather_01.png');
+                    $(winfo).attr('src', 'images/weather_01.gif');
 
                     break;
 
@@ -3782,7 +3783,7 @@ function change() {
                 case '27':
                 case '28':
 
-                    $(winfo).attr('src', 'images/weather_02.png');
+                    $(winfo).attr('src', 'images/weather_02.gif');
 
                     break;
 
@@ -3798,7 +3799,7 @@ function change() {
                 case '40':
                 case '41':
 
-                    $(winfo).attr('src', 'images/weather_03.png');
+                    $(winfo).attr('src', 'images/weather_03.gif');
 
                     break;
 
@@ -3814,13 +3815,13 @@ function change() {
                 case '35':
                 case '36':
 
-                    $(winfo).attr('src', 'images/weather_04.png');
+                    $(winfo).attr('src', 'images/weather_04.gif');
 
                     break;
 
                 case '陰短暫雨':
 
-                    $(winfo).attr('src', 'images/weather_05.png');
+                    $(winfo).attr('src', 'images/weather_05.gif');
 
                     break;
 
@@ -3833,7 +3834,7 @@ function change() {
                 case '31':
                 case '32':
 
-                    $(winfo).attr('src', 'images/weather_06.png');
+                    $(winfo).attr('src', 'images/weather_06.gif');
 
                     break;
 
@@ -3961,7 +3962,7 @@ function change() {
                 case '25':
                 case '26':
 
-                    $(winfo).attr('src', 'images/weather_01.png');
+                    $(winfo).attr('src', 'images/weather_01.gif');
 
                     break;
 
@@ -3974,7 +3975,7 @@ function change() {
                 case '27':
                 case '28':
 
-                    $(winfo).attr('src', 'images/weather_02.png');
+                    $(winfo).attr('src', 'images/weather_02.gif');
 
                     break;
 
@@ -3990,7 +3991,7 @@ function change() {
                 case '40':
                 case '41':
 
-                    $(winfo).attr('src', 'images/weather_03.png');
+                    $(winfo).attr('src', 'images/weather_03.gif');
 
                     break;
 
@@ -4006,13 +4007,13 @@ function change() {
                 case '35':
                 case '36':
 
-                    $(winfo).attr('src', 'images/weather_04.png');
+                    $(winfo).attr('src', 'images/weather_04.gif');
 
                     break;
 
                 case '陰短暫雨':
 
-                    $(winfo).attr('src', 'images/weather_05.png');
+                    $(winfo).attr('src', 'images/weather_05.gif');
 
                     break;
 
@@ -4025,7 +4026,7 @@ function change() {
                 case '31':
                 case '32':
 
-                    $(winfo).attr('src', 'images/weather_06.png');
+                    $(winfo).attr('src', 'images/weather_06.gif');
 
                     break;
 
@@ -4150,7 +4151,7 @@ function change() {
                 case '25':
                 case '26':
 
-                    $(winfo).attr('src', 'images/weather_01.png');
+                    $(winfo).attr('src', 'images/weather_01.gif');
 
                     break;
 
@@ -4163,7 +4164,7 @@ function change() {
                 case '27':
                 case '28':
 
-                    $(winfo).attr('src', 'images/weather_02.png');
+                    $(winfo).attr('src', 'images/weather_02.gif');
 
                     break;
 
@@ -4179,7 +4180,7 @@ function change() {
                 case '40':
                 case '41':
 
-                    $(winfo).attr('src', 'images/weather_03.png');
+                    $(winfo).attr('src', 'images/weather_03.gif');
 
                     break;
 
@@ -4195,13 +4196,13 @@ function change() {
                 case '35':
                 case '36':
 
-                    $(winfo).attr('src', 'images/weather_04.png');
+                    $(winfo).attr('src', 'images/weather_04.gif');
 
                     break;
 
                 case '陰短暫雨':
 
-                    $(winfo).attr('src', 'images/weather_05.png');
+                    $(winfo).attr('src', 'images/weather_05.gif');
 
                     break;
 
@@ -4214,7 +4215,7 @@ function change() {
                 case '31':
                 case '32':
 
-                    $(winfo).attr('src', 'images/weather_06.png');
+                    $(winfo).attr('src', 'images/weather_06.gif');
 
                     break;
 
