@@ -499,6 +499,8 @@ function isMobile() {
         return false;
     }
 
+
+
 }
 
 
@@ -506,5 +508,9 @@ function isMobile() {
 if (isMobile()) {
 
     $('html').getNiceScroll().remove();
+
+    var _css = document.querySelector('.words');
+    console.log(_css);
+    document.head.removeChild(_css);
 
 }
