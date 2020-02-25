@@ -343,6 +343,11 @@ h1.col-auto.edit-h1 {
     position: relative;
     text-align: right;
 
+    @include mob(){
+margin-bottom: 15px;
+
+    }
+
     span {
 
         position: absolute;
@@ -486,7 +491,26 @@ a.plus-icon i {
 
     @include mob() {
 
-        margin-bottom: 10px;
+        margin-bottom: 40px;
+        position: relative;
+
+
+        &:before {
+
+    content: '➧';
+    position: absolute;
+    bottom: -60px;
+    font-size:$font*2;
+    color: #de4949;
+    left: 50%;
+    transform: translateX(-50%) rotate(90deg);
+
+
+        }
+
+       
+
+
     }
 
 
@@ -667,6 +691,18 @@ input.flatpickr.flatpickr-input {
     @include mob() {
 
         position: relative;
+
+        &:last-child {
+
+            .stone-images:before {
+
+                display: none;;
+
+            }
+
+
+        }
+
     }
 
 
@@ -681,7 +717,7 @@ input.flatpickr.flatpickr-input {
 
         @include mob() {
 
-            padding: 0 15px 0 60px;
+            padding: 0 15px 0 15px;
         }
 
     }
@@ -691,7 +727,7 @@ input.flatpickr.flatpickr-input {
 
         @include mob() {
 
-            padding: 0 15px 0 60px;
+            padding: 0 15px 0 15px;
         }
 
     }
@@ -701,7 +737,7 @@ input.flatpickr.flatpickr-input {
 
         @include mob() {
 
-            padding: 0 15px 0 60px;
+            padding: 0 20px 0 15px;
         }
 
     }
@@ -765,46 +801,103 @@ button#start {
 
 #select-day-box ul {
 
-    @include ulstyle();
+   
 
-    a {
-
-        -webkit-writing-mode: vertical-lr;
-        letter-spacing: 2px;
-        writing-mode: vertical-lr;
-        color: #fff;
-        text-decoration: none;
-        padding: 5px 0;
-
-
-        @include mob() {
-
-            writing-mode: inherit;
-        }
-
-        i {
-
-            margin-top: 10px;
-
-            @include mob() {
-
-                margin-top: 5px;
-                margin-bottom: 5px;
-                margin-left: 5px;
-            }
-        }
-    }
-
+   
 
 }
 
 
-div#select-day-box {
+#select-day-box {
+
     position: absolute;
     left: 20px;
     top: 50px;
     width: 40px;
     z-index: 5;
+
+
+    ul {
+
+        @include ulstyle();
+
+        a {
+
+            -webkit-writing-mode: vertical-lr;
+            letter-spacing: 2px;
+            writing-mode: vertical-lr;
+            color: #fff;
+            text-decoration: none;
+            padding: 5px 0;
+    
+    
+            @include mob() {
+    
+                writing-mode: inherit;
+            }
+    
+            i {
+    
+                margin-top: 10px;
+    
+                @include mob() {
+    
+                    margin-top: 5px;
+                    margin-bottom: 5px;
+                    margin-left: 5px;
+                }
+            }
+        }
+
+        li {
+            background: #b4b5a9;
+            margin-bottom: 10px;
+            padding-left: 10px;
+            border-radius: 15px 0 0 15px;
+            padding: 10px 0 0px 10px;
+            border-right: #999b8c solid 6px;
+    
+            @include mob() {
+    
+                background: #b4b5a9;
+                margin-bottom: 10px;
+                padding-left: 10px;
+                border-radius: 0;
+                padding: 0 10px;
+                border-right: #999b8c solid 6px;
+                display:block;
+                text-align: center;
+                
+               
+                
+            }
+
+            &.active{
+
+                background: #b58e78;
+                margin-bottom: 10px;
+                padding-left: 10px;
+                border-radius: 15px 0 0 15px;
+                padding: 10px 0 0px 10px;
+                border-right: #a87e6a solid 6px;
+
+
+                @include mob() {
+
+                    padding-left: 10px;
+                    border-radius: 0;
+                    padding: 0 10px;
+                }
+
+
+
+
+            }
+    
+        }
+    
+
+    }
 
     @include mob() {
 
@@ -812,47 +905,13 @@ div#select-day-box {
         width: 100%;
     }
 
-    ul li {
-        background: #b4b5a9;
-        margin-bottom: 10px;
-        padding-left: 10px;
-        border-radius: 15px 0 0 15px;
-        padding: 10px 0 0px 10px;
-        border-right: #999b8c solid 6px;
+    
 
-        @include mob() {
 
-            background: #b4b5a9;
-            margin-bottom: 10px;
-            padding-left: 10px;
-            border-radius: 0;
-            padding: 0 10px;
-            border-right: #999b8c solid 6px;
-            display: inline-block;
-        }
-
-    }
 }
 
 
 
-
-#select-day-box ul li.active {
-
-    background: #b58e78;
-    margin-bottom: 10px;
-    padding-left: 10px;
-    border-radius: 15px 0 0 15px;
-    padding: 10px 0 0px 10px;
-    border-right: #a87e6a solid 6px;
-
-    @include mob() {
-
-        padding-left: 10px;
-        border-radius: 0;
-        padding: 0 10px;
-    }
-}
 
 
 a#select-palace {
@@ -975,9 +1034,25 @@ div#database {
     margin-bottom: 30px;
     padding-right: 40px;
 
+    @include mob(){
+
+        padding-right: 0px;
+    }
+
     @include sm-mob() {
 
         padding-right: 0px;
+    }
+
+
+    .style{
+
+@include mob() {
+
+    text-align: center;
+    padding: 15px 0;
+}
+
     }
 
 
@@ -1471,6 +1546,7 @@ ul.pagination.justify-content-end {
 
     .step-images {
         text-align: left;
+       
 
         span {
 
@@ -1488,6 +1564,7 @@ ul.pagination.justify-content-end {
         @include mob() {
             left: 25px;
             height: 100%;
+            display: none;
         }
 
     }
@@ -1546,7 +1623,7 @@ ul.pagination.justify-content-end {
 
     #edit-main {
         max-height: inherit;
-        padding-right: 25px;
+        padding-right: 15px;
     }
 
 
@@ -1556,7 +1633,7 @@ ul.pagination.justify-content-end {
         display: inline-block;
 
         &:before {
-            content: '點擊查看路線';
+            content: '點擊查看路線➥';
             margin-right: 10px;
             color: #727171;
 

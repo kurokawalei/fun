@@ -28,13 +28,15 @@
     <link rel="bookmark" href="../fun/images/favicon.ico"/>
      -->
 
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/owl.carousel.css" rel="stylesheet">
-    <link href="css/owl.theme.default.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/fontawesome.min.css" rel="stylesheet">
-    <link href="css/fontawesome-all.min.css" rel="stylesheet">
-    <link href="css/animate.css" rel="stylesheet">
+     <link href="css/bootstrap.min.css" rel="stylesheet" async>
+     <link href="css/style.css" rel="stylesheet">
+ 
+      <!--非同步-->
+     <link href="css/fontawesome-all.min.css" rel="stylesheet" async>
+     <link href="css/owl.carousel.min.css" rel="stylesheet" async>
+     <link href="css/animate.css" rel="stylesheet" defer>
+
+
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
     <!--直接引用Google Fonts API-->
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,400,700,900&display=swap" rel="stylesheet">
@@ -255,7 +257,7 @@
                                         <div class="input-style">
 
                                             <div class="buttons">
-                                                <button id="top" type="button" class="btn ">請選擇地區</button>
+                                                <button id="top" type="button" class="btn">請選擇地區</button>
                                             </div>
 
                                         </div>
@@ -1063,6 +1065,9 @@
 
             </ul>
 
+            
+
+
 
 
 
@@ -1189,7 +1194,7 @@
                             <div class="col-lg-2 col-md-3 col-6">
 
 
-                                <input type="checkbox" id="a1" name="台中" />
+                                <input type="checkbox" id="a1" name="台中" value="台中" >
                                 <label for="a1"><span></span>台中</label>
 
                             </div>
@@ -1197,7 +1202,7 @@
                             <div class="col-lg-2 col-md-3 col-6">
 
 
-                                <input type="checkbox" id="a2" name="彰化" />
+                                <input type="checkbox" id="a2" name="彰化" value="彰化" >
                                 <label for="a2"><span></span>彰化</label>
 
                             </div>
@@ -1205,7 +1210,7 @@
                             <div class="col-lg-2 col-md-3 col-6">
 
 
-                                <input type="checkbox" id="a3" name="南投" />
+                                <input type="checkbox" id="a3" name="南投" value="南投">
                                 <label for="a3"><span></span>南投</label>
 
                             </div>
@@ -1213,7 +1218,7 @@
                             <div class="col-lg-2 col-md-3 col-6">
 
 
-                                <input type="checkbox" id="a4" name="雲林" />
+                                <input type="checkbox" id="a4" name="雲林" value="雲林">
                                 <label for="a4"><span></span>雲林</label>
 
                             </div>
@@ -1221,7 +1226,7 @@
                             <div class="col-lg-2 col-md-3 col-6">
 
 
-                                <input type="checkbox" id="a5" name="嘉義市" />
+                                <input type="checkbox" id="a5" name="嘉義市" value="嘉義市">
                                 <label for="a5"><span></span>嘉義市</label>
 
                             </div>
@@ -1229,7 +1234,7 @@
                             <div class="col-lg-2 col-md-3 col-6">
 
 
-                                <input type="checkbox" id="a6" name="嘉義縣" />
+                                <input type="checkbox" id="a6" name="嘉義縣" value="嘉義市">
                                 <label for="a6"><span></span>嘉義縣</label>
 
                             </div>
@@ -1399,6 +1404,7 @@
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="js/jquery.min.js"></script>
+    <script src="https://unpkg.com/vue"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
@@ -1408,6 +1414,7 @@
     <script src="js/lazyload.min.js"></script>
     <script src="js/action.js"></script>
 
+   
 
     <script>
         $(function() {
@@ -1420,6 +1427,7 @@
                     var id = button.getAttribute("id");
 
                     var layerClass = "." + id + "-layer";
+                   
                     var layers = document.querySelectorAll(layerClass);
 
                     for (const layer of layers) {
@@ -1473,6 +1481,8 @@
             })
 
 
+           
+            
 
 
 

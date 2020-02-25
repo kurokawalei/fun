@@ -290,7 +290,19 @@ list.addEventListener('click', toggleDone, false);
 
      if (jointotal > 6) {
 
-         swal("已加入收藏", "請至行程頁面觀看", "success");
+
+         swal({
+
+            title: "已加入收藏",
+            text: "請移至行程頁面查看",
+            icon: "success"
+         })
+
+        //  }).then(function() {
+       //     window.location = "stroke.html";
+       //});
+         
+         
 
      }
 
@@ -416,8 +428,10 @@ mm.click(
     function () {
         //收
         $('.an').slideUp(250);
+      
         //展
         $(this).parent('li').find('.an').slideDown(250);
+        $(this).parent('li').find('i').addClass('shit');
     }
 
 );

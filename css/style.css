@@ -1022,6 +1022,9 @@ h1.col-auto.edit-h1 {
 .step-images {
   position: relative;
   text-align: right; }
+  @media (max-width: 769px) {
+    .step-images {
+      margin-bottom: 15px; } }
   .step-images span {
     position: absolute;
     color: #fff;
@@ -1098,7 +1101,18 @@ a.plus-icon i {
 
 @media (max-width: 769px) {
   .stone-images {
-    margin-bottom: 10px; } }
+    margin-bottom: 40px;
+    position: relative; }
+    .stone-images:before {
+      content: '➧';
+      position: absolute;
+      bottom: -60px;
+      font-size: 2.5rem;
+      color: #de4949;
+      left: 50%;
+      -webkit-transform: translateX(-50%) rotate(90deg);
+      -ms-transform: translateX(-50%) rotate(90deg);
+      transform: translateX(-50%) rotate(90deg); } }
 
 .stone-images img {
   -webkit-box-shadow: #cccac5 5px 5px 0px 3px;
@@ -1201,7 +1215,9 @@ input.flatpickr.flatpickr-input {
 
 @media (max-width: 769px) {
   .stroke-box {
-    position: relative; } }
+    position: relative; }
+    .stroke-box:last-child .stone-images:before {
+      display: none; } }
 
 .stroke-box > .row .col-md-4:first-child {
   text-align: right; }
@@ -1210,15 +1226,15 @@ input.flatpickr.flatpickr-input {
   padding: 0; }
   @media (max-width: 769px) {
     .stroke-box > .row .col-md-4:nth-child(2) {
-      padding: 0 15px 0 60px; } }
+      padding: 0 15px 0 15px; } }
 
 @media (max-width: 769px) {
   .stroke-box > .row .col-md-5 {
-    padding: 0 15px 0 60px; } }
+    padding: 0 15px 0 15px; } }
 
 @media (max-width: 769px) {
   .stroke-box > .row .col-md-4 {
-    padding: 0 15px 0 60px; } }
+    padding: 0 20px 0 15px; } }
 
 .stroke-box:before {
   content: '';
@@ -1258,70 +1274,69 @@ button#start {
   margin: 0 auto;
   display: block; }
 
-#select-day-box ul {
-  padding: 0;
-  margin: 0;
-  list-style-type: none; }
-  #select-day-box ul a {
-    -webkit-writing-mode: vertical-lr;
-    letter-spacing: 2px;
-    -ms-writing-mode: tb-lr;
-    writing-mode: vertical-lr;
-    color: #fff;
-    text-decoration: none;
-    padding: 5px 0; }
-    @media (max-width: 769px) {
-      #select-day-box ul a {
-        -webkit-writing-mode: inherit;
-        -ms-writing-mode: inherit;
-        writing-mode: inherit; } }
-    #select-day-box ul a i {
-      margin-top: 10px; }
-      @media (max-width: 769px) {
-        #select-day-box ul a i {
-          margin-top: 5px;
-          margin-bottom: 5px;
-          margin-left: 5px; } }
-
-div#select-day-box {
+#select-day-box {
   position: absolute;
   left: 20px;
   top: 50px;
   width: 40px;
   z-index: 5; }
-  @media (max-width: 769px) {
-    div#select-day-box {
-      position: static;
-      width: 100%; } }
-  div#select-day-box ul li {
-    background: #b4b5a9;
-    margin-bottom: 10px;
-    padding-left: 10px;
-    border-radius: 15px 0 0 15px;
-    padding: 10px 0 0px 10px;
-    border-right: #999b8c solid 6px; }
-    @media (max-width: 769px) {
-      div#select-day-box ul li {
-        background: #b4b5a9;
+  #select-day-box ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none; }
+    #select-day-box ul a {
+      -webkit-writing-mode: vertical-lr;
+      letter-spacing: 2px;
+      -ms-writing-mode: tb-lr;
+      writing-mode: vertical-lr;
+      color: #fff;
+      text-decoration: none;
+      padding: 5px 0; }
+      @media (max-width: 769px) {
+        #select-day-box ul a {
+          -webkit-writing-mode: inherit;
+          -ms-writing-mode: inherit;
+          writing-mode: inherit; } }
+      #select-day-box ul a i {
+        margin-top: 10px; }
+        @media (max-width: 769px) {
+          #select-day-box ul a i {
+            margin-top: 5px;
+            margin-bottom: 5px;
+            margin-left: 5px; } }
+    #select-day-box ul li {
+      background: #b4b5a9;
+      margin-bottom: 10px;
+      padding-left: 10px;
+      border-radius: 15px 0 0 15px;
+      padding: 10px 0 0px 10px;
+      border-right: #999b8c solid 6px; }
+      @media (max-width: 769px) {
+        #select-day-box ul li {
+          background: #b4b5a9;
+          margin-bottom: 10px;
+          padding-left: 10px;
+          border-radius: 0;
+          padding: 0 10px;
+          border-right: #999b8c solid 6px;
+          display: block;
+          text-align: center; } }
+      #select-day-box ul li.active {
+        background: #b58e78;
         margin-bottom: 10px;
         padding-left: 10px;
-        border-radius: 0;
-        padding: 0 10px;
-        border-right: #999b8c solid 6px;
-        display: inline-block; } }
-
-#select-day-box ul li.active {
-  background: #b58e78;
-  margin-bottom: 10px;
-  padding-left: 10px;
-  border-radius: 15px 0 0 15px;
-  padding: 10px 0 0px 10px;
-  border-right: #a87e6a solid 6px; }
+        border-radius: 15px 0 0 15px;
+        padding: 10px 0 0px 10px;
+        border-right: #a87e6a solid 6px; }
+        @media (max-width: 769px) {
+          #select-day-box ul li.active {
+            padding-left: 10px;
+            border-radius: 0;
+            padding: 0 10px; } }
   @media (max-width: 769px) {
-    #select-day-box ul li.active {
-      padding-left: 10px;
-      border-radius: 0;
-      padding: 0 10px; } }
+    #select-day-box {
+      position: static;
+      width: 100%; } }
 
 a#select-palace {
   background: transparent;
@@ -1396,9 +1411,16 @@ div#database {
   padding-bottom: 10px;
   margin-bottom: 30px;
   padding-right: 40px; }
+  @media (max-width: 769px) {
+    div#database {
+      padding-right: 0px; } }
   @media (max-width: 351px) {
     div#database {
       padding-right: 0px; } }
+  @media (max-width: 769px) {
+    div#database .style {
+      text-align: center;
+      padding: 15px 0; } }
 
 .database-list {
   padding-right: 30px;
@@ -1696,7 +1718,8 @@ a#close {
   @media (max-width: 1199px) and (max-width: 769px) {
     .stroke-box:before {
       left: 25px;
-      height: 100%; } }
+      height: 100%;
+      display: none; } }
 
 @media (max-width: 1199px) {
   ul.pagination.justify-content-end {
@@ -1728,12 +1751,12 @@ a#close {
     height: 100%; }
   #edit-main {
     max-height: inherit;
-    padding-right: 25px; }
+    padding-right: 15px; }
   a.route {
     margin-top: 15px;
     display: inline-block; }
     a.route:before {
-      content: '點擊查看路線';
+      content: '點擊查看路線➥';
       margin-right: 10px;
       color: #727171; }
   .list-btn {
@@ -1860,7 +1883,8 @@ nav#left_fixed_nav {
           font-size: 0.9rem;
           color: #9c9999;
           display: block;
-          padding-left: 30px; }
+          padding-left: 30px;
+          letter-spacing: 1px; }
           nav#left_fixed_nav ul li > ul a:before {
             content: '';
             height: 1px;
@@ -1936,7 +1960,7 @@ span.line-style {
   display: block;
   height: 1px;
   width: 100%;
-  margin: 25px 0;
+  margin: 15px 0;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+51,000000+100&0+0,0.65+51,0+100 */
   background: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 51%, rgba(0, 0, 0, 0) 100%);
   /* FF3.6-15 */
@@ -1948,6 +1972,10 @@ span.line-style {
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#00000000', GradientType=1);
   /* IE6-9 */ }
+
+.collection-box > ul {
+  max-height: 170px !important;
+  overflow: hidden; }
 
 .collection-box li {
   position: relative;
@@ -1976,7 +2004,7 @@ span.line-style {
 p.collection-total {
   font-size: 0.9rem;
   text-align: center;
-  margin-top: 25px;
+  margin-top: 5px;
   margin-bottom: 5px; }
   p.collection-total span a {
     color: #f00;
@@ -1990,6 +2018,9 @@ p.collection-notice {
   font-size: 0.7rem;
   text-align: center;
   margin: 0; }
+  p.collection-notice a {
+    font-size: 0.9375rem;
+    text-decoration: none; }
 
 #top-block ul {
   padding: 0;

@@ -182,17 +182,12 @@ mm.click(
 $('.delete').click(function(){
    
     
- $(this).parents('li').css('display','none');
+ $(this).parents('li').remove();
     
 })
 
              
 
-function momo(){
-$('#add-allstroke').modal({
-})
-
-}
 
 
 
@@ -286,5 +281,44 @@ $('.list-btn a').click(function(){
     }
     
 })
+
+
+//判斷行程
+
+
+$('#add').click(function(){
+
+
+    var strokenum = document.querySelector('#select-day-box ul').children.length;
+
+if ( strokenum ==4 ){
+
+    swal({
+        title: "小提醒",
+        text: "只能規劃3筆行程唷!",
+        icon: "warning",
+        dangerMode: true,
+      })
+
+}else{
+
+   $('#addstroke').modal();
+
+
+}
+
+
+    
+
+
+
+})
+
+
+
+
+
+
+
 
 
