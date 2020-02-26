@@ -171,7 +171,7 @@ function waether() {
             case '27':
             case '28':
 
-                $(winfo).attr('src', 'images/weather_02.gif');
+                $(winfo).attr('src', 'images/weather_02.png');
 
                 break;
 
@@ -371,7 +371,7 @@ function change() {
                 case '27':
                 case '28':
 
-                    $(winfo).attr('src', 'images/weather_02.gif');
+                    $(winfo).attr('src', 'images/weather_02.png');
 
                     break;
 
@@ -554,7 +554,7 @@ function change() {
                 case '27':
                 case '28':
 
-                    $(winfo).attr('src', 'images/weather_02.gif');
+                    $(winfo).attr('src', 'images/weather_02.png');
 
                     break;
 
@@ -738,7 +738,7 @@ function change() {
                 case '27':
                 case '28':
 
-                    $(winfo).attr('src', 'images/weather_02.gif');
+                    $(winfo).attr('src', 'images/weather_02.png');
 
                     break;
 
@@ -924,7 +924,7 @@ function change() {
                 case '27':
                 case '28':
 
-                    $(winfo).attr('src', 'images/weather_02.gif');
+                    $(winfo).attr('src', 'images/weather_02.png');
 
                     break;
 
@@ -1111,7 +1111,7 @@ function change() {
                 case '27':
                 case '28':
 
-                    $(winfo).attr('src', 'images/weather_02.gif');
+                    $(winfo).attr('src', 'images/weather_02.png');
 
                     break;
 
@@ -1296,7 +1296,7 @@ function change() {
                 case '27':
                 case '28':
 
-                    $(winfo).attr('src', 'images/weather_02.gif');
+                    $(winfo).attr('src', 'images/weather_02.png');
 
                     break;
 
@@ -1491,7 +1491,7 @@ function change() {
                 case '27':
                 case '28':
 
-                    $(winfo).attr('src', 'images/weather_02.gif');
+                    $(winfo).attr('src', 'images/weather_02.png');
 
                     break;
 
@@ -1683,7 +1683,7 @@ function change() {
                 case '27':
                 case '28':
 
-                    $(winfo).attr('src', 'images/weather_02.gif');
+                    $(winfo).attr('src', 'images/weather_02.png');
 
                     break;
 
@@ -1875,7 +1875,7 @@ function change() {
                 case '27':
                 case '28':
 
-                    $(winfo).attr('src', 'images/weather_02.gif');
+                    $(winfo).attr('src', 'images/weather_02.png');
 
                     break;
 
@@ -2064,7 +2064,7 @@ function change() {
                 case '27':
                 case '28':
 
-                    $(winfo).attr('src', 'images/weather_02.gif');
+                    $(winfo).attr('src', 'images/weather_02.png');
 
                     break;
 
@@ -2256,7 +2256,7 @@ function change() {
                 case '27':
                 case '28':
 
-                    $(winfo).attr('src', 'images/weather_02.gif');
+                    $(winfo).attr('src', 'images/weather_02.png');
 
                     break;
 
@@ -2446,7 +2446,7 @@ function change() {
                 case '27':
                 case '28':
 
-                    $(winfo).attr('src', 'images/weather_02.gif');
+                    $(winfo).attr('src', 'images/weather_02.png');
 
                     break;
 
@@ -2636,7 +2636,7 @@ function change() {
                 case '27':
                 case '28':
 
-                    $(winfo).attr('src', 'images/weather_02.gif');
+                    $(winfo).attr('src', 'images/weather_02.png');
 
                     break;
 
@@ -2826,7 +2826,7 @@ function change() {
                 case '27':
                 case '28':
 
-                    $(winfo).attr('src', 'images/weather_02.gif');
+                    $(winfo).attr('src', 'images/weather_02.png');
 
                     break;
 
@@ -3017,7 +3017,7 @@ function change() {
                 case '27':
                 case '28':
 
-                    $(winfo).attr('src', 'images/weather_02.gif');
+                    $(winfo).attr('src', 'images/weather_02.png');
 
                     break;
 
@@ -3203,7 +3203,7 @@ function change() {
                 case '27':
                 case '28':
 
-                    $(winfo).attr('src', 'images/weather_02.gif');
+                    $(winfo).attr('src', 'images/weather_02.png');
 
                     break;
 
@@ -3390,7 +3390,7 @@ function change() {
                 case '27':
                 case '28':
 
-                    $(winfo).attr('src', 'images/weather_02.gif');
+                    $(winfo).attr('src', 'images/weather_02.png');
 
                     break;
 
@@ -3591,7 +3591,7 @@ function change() {
                 case '27':
                 case '28':
 
-                    $(winfo).attr('src', 'images/weather_02.gif');
+                    $(winfo).attr('src', 'images/weather_02.png');
 
                     break;
 
@@ -3783,7 +3783,7 @@ function change() {
                 case '27':
                 case '28':
 
-                    $(winfo).attr('src', 'images/weather_02.gif');
+                    $(winfo).attr('src', 'images/weather_02.png');
 
                     break;
 
@@ -3975,7 +3975,7 @@ function change() {
                 case '27':
                 case '28':
 
-                    $(winfo).attr('src', 'images/weather_02.gif');
+                    $(winfo).attr('src', 'images/weather_02.png');
 
                     break;
 
@@ -4164,7 +4164,7 @@ function change() {
                 case '27':
                 case '28':
 
-                    $(winfo).attr('src', 'images/weather_02.gif');
+                    $(winfo).attr('src', 'images/weather_02.png');
 
                     break;
 
