@@ -1460,10 +1460,30 @@
             ] 
           }
         ]
-    </script>   
+    </script>  
+    
+    <script>
 
-    <!--直接引用Google Fonts API-->
+
+function loadCSS() {
+if((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|wOSBrowser|BrowserNG|WebOS)/i))) {
+document.write('<link href="style.css" rel="stylesheet" type="text/css" media="screen" />');
+}
+else {
+document.write('<link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:300,400,500,700&display=swap" rel="stylesheet" type="text/css" media="screen" />');
+}
+}
+loadCSS();
+
+    
+
+
+
+
+    </script>
+
+    <!--直接引用Google Fonts API
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:300,400,500,700&display=swap" rel="stylesheet" async>
-
+    -->
 
 </html>
