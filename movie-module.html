@@ -795,19 +795,96 @@
                    return false;
 
             });
-            
-            
-
-
+          
         })
 
     </script>
-
+    <script type="application/ld+json">
+        [
     
-	<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-    <!--直接引用Google Fonts API-->
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,400,700,900&display=swap" rel="stylesheet" async>
- 
+      {
+        "@context": "http://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [{
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@id": "https://central.1111.com.tw/fun/",
+            "name": "fun中台灣"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@id": "https://central.1111.com.tw/fun/activity-list.asp",
+            "name": "最新活動"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@id": "抓當前網址",
+            "name": "抓標題內容"
+          }
+        }
+       ]
+      },
+      {
+        "@context": "http://schema.org",
+        "@type": "ItemList",
+        "itemListElement": [{
+          "@type": "SiteNavigationElement",
+          "position": 1,
+          "name": "最新活動",
+          "url": "https://central.1111.com.tw/fun/activity-list.asp"
+        },
+        {
+          "@type": "SiteNavigationElement",
+          "position": 2,
+          "name": "人氣美食",
+    
+          "url": "https://central.1111.com.tw/fun/food-list.asp"
+        },
+        {
+          "@type": "SiteNavigationElement",
+          "position": 3,
+          "name": "熱門景點",
+    
+          "url": "https://central.1111.com.tw/fun/trip-list.asp"
+        },
+        {
+          "@type": "SiteNavigationElement",
+          "position": 4,
+          "name": "住宿推薦",
+          "url": "https://central.1111.com.tw/fun/stay-list.asp"
+        }
+        
+    
+        ]
+      },
+      {
+        "@context": "http://schema.org",
+        "@type" : "Event",
+        "name" : "抓網頁標題",
+        "description": "抓網頁描述",
+        "image":"抓代表圖",
+        "url" : "抓當前網址",
+        "location": {
+          "@type" : "Place",
+          "name" : "抓網頁標題",
+          "address" : "抓地址"
+        },
+        "startDate": "發表時間",
+        "endDate": "結束時間"
+      }
+     
+    
+      ]
+    
+    </script>
+
 
 
 

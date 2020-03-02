@@ -146,7 +146,7 @@
             </a>
             <form class="col-xl-2 col-lg col-md-3 align-self-center" id="search-form" name="searchform" action="search.html" method="get">
               <div class="row">
-                <input class="form-control form-control-sm col-md-9 col-7" placeholder="請輸入關鍵字.." type="text" name="keys">
+                <input  class="form-control form-control-sm col-md-9 col-7" placeholder="請輸入關鍵字.." type="text" name="keys" >
                 <a class="searchstyle col-3" onclick="allsearch()">
                   <i class="fas fa-search"></i>
                 </a>
@@ -206,7 +206,7 @@
               <a href="#">首頁</a></li>
             <li class="breadcrumb-item active" aria-current="page">搜尋結果</li></ol>
         </nav>
-        <div class="input-main">您輸入的[ 抓輸入的關鍵字 ]經搜尋結果如下：</div>
+        <div class="input-main">您輸入的[ {{keyin}} ]經搜尋結果如下：</div>
         <!--列表內容-->
         <ul class="search-main row">
           <li class="  col-md-4 col-sm-6">
@@ -360,23 +360,34 @@
               </ul>
             </div>
           </div>
+
           <div class="col-md-4 align-self-center">
             <a href="https://central.1111.com.tw" target="_blank" title="1111中台灣">
               <img src="images/sitemap-logo.jpg" class="img-fluid" alt="1111中台灣"></a>
             <p>求才與異業合作洽談：(04)2203-1111</p>
             <p>撥打免付費申訴專線：0800-09-1111</p>
+
+          
             <div id="fb-box" class="d-none d-md-block">
-              <div id="fb-root"></div>
-              <script async defer crossorigin="anonymous" src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v5.0&appId=840565986116397&autoLogAppEvents=1"></script>
-              <div class="fb-page" data-href="https://www.facebook.com/central1111/" data-tabs="timeline" data-width="300" data-height="70" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false">
-                <blockquote cite="https://www.facebook.com/central1111/" class="fb-xfbml-parse-ignore">
-                  <a href="https://www.facebook.com/central1111/">1111中台灣《生活的好朋友！》</a></blockquote>
-              </div>
+      
+              <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fcentral1111%2F&tabs=timeline&width=300&height=70&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=false&appId=840565986116397" width="300" height="70" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+
+
             </div>
+            
+      
           </div>
-        </div>
-        <footer>全球華人股份有限公司(1111人力銀行) 版權所有 © 1111 Job Bank All Rights Reserved.</footer>
-        <a href="javascript:;" id="gotop">
+
+
+          </div>
+
+
+
+          <footer>全球華人股份有限公司(1111人力銀行) 版權所有 © 1111 Job Bank All Rights Reserved.</footer>
+        
+
+
+        <a href="javascript:;" id="gotop"  @click="top">
           <i class="fas fa-chevron-up"></i>TOP</a>
         <!--地區選單-->
         <aside class="form-box" id="areaform">
@@ -478,6 +489,10 @@
             </form>
           </div>
         </aside>
+
+        
+
+        
       </main>
     </section>
     <!-- Modal <div aria-hidden="true" aria-labelledby="exampleModalLabel2" class="modal fade" id="exampleModal2" role="dialog" tabindex="-1">
@@ -514,6 +529,9 @@
     <script src="js/jquery.marquee.min.js"></script>
     <script src="js/lazyload.min.js"></script>
     <script src="js/action.js"></script>
+   
+   
+
    
   </body>
 
