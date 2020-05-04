@@ -1028,13 +1028,31 @@ a#select-palace {
     color: #fff;
 }
 
-div#database {
+#exampleModalCenter {
+
+    .modal-body {
+
+        @include mob() {
+
+            padding: 0;
+
+        }
+
+    }
+
+}
+
+
+
+
+#database {
+
     border-bottom: #ccc solid 2px;
     padding-bottom: 10px;
     margin-bottom: 30px;
     padding-right: 40px;
 
-    @include mob(){
+    @include mob() {
 
         padding-right: 0px;
     }

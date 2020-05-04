@@ -114,25 +114,31 @@ input.form-control.form-control-sm.col-9 {
   list-style-type: none;
   margin: 35px 35px; }
   .list-main > li {
-    margin-bottom: 15px;
+    margin-bottom: 30px;
     position: relative; }
     .list-main > li:after {
       content: '';
       width: 0%;
       height: 1px;
       background: #51bcba;
-      left: 0;
+      left: 27%;
       bottom: 10px;
       -webkit-transition: all 0.5s ease;
       -o-transition: all 0.5s ease;
       transition: all 0.5s ease;
       position: absolute; }
+      @media (min-width: 1441px) {
+        .list-main > li:after {
+          left: 22%; } }
     .list-main > li:hover:after {
-      width: 80%;
+      width: 53%;
       content: '';
       -webkit-transition: all 0.5s ease;
       -o-transition: all 0.5s ease;
       transition: all 0.5s ease; }
+      @media (min-width: 1441px) {
+        .list-main > li:hover:after {
+          width: 65%; } }
   .list-main .col-md-4 img {
     -webkit-box-shadow: #e6b422 5px 5px 0px 0;
     box-shadow: #e6b422 5px 5px 0px 0; }
@@ -351,12 +357,18 @@ input.btn.btn-outline-light.btn-lg {
       width: 35%; } }
 
 @media (min-width: 992px) and (max-width: 1200px) {
-  .list-main .col-md-4 {
+  .list-main .col-md-4.col-xl-3 {
     padding-right: 25px; } }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  .list-main .col-md-4 {
+  .list-main .col-md-4.col-xl-3 {
     padding-right: 25px; } }
+
+.list-main .col-md-8.col-xl-9 {
+  padding-left: 25px; }
+  @media (min-width: 1441px) {
+    .list-main .col-md-8.col-xl-9 {
+      padding-left: 0px; } }
 
 @media (min-width: 769px) and (max-width: 993px) {
   .search-ui-box {
@@ -411,10 +423,12 @@ input.btn.btn-outline-light.btn-lg {
 @media (max-width: 769px) {
   .tag-link li {
     margin-bottom: 0; }
-  .list-main > li:hover:after {
-    width: 0; }
-  .list-main > li img {
-    width: 100%; } }
+  .list-main > li {
+    margin-bottom: 15px; }
+    .list-main > li:hover:after {
+      width: 0; }
+    .list-main > li img {
+      width: 100%; } }
 
 @media (max-width: 351px) {
   .close-btn i {
@@ -1406,19 +1420,23 @@ a#select-palace {
 #database-search input::-moz-placeholder {
   color: #fff; }
 
-div#database {
+@media (max-width: 769px) {
+  #exampleModalCenter .modal-body {
+    padding: 0; } }
+
+#database {
   border-bottom: #ccc solid 2px;
   padding-bottom: 10px;
   margin-bottom: 30px;
   padding-right: 40px; }
   @media (max-width: 769px) {
-    div#database {
+    #database {
       padding-right: 0px; } }
   @media (max-width: 351px) {
-    div#database {
+    #database {
       padding-right: 0px; } }
   @media (max-width: 769px) {
-    div#database .style {
+    #database .style {
       text-align: center;
       padding: 15px 0; } }
 
@@ -1839,9 +1857,15 @@ header#header {
   height: 100vh;
   background: #eee;
   border-right: #ccc solid 1px; }
+  @media (min-width: 1441px) {
+    header#header {
+      width: 22.85714em; } }
 
 #main {
   margin-left: 12.85714em; }
+  @media (min-width: 1441px) {
+    #main {
+      margin-left: 22.85714em; } }
 
 .running {
   overflow: hidden; }
@@ -1866,6 +1890,9 @@ nav#left_fixed_nav {
     nav#left_fixed_nav ul li {
       margin-bottom: 8px;
       position: relative; }
+      @media (min-width: 1441px) {
+        nav#left_fixed_nav ul li {
+          text-align: center; } }
       nav#left_fixed_nav ul li i {
         margin-right: 10px; }
       nav#left_fixed_nav ul li i.fas.fa-chevron-down {
@@ -1885,6 +1912,9 @@ nav#left_fixed_nav {
           display: block;
           padding-left: 30px;
           letter-spacing: 1px; }
+          @media (min-width: 1441px) {
+            nav#left_fixed_nav ul li > ul a {
+              font-size: 1rem; } }
           nav#left_fixed_nav ul li > ul a:before {
             content: '';
             height: 1px;
@@ -1986,6 +2016,10 @@ span.line-style {
     top: 0px;
     cursor: pointer;
     font-size: 0.8rem; }
+    @media (min-width: 1441px) {
+      .collection-box li span {
+        font-size: 0.9rem;
+        left: 30px; } }
   .collection-box li a {
     color: #343434;
     font-size: 0.85rem;

@@ -4,6 +4,7 @@ $("img.lazyload").lazyload();
 
 
 function loadCSS() {
+
     if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|wOSBrowser|BrowserNG|WebOS)/i))) {
       document.write('<link href="css/style.css" rel="stylesheet" type="text/css" media="screen" />');
     } else {
@@ -13,10 +14,11 @@ function loadCSS() {
 
   loadCSS();
 
-
-$('html').niceScroll({
+    $('html').niceScroll({
 
     cursorcolor: "#ccc",
+    //preservenativescrolling:false,
+    //enablemousewheel:false,
     zindex: "9",
     cursorborder: false,
     cursorminheight: 64,
@@ -33,12 +35,7 @@ $('html').niceScroll({
     smoothscroll: true,
     horizrailenabled: false,
 
-
-
 });
-
-
-
 
 
 
@@ -75,11 +72,11 @@ $('#lg-bn-box ul').owlCarousel({
 
 // $('#hot-link').marquee({
 //speed in milliseconds of the marquee
-//    duration: 10000,
+//  duration: 10000,
 //gap in pixels between the tickers
-//    gap: 0,
+//  gap: 0,
 //time in milliseconds before the marquee will start animating
-//    delayBeforeStart: 0,
+//  delayBeforeStart: 0,
 //  pauseOnHover: true,
 //'left' or 'right'
 //direction: 'left',
@@ -95,7 +92,7 @@ $('#leftmain').niceScroll({
     cursorwidth: "20px", // cursor width in pixel (you can also write "5px")
     scrollspeed: 60,
     smoothscroll: true,
-    zindex: "1",
+    zindex: "1", 
     background: "#efefef", // change css for rail background
     cursorborder: false,
     cursordragontouch: true,

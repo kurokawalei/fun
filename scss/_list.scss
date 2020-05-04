@@ -185,7 +185,7 @@ input.form-control.form-control-sm.col-9 {
 
     & > li {
 
-        margin-bottom: 15px;
+        margin-bottom: 30px;
         position: relative;
 
 
@@ -195,18 +195,25 @@ input.form-control.form-control-sm.col-9 {
             width: 0%;
             height: 1px;
             background: #51bcba;
-            left: 0;
+            left: 27%;
             bottom: 10px;
             transition: all 0.5s ease;
             position: absolute;
+            @include xl(){
+             left: 22%;
+           
+            }
         }
 
         
         &:hover:after {
             
-            width: 80%;
+            width: 53%;
             content: '';
             transition: all 0.5s ease;
+            @include xl(){
+                width: 65%;
+            }
 
         }
 
@@ -547,7 +554,7 @@ input.btn.btn-outline-light.btn-lg {
 
 .list-main {
 
-    .col-md-4 {
+    .col-md-4.col-xl-3{
 
         @include xl-pad() {
 
@@ -561,6 +568,14 @@ input.btn.btn-outline-light.btn-lg {
 
         }
 
+    }
+
+    .col-md-8.col-xl-9 {
+        padding-left: 25px;
+        
+        @include xl(){
+            padding-left: 0px;
+        }
     }
 
 }
@@ -701,6 +716,7 @@ input.btn.btn-outline-light.btn-lg {
     .list-main {
 
         & > li {
+            margin-bottom: 15px;
 
             &:hover:after { 
                 width: 0;

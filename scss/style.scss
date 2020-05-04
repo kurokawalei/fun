@@ -1,6 +1,7 @@
 @charset "utf-8";
 
 @import "system";
+
 @import "list";
 @import "inside";
 @import "movielist";
@@ -38,10 +39,19 @@ header#header {
     height: 100vh;
     background: #eee;
     border-right: #ccc solid 1px;
+
+    @include xl(){
+        width: 22.85714em;
+    }
 }
+
+
 
 #main {
     margin-left: 12.85714em;
+    @include xl(){
+        margin-left: 22.85714em;
+    }
 }
 
 .running {
@@ -81,6 +91,9 @@ nav#left_fixed_nav {
 
             margin-bottom: 8px;
             position: relative;
+            @include xl(){
+                text-align: center;
+            }
 
             i {
 
@@ -110,6 +123,9 @@ nav#left_fixed_nav {
                     display: block;
                     padding-left: 30px;
                     letter-spacing: 1px;
+                    @include xl (){
+                        font-size: 1rem;
+                    }
 
                     &:before {
 
@@ -247,6 +263,10 @@ span.line-style {
         top: 0px;
         cursor: pointer;
         font-size: 0.8rem;
+        @include xl(){
+            font-size: 0.9rem;
+            left: 30px;
+        }
 
 
     }

@@ -704,6 +704,8 @@
     <script src="js/stroke.js"></script>
     <script src="js/flatpickr.js"></script>
     <script>
+      
+        // 2020/試用結束要收費了
         // 執行 tinyMap 前可使用 $.tinyMapConfigure 進行 API 的設定。    
       $.fn.tinyMapConfigure({
           
@@ -719,11 +721,11 @@
         // MarkerClustererPlus.js 路徑
         // 預設 'https://cdn.essoduke.org/js/tinyMap/markerclusterer.js'
         // 建議下載至自有主機，避免讀取延遲造成無法使用。
-        'clusterer': 'path/to/markerclusterer.js',
+        'clusterer': 'js/markerclusterer.js',
         // MarkerWithLabel.js 路徑
         // 預設 'https://cdn.essoduke.org/js/tinyMap/markerwithlabel.js'
         // 建議下載至自有主機，避免讀取延遲造成無法使用。
-        'withLabel': '/path/to/markerwithlabel.js'
+        'withLabel': 'js/markerwithlabel.js'
           
       });
 
@@ -735,7 +737,9 @@
           
         $('#map-direction-01').tinyMap({
 
-          'center': ['23.849647, 120.922398'],
+          'center': {'lat': 'Lat', 'lng': 'Lng'},
+         
+          //'autoLocation': true, // 預設 false
           'zoom': 13,
           'direction': [{
             'from': '台中市北區中清路一段369號',

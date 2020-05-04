@@ -6,3 +6,6 @@ header#header {
   height: 100vh;
   background: #eee;
   border-right: #ccc solid 1px; }
+  @media (min-width: 1441px) {
+    header#header {
+      width: 22.85714em; } }
