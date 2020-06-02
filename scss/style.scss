@@ -1,7 +1,6 @@
 @charset "utf-8";
 
 @import "system";
-
 @import "list";
 @import "inside";
 @import "movielist";
@@ -39,6 +38,7 @@ header#header {
     height: 100vh;
     background: #eee;
     border-right: #ccc solid 1px;
+    padding-top: 28px;
 
     @include xl(){
         width: 22.85714em;
@@ -253,6 +253,7 @@ span.line-style {
 
 
 .collection-box li {
+    
     position: relative;
     padding-left: 12px;
 
@@ -263,9 +264,10 @@ span.line-style {
         top: 0px;
         cursor: pointer;
         font-size: 0.8rem;
-        @include xl(){
+
+        @include xl() {
             font-size: 0.9rem;
-            left: 30px;
+            left: 25px;
         }
 
 
@@ -279,7 +281,10 @@ span.line-style {
         text-overflow: ellipsis;
         white-space: nowrap;
         overflow: hidden;
-        display: block;
+        display: inline-block;
+        @include xl(){
+            font-size: 0.9rem;
+        }
 
         &:hover {
 
@@ -301,6 +306,7 @@ p.collection-total {
     margin-bottom: 5px;
 
     span {
+        
 
         a {
             color: #f00;
@@ -327,6 +333,14 @@ p.collection-notice {
 
         font-size: $font*0.75;
         text-decoration: none;
+        background: #4aabaa;
+        color: #fff;
+        border-radius: 5px;
+        padding: 5px 15px;
+        /* margin-top: 10px; */
+        display: block;
+        width: 80%;
+        margin: 15px auto 0;
     }
 }
 
@@ -528,6 +542,9 @@ a.bn-link {
             right: 0;
             left: inherit;
             transform: translateX(0);
+        }
+        @include xl(){
+            transform: translateX(400%);
         }
 
     }
@@ -1230,12 +1247,15 @@ a#gotop {
 #weather-box {
 
     position: absolute;
-    width: 70%;
+    width: 75%;
     padding: 15px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     background: #d2f3ff;
+    @include xl(){
+        width: 55%;
+    }
 
     i {
         font-size: 2rem;
@@ -1483,6 +1503,7 @@ figure.theweather-images {
         left: -12.85714em;
         z-index: 4;
         transition: all 0.5s ease;
+      
 
         &.vis {
 
@@ -1942,7 +1963,7 @@ figure.theweather-images {
         
         .row {
             
-            top: 50%;
+    top: 50%;
     position: absolute;
     transform: translateY(-50%);
     width: 100%;

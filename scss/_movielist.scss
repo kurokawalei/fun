@@ -264,6 +264,18 @@
         text-decoration: none;
         color: $else-color;
         transition: all 0.5s ease;
+        background: #51bcba;
+        color: #fff;
+    }
+
+    &.w {
+
+        &:hover {
+            background: #faa527;
+            transition: all 0.5s ease;
+            color: #fff;
+
+        }
     }
 }
 

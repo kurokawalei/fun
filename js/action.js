@@ -332,7 +332,7 @@ list.addEventListener('click', toggleDone, false);
 
      for (var i = 0; i < len; i++) {
 
-         str += '<li><span class="removeitem" title="移除" data-index=' + i + '><i class="fas fa-times"></i></span> <a href="http://google.com">' + items[i].content + '</a></li>'
+         str += '<li><span class="removeitem" title="移除" data-index=' + i + '><i class="fas fa-times"></i></span> <a href="#">' + items[i].content + '</a></li>'
 
      }
     

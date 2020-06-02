@@ -17,70 +17,99 @@
         padding: 0 15px;
     }
 
-    
-  
+    @include xl() {
+
+        padding: 0 55px;
+
+    }
+
+    figure.st-logo {
+
+        text-align: center;
+
+    }
+
 
     .tip-info-box {
 
         position: relative;
+        background: #eee;
+        padding: 30px 15px;
 
-
-        @include mob() {
-
-
-            & img {
-
-                width: 100%;
-            }
-
-
+        .deputy-images {
+          @include mob(){
+            margin-bottom: 25px;
+          }
         }
 
-        .col-md-9 {
 
-            @include mob() {
 
-                background-image: linear-gradient(45deg, #655DE2 0%, #00E3D6 100%);
+        .deputy-images.activity {
+
+            position: relative;
+
+            img {
+                box-shadow: #ffce61 10px 10px 0 0;
             }
+          
+           
         }
+
+        .deputy-images.food {
+            
+            position: relative;
+
+            img {
+                box-shadow: #f7886d 10px 10px 0 0;
+            }
+          
+           
+        }
+
+        .deputy-images.stay {
+            
+            position: relative;
+
+            img {
+                box-shadow: #3ab1db 10px 10px 0 0;
+            }
+          
+           
+        }
+
+        .deputy-images.trip {
+            
+            position: relative;
+
+            img {
+                box-shadow: #5bb588 10px 10px 0 0;
+            }
+          
+           
+        }
+
+
+       
+
+        
 
 
     }
 
 
-    & .tip-info-box:before {
-
-        content: '';
-        background-image: linear-gradient(45deg, #655DE2 0%, #00E3D6 100%);
-        position: absolute;
-        left: 30px;
-        top: 30px;
-        width: calc(100% - 30px);
-        height: 105%;
-
-        @include pad() {
-
-            content: '';
-            position: absolute;
-            left: 30px;
-            top: 20px;
-            width: calc(100% - 30px);
-            height: 100%;
-        }
-
-
-        @include mob() {
-
-            display: none;
-
-        }
+   
 
 
 
 
+   
 
 
-    }
+   
+
+
+
+
 
 
     .title {
@@ -91,6 +120,8 @@
     }
 
     .tag-link {
+
+      
 
         text-align: center;
 
@@ -116,10 +147,10 @@
 .store-info {
 
     @include ulstyle();
+
     padding-left: 50px;
 
     @include mob() {
-
 
         padding-left: 0px;
         padding-right: 0px;
@@ -127,32 +158,59 @@
     }
 
 
-    @include pad() {
 
-        padding-top: 50px;
+  
+
+    &.activity {
+
+        i {
+            color: #ffce61;
+        }
+
     }
 
-    @include xl-pad() {
-        padding-top: 55px;
+    &.stay {
+
+        i {
+            color: #3ab1db;
+        }
+
     }
+
+    &.food {
+
+        i {
+            color: #f7886d;
+        }
+
+    }
+
+    &.trip {
+
+        i {
+            color: #5bb588;
+        }
+
+    }
+
+
 
 
 
     li {
 
-        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#333333+80,000000+100&0.65+0,0+100 */
-        background: -moz-linear-gradient(left, rgba(51, 51, 51, 0.65) 0%, rgba(51, 51, 51, 0.13) 80%, rgba(0, 0, 0, 0) 100%);
-        /* FF3.6-15 */
-        background: -webkit-linear-gradient(left, rgba(51, 51, 51, 0.65) 0%, rgba(51, 51, 51, 0.13) 80%, rgba(0, 0, 0, 0) 100%);
-        /* Chrome10-25,Safari5.1-6 */
-        background: linear-gradient(to right, rgba(51, 51, 51, 0.65) 0%, rgba(51, 51, 51, 0.13) 80%, rgba(0, 0, 0, 0) 100%);
-        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a6333333', endColorstr='#00000000', GradientType=1);
-        /* IE6-9 */
-
-        color: #eee;
+       
         padding-left: 10px;
-        margin-bottom: 5px;
+        margin-bottom: 10px;
+        color: $b-color;
+
+        span{
+            width: 90px;
+            display: inline-block;
+            text-justify: distribute-all-lines;
+            text-align-last: justify;
+           
+        }
 
 
     }
@@ -162,6 +220,8 @@
     i {
 
         margin-right: 5px;
+        width: 16px;
+      
 
     }
 
@@ -173,7 +233,7 @@
     margin-top: 100px;
     color: #1b1b25;
     font-weight: 400;
-    padding: 0 50px;
+   
     line-height: 200%;
 
     @include mob() {
@@ -185,9 +245,13 @@
 
 
     img {
+        max-width: 100%;
+        height: auto;
 
-        display: block;
-        margin: 0 auto;
+       
+    }
+    p{
+        text-align: center;
     }
 
 
@@ -258,7 +322,6 @@
 
 
 
-
         i {
             position: absolute;
             bottom: -35px;
@@ -270,6 +333,7 @@
 
                 bottom: 5px;
                 right: 10px;
+
             }
 
 

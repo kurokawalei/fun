@@ -171,7 +171,7 @@ function waether() {
             case '27':
             case '28':
 
-                $(winfo).attr('src', 'images/weather_02.png');
+                $(winfo).attr('src', 'images/weather_02.gif');
 
                 break;
 
@@ -371,7 +371,7 @@ function change() {
                 case '27':
                 case '28':
 
-                    $(winfo).attr('src', 'images/weather_02.png');
+                    $(winfo).attr('src', 'images/weather_02.gif');
 
                     break;
 

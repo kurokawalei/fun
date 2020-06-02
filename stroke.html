@@ -45,19 +45,39 @@
           <div class="sm-logo col-auto">
             <a href="index.html" title="fun中台灣"><img src="images/sm_logo.png" class="img-fluid"></a>
             </div>
-          <h1 class="col-auto edit-h1 align-self-center">行程編輯器</h1></div>
+          <h1 class="col-auto edit-h1 align-self-center">行程編輯器</h1>
+        
+        
+       
+
+          <div class="col">
+
+                   <div id="stroke-info">
+            <div class="row no-gutters">
+
+              <div class="col-9 ">
+                <div class="trip-data">日期：108/10/31
+                <span>－</span>108/11/4</div></div>
+              <div class="col-3 align-self-center ">
+              
+                <a href="stroke-inside.html" class="else-btn" title="查看行程">查看行程</a>
+                <a href="javascript:;" class="else-btn" title="新增行程" id="add">新增行程</a>
+              
+              </div>
+              </div>
+          </div>
+
+
+          </div>
+
+        </div>
+   
+
+
+
       </header>
       <div class="container-fluid">
-        <div id="stroke-info">
-          <div class="row no-gutters">
-            <div class="col-lg-10 col-md-8">
-              <div class="trip-data">日期：108/10/31
-                <span>－</span>108/11/4</div></div>
-            <div class="col-lg-2 col-md-4 align-self-center">
-            
-              <a href="stroke-inside.html" class="else-btn" title="查看行程">查看行程</a></div>
-          </div>
-        </div>
+       
 
         <main id="edit-main">
           <!--天數切換--->
@@ -75,11 +95,11 @@
                 <a href="#">行程名稱3
                   <i class="far fa-trash-alt delete"></i></a>
               </li>
-              <li>
+              <!-- <li>
                 <a href="#" title="新增旅遊行程" id="add" data-target="#addstroke">
                   <i class="fas fa-plus"></i>
                 </a>
-              </li>
+              </li> -->
             </ul>
           </div>
           <div class="row">
@@ -273,11 +293,11 @@
                 </div>
               </div>
               
-              <div id="add-stroke">
+              <!-- <div id="add-stroke">
                 <a href="#" title="新增行程" data-toggle="modal" data-target="#add-liststroke">
                   <i class="fas fa-plus-circle"></i>
                 </a>
-              </div>
+              </div> -->
               
             </div>
             <div class="list-btn d-xl-none">
@@ -316,8 +336,11 @@
           
                   </div>
                   -->
+                  我收藏的文章：
                   <div class="col-md-auto col-md-7 align-self-center">
+                   
                     <ul class="style">
+                      
                       <li>
                         <a href="#">美食</a></li>
                       <li>
@@ -328,12 +351,14 @@
                         <a href="#">活動</a></li>
                     </ul>
                   </div>
+                  <!--
                   <div class="col-md-5 align-self-center">
                     <div id="database-search">
                       <input class="form-control form-control-sm" type="text" placeholder="關鍵字搜尋..">
                       <i class="fas fa-search" title="搜尋"></i>
                     </div>
                   </div>
+                -->
                 </div>
               </div>
               <div class="database-list">
@@ -351,7 +376,8 @@
                               <i class="fas fa-map-marker-alt"></i>
                             </span>
                           </a>
-                          <a href="#" class="plus-icon" title="點此加入行程">
+                      
+                            <a href="#"  class="plus-icon" title="新增行程" data-toggle="modal" data-target="#add-liststroke">
                             <i class="fas fa-plus-circle"></i>
                           </a>
                           <a href="#" class="remove-icon" title="點此移除行程">
@@ -361,29 +387,8 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-md-4 col-6">
-                    <div class="box">
-                      <p>
-                        <img src="images/22122_logo.jpg" class="img-fluid"></p>
-                      <div class="row no-gutters">
-                        <div class="col-7 align-self-center">
-                          <a href="#" title="抓標題" target="">神奇大柱子</a></div>
-                        <div class="col-5 align-self-center">
-                          <a href="#" class="map-icon" title="查看景點位置">
-                            <span>
-                              <i class="fas fa-map-marker-alt"></i>
-                            </span>
-                          </a>
-                          <a href="#" class="plus-icon" title="點此加入行程">
-                            <i class="fas fa-plus-circle"></i>
-                          </a>
-                          <a href="#" class="remove-icon" title="點此移除行程">
-                            <i class="fas fa-minus-circle"></i>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+
+
                   <div class="col-md-4 col-6">
                     <div class="box">
                       <p>
@@ -392,12 +397,13 @@
                         <div class="col-7 align-self-center">
                           <a href="#" title="抓標題" target="">神奇大柱子</a></div>
                         <div class="col-5 align-self-center">
-                          <a href="#" class="map-icon" title="查看景點位置">
+                          <a href="javascript:;" class="map-icon" title="查看景點位置" data-toggle="modal" data-target="#mapinfo">
                             <span>
                               <i class="fas fa-map-marker-alt"></i>
                             </span>
                           </a>
-                          <a href="#" class="plus-icon" title="點此加入行程">
+                      
+                            <a href="#"  class="plus-icon" title="新增行程" data-toggle="modal" data-target="#add-liststroke">
                             <i class="fas fa-plus-circle"></i>
                           </a>
                           <a href="#" class="remove-icon" title="點此移除行程">
@@ -407,29 +413,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-md-4 col-6">
-                    <div class="box">
-                      <p>
-                        <img src="images/22122_logo.jpg" class="img-fluid"></p>
-                      <div class="row no-gutters">
-                        <div class="col-7 align-self-center">
-                          <a href="#" title="抓標題" target="">神奇大柱子</a></div>
-                        <div class="col-5 align-self-center">
-                          <a href="#" class="map-icon" title="查看景點位置">
-                            <span>
-                              <i class="fas fa-map-marker-alt"></i>
-                            </span>
-                          </a>
-                          <a href="#" class="plus-icon" title="點此加入行程">
-                            <i class="fas fa-plus-circle"></i>
-                          </a>
-                          <a href="#" class="remove-icon" title="點此移除行程">
-                            <i class="fas fa-minus-circle"></i>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+
                   <div class="col-md-4 col-6">
                     <div class="box">
                       <p>
@@ -438,12 +422,13 @@
                         <div class="col-7 align-self-center">
                           <a href="#" title="抓標題" target="">神奇大柱子</a></div>
                         <div class="col-5 align-self-center">
-                          <a href="#" class="map-icon" title="查看景點位置">
+                          <a href="javascript:;" class="map-icon" title="查看景點位置" data-toggle="modal" data-target="#mapinfo">
                             <span>
                               <i class="fas fa-map-marker-alt"></i>
                             </span>
                           </a>
-                          <a href="#" class="plus-icon" title="點此加入行程">
+                      
+                            <a href="#"  class="plus-icon" title="新增行程" data-toggle="modal" data-target="#add-liststroke">
                             <i class="fas fa-plus-circle"></i>
                           </a>
                           <a href="#" class="remove-icon" title="點此移除行程">
@@ -453,20 +438,22 @@
                       </div>
                     </div>
                   </div>
+
                   <div class="col-md-4 col-6">
                     <div class="box">
                       <p>
-                        <img src="images/22122_logo.jpg" class="img-fluid"></p>
+                        <img src="images/22235_logo.jpg" class="img-fluid"></p>
                       <div class="row no-gutters">
                         <div class="col-7 align-self-center">
                           <a href="#" title="抓標題" target="">神奇大柱子</a></div>
                         <div class="col-5 align-self-center">
-                          <a href="#" class="map-icon" title="查看景點位置">
+                          <a href="javascript:;" class="map-icon" title="查看景點位置" data-toggle="modal" data-target="#mapinfo">
                             <span>
                               <i class="fas fa-map-marker-alt"></i>
                             </span>
                           </a>
-                          <a href="#" class="plus-icon" title="點此加入行程">
+                      
+                            <a href="#"  class="plus-icon" title="新增行程" data-toggle="modal" data-target="#add-liststroke">
                             <i class="fas fa-plus-circle"></i>
                           </a>
                           <a href="#" class="remove-icon" title="點此移除行程">
@@ -476,6 +463,61 @@
                       </div>
                     </div>
                   </div>
+
+                  <div class="col-md-4 col-6">
+                    <div class="box">
+                      <p>
+                        <img src="images/22235_logo.jpg" class="img-fluid"></p>
+                      <div class="row no-gutters">
+                        <div class="col-7 align-self-center">
+                          <a href="#" title="抓標題" target="">神奇大柱子</a></div>
+                        <div class="col-5 align-self-center">
+                          <a href="javascript:;" class="map-icon" title="查看景點位置" data-toggle="modal" data-target="#mapinfo">
+                            <span>
+                              <i class="fas fa-map-marker-alt"></i>
+                            </span>
+                          </a>
+                      
+                            <a href="#"  class="plus-icon" title="新增行程" data-toggle="modal" data-target="#add-liststroke">
+                            <i class="fas fa-plus-circle"></i>
+                          </a>
+                          <a href="#" class="remove-icon" title="點此移除行程">
+                            <i class="fas fa-minus-circle"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4 col-6">
+                    <div class="box">
+                      <p>
+                        <img src="images/22235_logo.jpg" class="img-fluid"></p>
+                      <div class="row no-gutters">
+                        <div class="col-7 align-self-center">
+                          <a href="#" title="抓標題" target="">神奇大柱子</a></div>
+                        <div class="col-5 align-self-center">
+                          <a href="javascript:;" class="map-icon" title="查看景點位置" data-toggle="modal" data-target="#mapinfo">
+                            <span>
+                              <i class="fas fa-map-marker-alt"></i>
+                            </span>
+                          </a>
+                      
+                            <a href="#"  class="plus-icon" title="新增行程" data-toggle="modal" data-target="#add-liststroke">
+                            <i class="fas fa-plus-circle"></i>
+                          </a>
+                          <a href="#" class="remove-icon" title="點此移除行程">
+                            <i class="fas fa-minus-circle"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                
+
+
+
                 </div>
                 <nav aria-label="Page navigation" id="pagebox">
                   <ul class="pagination justify-content-center">
@@ -555,6 +597,9 @@
         </div>
       </div>
     </div>
+
+
+
     <!-- 新增行程 -->
     <div class="modal fade" id="add-liststroke" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel2" aria-hidden="true">
       <div class="modal-dialog" role="document">
@@ -587,7 +632,8 @@
               <div class="row">
                 <div class="col-auto">地點</div>
                 <div class="col-9">
-                  <input class="form-control form-control-sm" type="text"></div>
+                 抓點擊的標題
+                </div>
               </div>
               <div class="row">
                 <div class="col-auto">時間</div>
@@ -683,6 +729,10 @@
     </div>
   </div>
 </div>
+
+<script type="text/javascript" src="/includesU/toplink/topLink2018.asp"></script>
+
+
     
     
     

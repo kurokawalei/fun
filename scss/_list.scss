@@ -17,11 +17,12 @@ ol.breadcrumb {
     margin-top: 25px;
 
     @include mob() {
+
         padding-left: 15px;
 
     }
 
-    a {
+    a { 
         color: #999;
     }
 
@@ -34,9 +35,14 @@ input.form-control.form-control-sm.col-9 {
 
 
 .search-ui-box {
+    
     margin: 0 35px;
     background: url(../images/blue_background.jpg);
     padding: 50px;
+    background-size: cover;
+    @include xl(){
+        background: url(../images/blue_background_xl.jpg);
+    }
 
     @include mob() {
 
@@ -49,9 +55,9 @@ input.form-control.form-control-sm.col-9 {
 
 }
 
+
+
 .input-style {
-
-
 
     button {
 
@@ -66,13 +72,8 @@ input.form-control.form-control-sm.col-9 {
         text-align: left;
         width: 100%;
 
-       
-
-
     }
-
-
-
+    
 
     input {
 
@@ -288,6 +289,10 @@ input.form-control.form-control-sm.col-9 {
     color: #fff;
     padding: 0 5px;
     font-size: $font*0.8;
+    @include mob(){
+        display: inline-block;
+      
+    }
 }
 
 .title {
@@ -300,6 +305,8 @@ input.form-control.form-control-sm.col-9 {
     border-bottom: #ccc solid 1px;
 }
 
+
+
 .info {
 
     font-weight: 300;
@@ -307,21 +314,20 @@ input.form-control.form-control-sm.col-9 {
     color: #333;
     margin-top: 10px;
 
-    @include mob(){
-
-       
+    @include mob() {      
    
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
+
     }
 
 }
 
 .tag-link {
-    margin: 10px 0;
+    margin: 10px 0 20px 0;
 
 
     ul {
@@ -330,13 +336,18 @@ input.form-control.form-control-sm.col-9 {
 
         li {
             display: inline-block;
-            margin-right: 10px;
+            margin-right: 12px;
 
             a {
-                color: $b-color;
+                color:#fc4a1a;
                 text-decoration: none;
+                font-weight: 500;
+                &:before {
+                    content: '#';
+                }
 
             }
+          
         }
 
 
@@ -365,8 +376,7 @@ a.join-btn {
 
 a.read-btn {
     font-weight: 300;
-  
-      background: #51bcba;
+    background: #51bcba;
     color: #fff;
     padding: 0 8px;
     text-decoration: none;
@@ -395,9 +405,10 @@ a.read-btn {
     padding: 15px 35px 15px 35px !important;
 }
 
+
 #areaform {
     
-    background: url(../images/designate-sunlight-head-board.jpg);
+   
     background-size: cover;
     background-position: center;
 }
@@ -438,11 +449,14 @@ aside.form-box {
         vertical-align: middle;
         background: url(../images/check_radio_sheet.png) left top no-repeat;
         cursor: pointer;
+
     }
+
+
 
     & input[type="checkbox"]:checked + label span {
         
-        background: url(../images/check_radio_sheet.png) -19px top no-repeat;
+       background: url(../images/check_radio_sheet.png) -19px top no-repeat;
 
     }
 
@@ -466,7 +480,7 @@ aside.form-box {
     i {
 
         position: absolute;
-        top: 25px;
+        top: 50px;
         right: 50px;
         font-size: $font*2;
         color: #333;
@@ -572,7 +586,10 @@ input.btn.btn-outline-light.btn-lg {
 
     .col-md-8.col-xl-9 {
         padding-left: 25px;
-        
+        @include mob(){
+            padding-left: 0;
+        }
+
         @include xl(){
             padding-left: 0px;
         }
@@ -602,10 +619,9 @@ input.btn.btn-outline-light.btn-lg {
 }
 
 
+
+
 @media (max-width:769px) {
-
-
-
 
     .input-style {
 
@@ -637,7 +653,7 @@ input.btn.btn-outline-light.btn-lg {
         padding-left: 0;
         color: #fff;
         transform: translateY(0px);
-        margin-bottom: 15px;
+        margin-bottom: 30px;
 
 
         &:hover {
@@ -744,7 +760,7 @@ input.btn.btn-outline-light.btn-lg {
     .close-btn i {
 
         position: absolute;
-        top: 25px;
+        top: 50px;
         right: 20px;
         font-size: 2rem;
         color: #333;
