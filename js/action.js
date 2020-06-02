@@ -8,7 +8,7 @@ function loadCSS() {
     if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|wOSBrowser|BrowserNG|WebOS)/i))) {
       document.write('<link href="css/style.css" rel="stylesheet" type="text/css" media="screen" />');
     } else {
-      document.write('<link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,300,400,500,700&display=swap" rel="stylesheet" type="text/css" media="screen" />');
+      document.write('<link  href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,300,400,500,700&display=swap" rel="stylesheet preload" type="text/css" media="screen" />');
     }
   }
 
