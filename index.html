@@ -28,9 +28,15 @@
     <meta name="google-site-verification" content="8IM9WnsbLq87HsYleprKLT-PMenJd1WgZC6iUHcpsko" />
     <link href="css/bootstrap.min.css" rel="stylesheet" async>
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/bootstrap-select.min.css" rel="stylesheet" >
     <!--非同步-->
     <link href="css/fontawesome-all.min.css" rel="stylesheet" async>
-    <link href="css/over.css" rel="stylesheet" defer></head>
+    <link href="css/over.css" rel="stylesheet" defer>
+    
+   
+  
+  </head>
+
   
   <body>
     <section class="container-fluid" id="warp">
@@ -127,6 +133,10 @@
         </nav>
       </header>
       <main id="main">
+
+       
+
+
         <aside id="top-block">
           <div class="row">
             <a class="d-lg-none sm-menu" href="javascript:;">
@@ -882,6 +892,11 @@
         <i class="fas fa-chevron-up"></i>TOP</a>
       </main>
     </section>
+
+
+   
+
+
     <!--天氣預報-->
     <section id="weather">
       <div id="weather-box">
@@ -936,10 +951,16 @@
           <div class="col-xl-5 col-md-4 align-self-center center d-none d-md-block">
             <img src="images/loading.svg" data-src="images/weather_01.png" class="img-fluid" id="weatherimages"></div>
           <div class="col-xl-4 col-md-5 align-self-center">
+
+
+
+           
+
             <div id="area-box">
-              <select class="form-control" id="select" onmousedown="if(this.options.length>3){this.size=5}" onblur="this.size=1" onchange=" this.size=1;change()">
-                <option value="" disabled hidden>選擇地區</option>
-                <option value='17' selected>臺中市</option>
+              
+              <select class="form-control selectpicker" id="select" data-size="4" onchange="change();" >
+              
+                <option value='17' selected>台中市</option>
                 <option value='13'>彰化縣</option>
                 <option value="1">南投縣</option>
                 <option value='0'>雲林縣</option>
@@ -948,12 +969,12 @@
                 <option value='7'>苗栗縣</option>
                 <option value='23'>--------</option>
                 <option value='16'>基隆市</option>
-                <option value='9'>臺北市</option>
+                <option value='9'>台北市</option>
                 <option value='15'>新北市</option>
                 <option value='19'>桃園市</option>
                 <option value='14'>新竹市</option>
                 <option value='10'>新竹縣</option>
-                <option value='18'>臺南市</option>
+                <option value='18'>台南市</option>
                 <option value='12'>高雄市</option>
                 <option value='6'>屏東縣</option>
                 <option value='3'>臺東縣</option>
@@ -972,40 +993,12 @@
     </section>
 
 
+ 
 
 
 
 
-
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <script type="text/javascript" src="/includesU/toplink/topLink2018.asp"></script>
+   
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="js/jquery.min.js"></script>
@@ -1014,9 +1007,10 @@
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/wow.min.js"></script>
     <script src="js/jquery.nicescroll.js"></script>
-    
     <script src="js/lazyload.min.js"></script>
     <script src="js/sweetalert.min.js"></script>
+    <script src="js/bootstrap-select.js"></script>
+   
     <script src="js/action.js"></script>
     <script src="js/weather.min.js"></script>
     <script type="application/ld+json">[{
@@ -1125,6 +1119,10 @@
       }
 
       ]</script>
+
+    
+
+   
       
   
 

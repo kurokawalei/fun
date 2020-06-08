@@ -3575,6 +3575,30 @@ a#gotop.vis {
 #area-box {
   text-align: center;
 }
+#area-box ul li {
+  background: transparent;
+  margin-bottom: 0;
+  text-align: center;
+  position: relative;
+  padding: 0;
+}
+@media (max-width: 769px) {
+  #area-box ul li {
+    background: transparent !important;
+    margin-bottom: 0;
+    width: 100% !important;
+    text-align: center;
+    position: relative;
+    padding: 0 !important;
+    margin-left: 0 !important;
+  }
+}
+#area-box ul li:after, #area-box ul li:before {
+  display: none;
+}
+#area-box ul li .dropdown-item.active, #area-box ul li .dropdown-item:active {
+  background-color: #73bff0;
+}
 
 span.temperature {
   font-weight: 900;

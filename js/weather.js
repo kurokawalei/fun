@@ -247,6 +247,7 @@ waether();
 //切換行為   
 
 function change() {
+    
 
     var vv = $('#select :selected').val();
 

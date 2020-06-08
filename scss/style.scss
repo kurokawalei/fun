@@ -1281,6 +1281,9 @@ a#gotop {
     text-decoration: none;
     font-size: $font*0.8;
     max-height: 300px;
+
+
+    
 }
 
 #select:after {
@@ -1327,6 +1330,36 @@ a#gotop {
 
 #area-box {
     text-align: center;
+
+    ul {
+
+        li{
+            background: transparent;
+            margin-bottom: 0;
+            text-align: center;
+            position: relative;
+            padding: 0;
+
+            @include mob(){
+                background: transparent !important;
+                margin-bottom: 0;
+                width: 100% !important;
+                text-align: center;
+                position: relative;
+                padding: 0 !important;
+                margin-left: 0 !important;
+
+            }
+
+            &:after  ,  &:before {
+                display: none;
+            }
+
+            .dropdown-item.active, .dropdown-item:active {
+                background-color: #73bff0;
+            }
+        }
+    }
 }
 
 
