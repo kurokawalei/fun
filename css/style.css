@@ -2395,6 +2395,11 @@ html {
   height: 100%;
   overflow-x: hidden;
 }
+@media (max-width: 769px) {
+  html body .toplinkzone {
+    display: none !important;
+  }
+}
 
 body {
   font-family: "Noto Sans TC", "Microsoft JhengHei", sans-serif;
