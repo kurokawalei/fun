@@ -119,6 +119,9 @@ input.form-control.form-control-sm.col-9 {
   display: block;
   text-align: center;
 }
+.ul-menu li:nth-child(2) span {
+  padding-left: 15px;
+}
 .ul-menu li img {
   -webkit-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
@@ -128,9 +131,9 @@ input.form-control.form-control-sm.col-9 {
   -webkit-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
-  -webkit-transform: translate(10px, -10px);
-      -ms-transform: translate(10px, -10px);
-          transform: translate(10px, -10px);
+  -webkit-transform: scale(1.15);
+      -ms-transform: scale(1.15);
+          transform: scale(1.15);
 }
 .ul-menu li a {
   text-decoration: none;
@@ -667,6 +670,10 @@ input.btn.btn-outline-light.btn-lg:focus {
   margin-bottom: 10px;
   color: #707070;
 }
+.store-info li a {
+  color: #707070;
+  text-decoration: underline;
+}
 .store-info li span {
   width: 90px;
   display: inline-block;
@@ -684,6 +691,9 @@ input.btn.btn-outline-light.btn-lg:focus {
   color: #1b1b25;
   font-weight: 400;
   line-height: 200%;
+}
+.edit-box span, .edit-box p {
+  font-family: "Noto Sans TC" !important;
 }
 @media (max-width: 769px) {
   .edit-box {
@@ -894,6 +904,11 @@ input.btn.btn-outline-light.btn-lg:focus {
   color: #fff;
   margin-right: 10px;
 }
+@media (max-width: 769px) {
+  .inside-main-block .title {
+    margin-top: 10px;
+  }
+}
 
 #sponsor i {
   color: #eb6100;
@@ -932,7 +947,7 @@ input.btn.btn-outline-light.btn-lg:focus {
 }
 @media (max-width: 769px) {
   .nav-list ul {
-    text-align: center;
+    text-align: left;
   }
 }
 .nav-list ul li {
@@ -941,6 +956,7 @@ input.btn.btn-outline-light.btn-lg:focus {
 @media (max-width: 769px) {
   .nav-list ul li {
     width: 33.33%;
+    text-align: center;
   }
 }
 @media (max-width: 351px) {
@@ -1073,8 +1089,10 @@ input.btn.btn-outline-light.btn-lg:focus {
   margin-bottom: 40px;
 }
 #step1 p, #step2 p, #step3 p, #step4 p, #step5 p, #step6 p {
-  font-size: 1.125rem;
+  font-size: 1rem;
   color: #666;
+  letter-spacing: 1px;
+  line-height: 170%;
 }
 @media (max-width: 769px) {
   #step1, #step2, #step3, #step4, #step5, #step6 {
@@ -1150,6 +1168,13 @@ input.btn.btn-outline-light.btn-lg:focus {
 .viewbox .begin {
   margin-bottom: 20px;
 }
+@media (max-width: 769px) {
+  .viewbox .begin {
+    margin-bottom: 20px;
+    border-bottom: #ccc solid 1px;
+    padding-bottom: 25px;
+  }
+}
 .viewbox .step-images {
   text-align: center;
   position: relative;
@@ -1220,6 +1245,7 @@ h1.col-auto.edit-h1 {
   font-size: 2rem;
   margin: 0;
   letter-spacing: 2px;
+  font-weight: bold;
 }
 
 .trip-name {
@@ -1279,6 +1305,12 @@ h1.col-auto.edit-h1 {
   }
 }
 
+@media (max-width: 769px) {
+  .col-xl-8.col-lg-5.align-self-center {
+    margin-top: 15px;
+  }
+}
+
 .trip-data {
   display: inline-block;
   background: #f4f1ea;
@@ -1289,7 +1321,6 @@ h1.col-auto.edit-h1 {
   font-size: 1rem;
   -webkit-box-shadow: #c3a791 3px 3px 0px 1px;
           box-shadow: #c3a791 3px 3px 0px 1px;
-  margin-left: 50px;
 }
 @media (max-width: 769px) {
   .trip-data {
@@ -1543,12 +1574,6 @@ div#add-stroke a {
   display: block;
 }
 
-@media (min-width: 1441px) {
-  #data-info {
-    padding-left: 55px;
-  }
-}
-
 input.flatpickr.flatpickr-input {
   width: 100%;
   padding-left: 10px;
@@ -1666,6 +1691,11 @@ button#start {
   color: #fff;
   margin: 0 auto;
   display: block;
+}
+@media (max-width: 769px) {
+  button#start {
+    margin: 15px auto;
+  }
 }
 
 #select-day-box {
@@ -1853,6 +1883,7 @@ a#select-palace {
 @media (max-width: 769px) {
   #database {
     padding-right: 0px;
+    padding-top: 10px;
   }
 }
 @media (max-width: 351px) {
@@ -2446,6 +2477,11 @@ nav#left_fixed_nav ul li {
     text-align: center;
   }
 }
+@media (max-width: 769px) {
+  nav#left_fixed_nav ul li {
+    margin-bottom: 12px;
+  }
+}
 nav#left_fixed_nav ul li i {
   margin-right: 10px;
 }
@@ -2455,6 +2491,11 @@ nav#left_fixed_nav ul li i.fas.fa-chevron-down {
   top: 5px;
   color: #c2c1c1;
 }
+@media (max-width: 769px) {
+  nav#left_fixed_nav ul li i.fas.fa-chevron-down {
+    position: static;
+  }
+}
 nav#left_fixed_nav ul li > ul {
   padding-left: 50px;
   margin: 5px 0;
@@ -2462,12 +2503,23 @@ nav#left_fixed_nav ul li > ul {
   padding: 0;
   list-style-type: none;
 }
+@media (max-width: 769px) {
+  nav#left_fixed_nav ul li > ul {
+    margin: 15px 0;
+  }
+}
 nav#left_fixed_nav ul li > ul a {
   font-size: 0.9rem;
   color: #9c9999;
   display: block;
   padding-left: 30px;
   letter-spacing: 1px;
+}
+@media (max-width: 769px) {
+  nav#left_fixed_nav ul li > ul a {
+    font-size: 1rem;
+    padding-left: 0px;
+  }
 }
 @media (min-width: 1441px) {
   nav#left_fixed_nav ul li > ul a {
@@ -2734,6 +2786,11 @@ ul#message-link li a {
 input.form-control.form-control-sm.col-md-9.col-7 {
   border-radius: 15px 0 0 15px;
 }
+input.form-control.form-control-sm.col-md-9.col-7:focus {
+  border: 1px solid #ced4da;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
 
 a.searchstyle {
   background: #fff;
@@ -2750,6 +2807,9 @@ a.searchstyle {
   -webkit-transform: translateX(-15px);
       -ms-transform: translateX(-15px);
           transform: translateX(-15px);
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
   border-left: #ccc solid 1px;
 }
 
@@ -3430,6 +3490,12 @@ a#gotop.vis {
   width: 100%;
   height: 100%;
   z-index: 20;
+  display: none;
+}
+@media (max-width: 769px) {
+  #weather {
+    background-color: transparent;
+  }
 }
 
 #weather-box ul li {
@@ -3567,7 +3633,7 @@ a#gotop.vis {
 .area-weather {
   color: #737270;
   margin: 15px 0;
-  font-size: 3.125rem;
+  font-size: 2.7rem;
   letter-spacing: 10px;
   font-weight: 400;
 }
@@ -3598,6 +3664,9 @@ a#gotop.vis {
 }
 #area-box ul li .dropdown-item.active, #area-box ul li .dropdown-item:active {
   background-color: #73bff0;
+}
+#area-box ul li .dropdown-item.foucus {
+  border: none;
 }
 
 span.temperature {
@@ -3654,6 +3723,12 @@ div#sm-weather-box {
   color: #4d8dc9;
   font-size: 1.25rem;
   font-weight: 900;
+}
+
+@media (max-width: 769px) {
+  img#weatherimages {
+    max-width: 50%;
+  }
 }
 
 figure.theweather-images {

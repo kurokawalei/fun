@@ -247,7 +247,7 @@ waether();
 //切換行為   
 
 function change() {
-    
+
 
     var vv = $('#select :selected').val();
 
@@ -256,7 +256,7 @@ function change() {
 
 
 
-        swal("雲林縣", "為您查詢雲林縣未來一周的天氣預報！", "success");
+        
 
         var xhr = new XMLHttpRequest();
 
@@ -442,7 +442,7 @@ function change() {
 
 
 
-        swal("南投縣", "為您查詢南投縣未來一周的天氣預報！", "success");
+       
 
         var xhr = new XMLHttpRequest();
 
@@ -555,7 +555,7 @@ function change() {
                 case '27':
                 case '28':
 
-                    $(winfo).attr('src', 'images/weather_02.png');
+                    $(winfo).attr('src', 'images/weather_02.gif');
 
                     break;
 
@@ -621,7 +621,7 @@ function change() {
 
     if (vv == 2) {
 
-        swal("連江縣", "為您查詢連江縣未來一周的天氣預報！", "success");
+       
 
 
         var xhr = new XMLHttpRequest();
@@ -739,7 +739,7 @@ function change() {
                 case '27':
                 case '28':
 
-                    $(winfo).attr('src', 'images/weather_02.png');
+                    $(winfo).attr('src', 'images/weather_02.gif');
 
                     break;
 
@@ -808,7 +808,7 @@ function change() {
 
     if (vv == 3) {
 
-        swal("台東縣", "為您查詢台東縣未來一周的天氣預報！", "success");
+     
 
 
         var xhr = new XMLHttpRequest();
@@ -925,7 +925,7 @@ function change() {
                 case '27':
                 case '28':
 
-                    $(winfo).attr('src', 'images/weather_02.png');
+                    $(winfo).attr('src', 'images/weather_02.gif');
 
                     break;
 
@@ -993,7 +993,7 @@ function change() {
 
     if (vv == 4) {
 
-        swal("金門縣", "為您查詢金門縣未來一周的天氣預報！", "success");
+    
 
         var xhr = new XMLHttpRequest();
 
@@ -1112,7 +1112,7 @@ function change() {
                 case '27':
                 case '28':
 
-                    $(winfo).attr('src', 'images/weather_02.png');
+                    $(winfo).attr('src', 'images/weather_02.gif');
 
                     break;
 
@@ -1179,7 +1179,7 @@ function change() {
 
     if (vv == 5) {
 
-        swal("宜蘭縣", "為您查詢宜蘭縣未來一周的天氣預報！", "success");
+      
 
 
         var xhr = new XMLHttpRequest();
@@ -1297,7 +1297,7 @@ function change() {
                 case '27':
                 case '28':
 
-                    $(winfo).attr('src', 'images/weather_02.png');
+                    $(winfo).attr('src', 'images/weather_02.gif');
 
                     break;
 
@@ -1370,7 +1370,7 @@ function change() {
 
     if (vv == 6) {
 
-        swal("屏東縣", "為您查詢屏東縣未來一周的天氣預報！", "success");
+       
 
 
 
@@ -1492,7 +1492,7 @@ function change() {
                 case '27':
                 case '28':
 
-                    $(winfo).attr('src', 'images/weather_02.png');
+                    $(winfo).attr('src', 'images/weather_02.gif');
 
                     break;
 
@@ -1563,7 +1563,7 @@ function change() {
     if (vv == 7) {
 
 
-        swal("苗栗縣", "為您查詢苗栗縣未來一周的天氣預報！", "success");
+       
 
 
         var xhr = new XMLHttpRequest();
@@ -1684,7 +1684,7 @@ function change() {
                 case '27':
                 case '28':
 
-                    $(winfo).attr('src', 'images/weather_02.png');
+                    $(winfo).attr('src', 'images/weather_02.gif');
 
                     break;
 
@@ -1755,7 +1755,7 @@ function change() {
     if (vv == 8) {
 
 
-        swal("澎湖縣", "為您查詢澎湖縣未來一周的天氣預報！", "success");
+      
 
 
         var xhr = new XMLHttpRequest();
@@ -1876,7 +1876,7 @@ function change() {
                 case '27':
                 case '28':
 
-                    $(winfo).attr('src', 'images/weather_02.png');
+                    $(winfo).attr('src', 'images/weather_02.gif');
 
                     break;
 
@@ -1944,7 +1944,7 @@ function change() {
     if (vv == 9) {
 
 
-        swal("台北市", "為您查詢台北市未來一周的天氣預報！", "success");
+      
 
 
         var xhr = new XMLHttpRequest();
@@ -2065,7 +2065,7 @@ function change() {
                 case '27':
                 case '28':
 
-                    $(winfo).attr('src', 'images/weather_02.png');
+                    $(winfo).attr('src', 'images/weather_02.gif');
 
                     break;
 
@@ -2136,7 +2136,7 @@ function change() {
     if (vv == 10) {
 
 
-        swal("新竹縣", "為您查詢新竹縣未來一周的天氣預報！", "success");
+      
 
 
         var xhr = new XMLHttpRequest();
@@ -2257,7 +2257,7 @@ function change() {
                 case '27':
                 case '28':
 
-                    $(winfo).attr('src', 'images/weather_02.png');
+                    $(winfo).attr('src', 'images/weather_02.gif');
 
                     break;
 
@@ -2328,7 +2328,7 @@ function change() {
 
 
 
-        swal("花蓮縣", "為您查詢花蓮縣未來一周的天氣預報！", "success");
+       
 
 
         var xhr = new XMLHttpRequest();
@@ -2447,7 +2447,7 @@ function change() {
                 case '27':
                 case '28':
 
-                    $(winfo).attr('src', 'images/weather_02.png');
+                    $(winfo).attr('src', 'images/weather_02.gif');
 
                     break;
 
@@ -2518,7 +2518,7 @@ function change() {
 
 
 
-        swal("高雄市", "為您查詢高雄市未來一周的天氣預報！", "success");
+      
 
         var xhr = new XMLHttpRequest();
 
@@ -2637,7 +2637,7 @@ function change() {
                 case '27':
                 case '28':
 
-                    $(winfo).attr('src', 'images/weather_02.png');
+                    $(winfo).attr('src', 'images/weather_02.gif');
 
                     break;
 
@@ -2707,7 +2707,7 @@ function change() {
 
 
 
-        swal("彰化縣", "為您查詢彰化縣未來一周的天氣預報！", "success");
+       
 
         var xhr = new XMLHttpRequest();
 
@@ -2827,7 +2827,7 @@ function change() {
                 case '27':
                 case '28':
 
-                    $(winfo).attr('src', 'images/weather_02.png');
+                    $(winfo).attr('src', 'images/weather_02.gif');
 
                     break;
 
@@ -2898,7 +2898,7 @@ function change() {
 
 
 
-        swal("新竹市", "為您查詢新竹市未來一周的天氣預報！", "success");
+       
 
         var xhr = new XMLHttpRequest();
 
@@ -3018,7 +3018,7 @@ function change() {
                 case '27':
                 case '28':
 
-                    $(winfo).attr('src', 'images/weather_02.png');
+                    $(winfo).attr('src', 'images/weather_02.gif');
 
                     break;
 
@@ -3085,7 +3085,7 @@ function change() {
 
 
 
-        swal("新北市", "為您查詢新北市未來一周的天氣預報！", "success");
+       
 
         var xhr = new XMLHttpRequest();
 
@@ -3204,7 +3204,7 @@ function change() {
                 case '27':
                 case '28':
 
-                    $(winfo).attr('src', 'images/weather_02.png');
+                    $(winfo).attr('src', 'images/weather_02.gif');
 
                     break;
 
@@ -3275,7 +3275,7 @@ function change() {
 
 
 
-        swal("基隆市", "為您查詢基隆市未來一周的天氣預報！", "success");
+       
 
 
         var xhr = new XMLHttpRequest();
@@ -3391,7 +3391,7 @@ function change() {
                 case '27':
                 case '28':
 
-                    $(winfo).attr('src', 'images/weather_02.png');
+                    $(winfo).attr('src', 'images/weather_02.gif');
 
                     break;
 
@@ -3459,7 +3459,7 @@ function change() {
     if (vv == 17) {
 
 
-        swal("台中市", "為您查詢台中市未來一周的天氣預報！", "success");
+       
 
         waether();
 
@@ -3473,7 +3473,7 @@ function change() {
 
 
 
-        swal("台南市", "為您查詢台南市未來一周的天氣預報！", "success");
+      
 
         var xhr = new XMLHttpRequest();
 
@@ -3592,7 +3592,7 @@ function change() {
                 case '27':
                 case '28':
 
-                    $(winfo).attr('src', 'images/weather_02.png');
+                    $(winfo).attr('src', 'images/weather_02.gif');
 
                     break;
 
@@ -3663,7 +3663,7 @@ function change() {
 
 
 
-        swal("桃園市", "為您查詢桃園市未來一周的天氣預報！", "success");
+       
 
 
         var xhr = new XMLHttpRequest();
@@ -3784,7 +3784,7 @@ function change() {
                 case '27':
                 case '28':
 
-                    $(winfo).attr('src', 'images/weather_02.png');
+                    $(winfo).attr('src', 'images/weather_02.gif');
 
                     break;
 
@@ -3856,7 +3856,7 @@ function change() {
 
 
 
-        swal("嘉義縣", "為您查詢嘉義縣未來一周的天氣預報！", "success");
+       
 
         var xhr = new XMLHttpRequest();
 
@@ -3976,7 +3976,7 @@ function change() {
                 case '27':
                 case '28':
 
-                    $(winfo).attr('src', 'images/weather_02.png');
+                    $(winfo).attr('src', 'images/weather_02.gif');
 
                     break;
 
@@ -4046,7 +4046,7 @@ function change() {
 
 
 
-        swal("嘉義市", "為您查詢嘉義市未來一周的天氣預報！", "success");
+       
 
         var xhr = new XMLHttpRequest();
 
@@ -4165,7 +4165,7 @@ function change() {
                 case '27':
                 case '28':
 
-                    $(winfo).attr('src', 'images/weather_02.png');
+                    $(winfo).attr('src', 'images/weather_02.gif');
 
                     break;
 

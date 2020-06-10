@@ -28,6 +28,13 @@
         color: #fff;
         margin-right: 10px;
     }
+
+    .title {
+        @include mob(){
+            margin-top: 10px;
+        }
+
+    }
     
 }
 
@@ -84,10 +91,12 @@
         
       @include ulstyle();
       text-align: right;
+
         
       @include mob() {
           
-         text-align: center;
+      
+         text-align: left;
 
         }
       
@@ -98,6 +107,7 @@
             @include mob { 
                 
                 width: 33.33%;
+                text-align: center;
             }
             @include sm-mob{
             
@@ -288,8 +298,10 @@
     
     p {
         
-        font-size: $font*0.9;
+        font-size: 1rem;
         color: #666;
+        letter-spacing: 1px;
+        line-height: 170%;
     }
     
     @include mob {    

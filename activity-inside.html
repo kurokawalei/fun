@@ -156,7 +156,7 @@
                             <input class="form-control form-control-sm col-9" placeholder="請輸入關鍵字.." type="text"> <a class="searchstyle col-3" href="#"><i class="fas fa-search"></i></a>
                         </div>
                     </form>
-                    <div class="col-xl-6 col-12 align-self-center running">
+                    <div class="col-xl-6 col-12 align-self-center running d-none d-md-block">
                         <div class="row no-gutters">
                             <div class="col-12 col-md-2 col align-self-center hot-link-title">
                                 熱門連結
@@ -269,8 +269,8 @@
 
                             <ul class="store-info activity">
                                 <li><i class="fas fa-phone-alt"></i><span class="tel-space">連絡電話：</span>0426276268a </li>
-                                <li><i class="fas fa-map-marker-alt"></i><span class="address-space">地址：</span>台中市清水區三田路12-35號</li>
-                                <li><i class="fab fa-weebly"></i><span class="web-space">網站：</span>https://t-sweet.com.tw/</li>
+                                <li><i class="fas fa-map-marker-alt"></i><span class="address-space">地址：</span><a href="#" id="gomap">台中市清水區三田路12-35號</a></li>
+                                <li><i class="fab fa-weebly"></i><span class="web-space">網站：</span><a href="#">https://t-sweet.com.tw/</a></li>
                                 <li><i class="far fa-clock"></i><span class="opentime-space">營業時間：</span>1000-1900、週日1100-1700</li>
 
                             </ul>
@@ -847,6 +847,33 @@
         },
         "startDate": "發表時間",
         "endDate": "結束時間"
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "NewsArticle",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://google.com/article"
+        },
+        "headline": "抓標題",
+        "image": [
+          "抓代表圖"     
+         ],
+        "datePublished": "抓開始時間",
+        "dateModified": "抓關閉時間",
+        "author": {
+          "@type": "Person",
+          "name": "1111中台灣"
+        },
+         "publisher": {
+          "@type": "Organization",
+          "name": "Google",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "images/logo.png"
+          }
+        },
+        "description": "抓敘述文"
       }
      
 

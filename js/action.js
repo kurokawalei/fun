@@ -253,8 +253,13 @@ list.addEventListener('click', toggleDone, false);
 
  sendData.click(function (e) {   
 
+  
+
+    e.toElement.innerText = "已收藏"
+
 
      var thisname = $(this).parents('.col-md-4').find('.article-ttitle').text();
+
 
      var todo = {content: thisname};
 
@@ -451,6 +456,8 @@ mm.click(
 
 $('#weather-box>i').click(function () {
 
+    $.cookie('the_cookie', 'yes');
+
     $('#weather').fadeOut(500);
     $('#sm-weather-box').addClass('animated fadeInRight').fadeIn(500);
 
@@ -459,7 +466,6 @@ $('#weather-box>i').click(function () {
 
 
 $('.delete').click(function () {
-
 
     $(this).parents('li').css('display', 'none');
 
@@ -532,6 +538,21 @@ if (isMobile()) {
 
     $('html').getNiceScroll().remove();
 
-   
-
 }
+
+
+
+
+
+
+$('#gomap').click(function() {
+
+    $('html,body').animate({
+
+      scrollTop:$('.map-box').offset().top
+
+    }, 800);
+
+    return false;
+
+});

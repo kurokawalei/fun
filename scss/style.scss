@@ -81,6 +81,7 @@ nav#left_fixed_nav {
         @include mob(){
 
             max-height: initial;
+           
             
         }
 
@@ -94,6 +95,9 @@ nav#left_fixed_nav {
             @include xl(){
                 text-align: center;
             }
+            @include mob(){
+                margin-bottom: 12px;
+            }
 
             i {
 
@@ -105,6 +109,9 @@ nav#left_fixed_nav {
                 right: 15px;
                 top: 5px;
                 color: #c2c1c1;
+                @include mob(){
+                    position: static;
+                }
 
             }
 
@@ -115,6 +122,9 @@ nav#left_fixed_nav {
                 display: none;
                 padding: 0;
                 list-style-type: none;
+                @include mob(){
+                    margin: 15px 0;
+                }
 
                 a {
 
@@ -123,6 +133,10 @@ nav#left_fixed_nav {
                     display: block;
                     padding-left: 30px;
                     letter-spacing: 1px;
+                    @include mob(){
+                        font-size: 1rem;
+                        padding-left: 0px;
+                    }
                     @include xl (){
                         font-size: 1rem;
                     }
@@ -444,7 +458,17 @@ ul#message-link li a {
 input.form-control.form-control-sm.col-md-9.col-7 {
 
     border-radius: 15px 0 0 15px;
+
+    &:focus {
+        border: 1px solid #ced4da;
+      
+        box-shadow:none;
+    }
+    
+  
 }
+
+
 
 a.searchstyle {
     background: #fff;
@@ -459,7 +483,10 @@ a.searchstyle {
     line-height: 35px;
     font-size: 1rem !important;
     transform: translateX(-15px);
+    transition: all 0.5s ease;
     border-left: #ccc solid 1px;
+
+   
 }
 
 aside#top-block .col-3 {
@@ -1164,6 +1191,11 @@ a#gotop {
     width: 100%;
     height: 100%;
     z-index: 20;
+    display: none;
+    @include mob(){
+        background-color: transparent;
+    }
+   
 }
 
 
@@ -1321,7 +1353,7 @@ a#gotop {
 .area-weather {
     color: #737270;
     margin: 15px 0;
-    font-size: 3.125rem;
+    font-size: 2.7rem;
     letter-spacing: 10px;
     font-weight: 400;
 
@@ -1358,6 +1390,11 @@ a#gotop {
             .dropdown-item.active, .dropdown-item:active {
                 background-color: #73bff0;
             }
+
+            .dropdown-item.foucus {
+                border: none;
+            }
+
         }
     }
 }
@@ -1426,6 +1463,13 @@ div#sm-weather-box {
     font-size: 1.25rem;
     font-weight: 900;
 
+}
+
+
+img#weatherimages {
+    @include mob(){
+        max-width: 50%;
+    }
 }
 
 

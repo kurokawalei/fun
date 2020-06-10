@@ -39,9 +39,8 @@
     <link href="css/fontawesome-all.min.css" rel="stylesheet" async>
     <link href="css/owl.carousel.min.css" rel="stylesheet" async>
     <link href="css/animate.css" rel="stylesheet" defer>
-
-  <link href="css/flatpickr.min.css" rel="stylesheet">
-  <link href="css/flatpickr.material_blue.min.css" rel="stylesheet">
+    <link href="css/flatpickr.min.css" rel="stylesheet">
+    <link href="css/flatpickr.material_blue.min.css" rel="stylesheet">
  
 </head>
 
@@ -53,34 +52,42 @@
       <a href="index.html" title="fun中台灣"> <img src="images/sm_logo.png" class="img-fluid" alt="fun中台灣"></a>
       </div>
       <h1 class="col-auto edit-h1 align-self-center">行程編輯器</h1>
+
+
+      <div class="col-xl-8 col-lg-5 align-self-center">
+
+        <div class="trip-name">台北五日遊</div>
+
+        <div class="trip-data">日期： 108/10/31
+          <span>－</span>108/11/4</div>
+
+
+
+      </div>
+
+    
+
+
+      <div class="col-md-auto  align-self-center">
+        <a href="javascript:window.print()" class="else-btn" title="列印">列印</a>
+
+
+
+      </div>
+
+
     </div>
+
+
+
+   
   </header>
 
   <section id="list-box">
 
     <div class="container-fluid">
       <div id="stroke-info">
-        <div class="row no-gutters">
-
-          <div class="col-lg-2 col-md-3">
-            <div class="trip-name">台北五日遊</div>
-
-          </div>
-
-          <div class="col-lg-8 col-md-6">
-            <div class="trip-data">日期： 108/10/31
-              <span>－</span>108/11/4</div>
-          </div>
-
-
-          <div class="col-lg-2 col-md-3 align-self-center">
-            <a href="javascript:window.print()" class="else-btn" title="列印">列印</a>
-
-
-
-          </div>
-
-        </div>
+       
 
 
       </div>
@@ -107,7 +114,7 @@
                 <div id="start-address">桃園市桃園區三四路56巷2號2樓</div>
               </div>
             </div>
-            <div class="col-lg-2 col-md-3">
+            <div class="col-lg-2 col-md-3 center">
               <a href="javascript:;" class="route" data-toggle="modal" data-target="#exampleModalCenter">
                 <img src="images/map.png" class="img-fluid" onclick="mapline()"></a>
             </div>
@@ -543,13 +550,13 @@
   <script src="js/jquery.min.js"></script>
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/wow.min.js"></script>
   <script src="js/jquery.nicescroll.js"></script>
   <script src="js/jquery.marquee.min.js"></script>
   <script src="js/jquery.tinyMap.min.js"></script>
   <script src="js/stroke.js"></script>
-  <script src="https://unpkg.com/vue"></script>
+
+  
+ 
   <script>
     // 執行 tinyMap 前可使用 $.tinyMapConfigure 進行 API 的設定。    
     $.fn.tinyMapConfigure({

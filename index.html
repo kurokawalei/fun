@@ -32,12 +32,9 @@
     <!--非同步-->
     <link href="css/fontawesome-all.min.css" rel="stylesheet" async>
     <link href="css/over.css" rel="stylesheet" defer>
-    
-   
-  
+
   </head>
 
-  
   <body>
     <section class="container-fluid" id="warp">
       <header id="header">
@@ -51,12 +48,16 @@
           <ul>
             <li>
               <a href="activity-list.html";" title="最新活動">
-                <i class="fab fa-hotjar"></i>最新活動</a>
+                <i class="fab fa-hotjar"></i>最新活動
+                <i class="fas fa-chevron-down" style="opacity: 0;"></i>
+              </a>
             </li>
             <li class="pr">
               <a href="javascript:;" title="人氣美食">
-                <i class="fas fa-coffee"></i>人氣美食</a>
-              <i class="fas fa-chevron-down"></i>
+                <i class="fas fa-coffee"></i>人氣美食
+                <i class="fas fa-chevron-down"></i>
+              </a>
+             
               <ul class="an">
                 <li>
                   <a href="#" title="台中美食">台中美食</a></li>
@@ -72,8 +73,8 @@
             </li>
             <li class="pr">
               <a href="javascript:;" title="熱門景點">
-                <i class="fas fa-tree"></i>熱門景點</a>
-              <i class="fas fa-chevron-down"></i>
+                <i class="fas fa-tree"></i>熱門景點 <i class="fas fa-chevron-down"></i></a>
+             
               <ul class="an">
                 <li>
                   <a href="#" title="台中景點">台中景點</a></li>
@@ -89,8 +90,8 @@
             </li>
             <li class="pr">
               <a href="javascript:;" title="推薦住宿">
-                <i class="fas fa-home"></i>推薦住宿</a>
-              <i class="fas fa-chevron-down"></i>
+                <i class="fas fa-home"></i>推薦住宿 <i class="fas fa-chevron-down"></i></a>
+             
               <ul class="an">
                 <li>
                   <a href="#" title="台中住宿">台中住宿</a></li>
@@ -133,10 +134,6 @@
         </nav>
       </header>
       <main id="main">
-
-       
-
-
         <aside id="top-block">
           <div class="row">
             <a class="d-lg-none sm-menu" href="javascript:;">
@@ -146,7 +143,7 @@
               <div class="row">
                 <input class="form-control form-control-sm col-md-9 col-7" placeholder="請輸入關鍵字.." type="text" name="keys">
                 <a class="searchstyle col-3" onclick="allsearch()">
-                  <i class="fas fa-search"></i>
+                  <i class="fas fa-search" style="cursor: pointer;"></i>
                 </a>
                 <div class="col-2 align-self-center d-md-none">
                   <i class="fas fa-cloud-sun"></i>
@@ -323,7 +320,7 @@
           <div class="col-md-4" itemscope="" itemtype="http://schema.org/Event">
             <div class="article-box">
               <figure class="article-images">
-                <a href="#" title="抓標題" itemprop="url">
+                <a href="activity-inside.html" title="抓標題" itemprop="url">
                   <img class="img-fluid lazyload" src="images/loading.svg" data-src="images/actvice.jpg" itemprop="image">
                   <!--隱藏內文-->
                   <div class="article-main">
@@ -362,8 +359,8 @@
           <div class="col-md-4" itemscope="" itemtype="http://schema.org/Event">
             <div class="article-box">
               <figure class="article-images">
-                <a href="#" title="抓標題" itemprop="url">
-                  <img class="img-fluid lazyload" src="images/relaxcenter_friend255x93_10.jpg" data-src="images/actvice.jpg" itemprop="image">
+                <a href="activity-inside.html" title="抓標題" itemprop="url">
+                  <img class="img-fluid lazyload" src="images/loading.svg" data-src="images/actvice.jpg" itemprop="image">
                   <!--隱藏內文-->
                   <div class="article-main">
                     <div class="row no-gutters">
@@ -401,8 +398,8 @@
           <div class="col-md-4" itemscope="" itemtype="http://schema.org/Event">
             <div class="article-box">
               <figure class="article-images">
-                <a href="#" title="抓標題" itemprop="url">
-                  <img class="img-fluid lazyload" src="images/relaxcenter_friend255x93_10.jpg" data-src="images/actvice.jpg" itemprop="image">
+                <a href="activity-inside.html" title="抓標題" itemprop="url">
+                  <img class="img-fluid lazyload" src="images/loading.svg" data-src="images/actvice.jpg" itemprop="image">
                   <!--隱藏內文-->
                   <div class="article-main">
                     <div class="row no-gutters">
@@ -437,6 +434,7 @@
               <span itemprop="offers"></span>
             </figcaption>
           </div>
+        
         </aside>
         <div class="x">
           <a class="sm-more" href="activity-list.html" title="看中部更多活動">
@@ -452,7 +450,7 @@
           <div class="col-md-4">
             <div class="article-box" itemscope itemtype="http://schema.org/LocalBusiness">
               <figure class="article-images food">
-                <a href="#" title="抓標題" itemprop="url">
+                <a href="food-inside.html" title="抓標題" itemprop="url">
                   <span itemprop="name" style="display: none;">抓標題</span>
                   <img class="img-fluid lazyload" itemprop="image" src="images/Rolling-1s-15px.svg" data-src="images/actvice_01.jpg">
                   <!--隱藏內文-->
@@ -485,10 +483,10 @@
               </div>
             </figcaption>
           </div>
-          <div class="col-md-4 ">
+          <div class="col-md-4">
             <div class="article-box" itemscope itemtype="http://schema.org/LocalBusiness">
               <figure class="article-images food">
-                <a href="#" title="抓標題" itemprop="url">
+                <a href="food-inside.html" title="抓標題" itemprop="url">
                   <span itemprop="name" style="display: none;">抓標題</span>
                   <img class="img-fluid lazyload" itemprop="image" src="images/Rolling-1s-15px.svg" data-src="images/actvice_01.jpg">
                   <!--隱藏內文-->
@@ -521,10 +519,10 @@
               </div>
             </figcaption>
           </div>
-          <div class="col-md-4 ">
+          <div class="col-md-4">
             <div class="article-box" itemscope itemtype="http://schema.org/LocalBusiness">
               <figure class="article-images food">
-                <a href="#" title="抓標題" itemprop="url">
+                <a href="food-inside.html" title="抓標題" itemprop="url">
                   <span itemprop="name" style="display: none;">抓標題</span>
                   <img class="img-fluid lazyload" itemprop="image" src="images/Rolling-1s-15px.svg" data-src="images/actvice_01.jpg">
                   <!--隱藏內文-->
@@ -557,7 +555,7 @@
               </div>
             </figcaption>
           </div>
-       
+         
         </aside>
         <div class="x">
           <a class="sm-more" href="food-list.html" title="看中部更多美食">
@@ -573,7 +571,7 @@
           <div class="col-md-4">
             <div class="article-box" itemscope itemtype="http://schema.org/LocalBusiness">
               <figure class="article-images attractions">
-                <a href="#" title="抓標題" itemprop="url">
+                <a href="stay-inside.html" title="抓標題" itemprop="url">
                   <span style="display: none;" itemprop="name">抓標題</span>
                   <img class="img-fluid lazyload" itemprop="image" src="images/Rolling-1s-15px.svg" data-src="images/actvice_02.jpg">
                   <!--隱藏內文-->
@@ -609,7 +607,7 @@
           <div class="col-md-4">
             <div class="article-box" itemscope itemtype="http://schema.org/LocalBusiness">
               <figure class="article-images attractions">
-                <a href="#" title="抓標題" itemprop="url">
+                <a href="stay-inside.html" title="抓標題" itemprop="url">
                   <span style="display: none;" itemprop="name">抓標題</span>
                   <img class="img-fluid lazyload" itemprop="image" src="images/Rolling-1s-15px.svg" data-src="images/actvice_02.jpg">
                   <!--隱藏內文-->
@@ -645,7 +643,7 @@
           <div class="col-md-4">
             <div class="article-box" itemscope itemtype="http://schema.org/LocalBusiness">
               <figure class="article-images attractions">
-                <a href="#" title="抓標題" itemprop="url">
+                <a href="stay-inside.html" title="抓標題" itemprop="url">
                   <span style="display: none;" itemprop="name">抓標題</span>
                   <img class="img-fluid lazyload" itemprop="image" src="images/Rolling-1s-15px.svg" data-src="images/actvice_02.jpg">
                   <!--隱藏內文-->
@@ -678,6 +676,7 @@
               </div>
             </figcaption>
           </div>
+         
         </aside>
         <div class="x">
           <a class="sm-more" href="trip-list.html" title="看中部更多景點">
@@ -693,7 +692,7 @@
           <div class="col-md-4" itemscope itemtype="http://schema.org/LocalBusiness">
             <div class="article-box">
               <figure class="article-images hotel">
-                <a href="#" title="抓標題">
+                <a href="trip-inside.html" title="抓標題">
                   <span style="display: none;" itemprop="name">抓標題</span>
                   <img class="img-fluid lazyload" src="images/Rolling-1s-15px.svg" data-src="images/actvice_03.jpg" itemprop="image">
                   <!--隱藏內文-->
@@ -729,7 +728,7 @@
           <div class="col-md-4" itemscope itemtype="http://schema.org/LocalBusiness">
             <div class="article-box">
               <figure class="article-images hotel">
-                <a href="#" title="抓標題">
+                <a href="trip-inside.html" title="抓標題">
                   <span style="display: none;" itemprop="name">抓標題</span>
                   <img class="img-fluid lazyload" src="images/Rolling-1s-15px.svg" data-src="images/actvice_03.jpg" itemprop="image">
                   <!--隱藏內文-->
@@ -765,7 +764,7 @@
           <div class="col-md-4" itemscope itemtype="http://schema.org/LocalBusiness">
             <div class="article-box">
               <figure class="article-images hotel">
-                <a href="#" title="抓標題">
+                <a href="trip-inside.html" title="抓標題">
                   <span style="display: none;" itemprop="name">抓標題</span>
                   <img class="img-fluid lazyload" src="images/Rolling-1s-15px.svg" data-src="images/actvice_03.jpg" itemprop="image">
                   <!--隱藏內文-->
@@ -798,6 +797,7 @@
               </div>
             </figcaption>
           </div>
+         
         </aside>
         <div class="x">
           <a class="sm-more" href="stay-list.html" title="看中部更多住宿">
@@ -902,7 +902,7 @@
       <div id="weather-box">
         <i class="fas fa-times" title="關閉"></i>
         <div class="row">
-          <div class="col-xl-3 col-md-3 align-self-center">
+          <div class="col-xl-3 col-md-3 align-self-center d-none d-md-block">
             <ul>
               <li>
                 <div class="data day2"></div>
@@ -948,7 +948,7 @@
               </li>
             </ul>
           </div>
-          <div class="col-xl-5 col-md-4 align-self-center center d-none d-md-block">
+          <div class="col-xl-5 col-md-4 align-self-center center">
             <img src="images/loading.svg" data-src="images/weather_01.png" class="img-fluid" id="weatherimages"></div>
           <div class="col-xl-4 col-md-5 align-self-center">
 
@@ -1010,9 +1010,9 @@
     <script src="js/lazyload.min.js"></script>
     <script src="js/sweetalert.min.js"></script>
     <script src="js/bootstrap-select.js"></script>
-   
+    <script src="js/jquery.cookie.js"></script>
     <script src="js/action.js"></script>
-    <script src="js/weather.min.js"></script>
+    <script src="js/weather.js"></script>
     <script type="application/ld+json">[{
         "@context": "http://schema.org/",
         "@type": "WebSite ",
@@ -1119,6 +1119,22 @@
       }
 
       ]</script>
+      <script>
+
+
+        //判斷有無yes
+
+        $('#weather').fadeIn(300);
+      
+
+         var s = $.cookie('the_cookie');
+         
+         if (s == 'yes') {
+               $('#weather').css('display','none');
+           }else{
+             $('#weather').css('display','block');
+           }
+      </script>
 
     
 

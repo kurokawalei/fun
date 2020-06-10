@@ -1,5 +1,17 @@
 // JavaScript Document design by kuro
 
+function loadCSS() {
+
+    if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|wOSBrowser|BrowserNG|WebOS)/i))) {
+      document.write('<link href="css/style.css" rel="stylesheet" type="text/css" media="screen" />');
+      $('#select').removeClass('selectpicker');
+    } else {
+      document.write('<link  href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,300,400,500,700&display=swap" rel="stylesheet preload" type="text/css" media="screen" />');
+    }
+  }
+
+  loadCSS();
+
 
 
   //判斷RWD
@@ -241,7 +253,7 @@ $('.remove-icon').click(function(){
 
 
 
-new WOW().init();
+
 
 
 $('#sm-weather-box-info').hover(function(){

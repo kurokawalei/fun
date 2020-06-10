@@ -102,6 +102,12 @@
 
         margin-bottom: 20px;
 
+        @include mob(){
+            margin-bottom: 20px;
+            border-bottom: #ccc solid 1px;
+            padding-bottom: 25px;
+        }
+
 
     }
 
@@ -210,7 +216,8 @@ h1.col-auto.edit-h1 {
     font-weight: bold;
     font-size: 2rem;
     margin: 0;
-    letter-spacing: 2px
+    letter-spacing: 2px;
+    font-weight: bold;
 }
 
 .trip-name {
@@ -272,6 +279,11 @@ h1.col-auto.edit-h1 {
 }
 
 
+.col-xl-8.col-lg-5.align-self-center {
+   @include mob(){
+    margin-top: 15px;
+   }
+}
 
 
 .trip-data {
@@ -283,7 +295,7 @@ h1.col-auto.edit-h1 {
     color: #727271;
     font-size: 1rem;
     box-shadow: #c3a791 3px 3px 0px 1px;
-    margin-left: 50px;
+   
 
     @include mob() {
 
@@ -655,9 +667,7 @@ div#add-stroke a {
 #data-info {
 
 
-    @include xl() {
-        padding-left: 55px;
-    }
+   
 }
 
 input.flatpickr.flatpickr-input {
@@ -824,6 +834,9 @@ button#start {
     color: #fff;
     margin: 0 auto;
     display: block;
+    @include mob(){
+        margin: 15px auto;
+    }
 }
 
 
@@ -1082,6 +1095,7 @@ a#select-palace {
     @include mob() {
 
         padding-right: 0px;
+        padding-top: 10px;
     }
 
     @include sm-mob() {
