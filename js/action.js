@@ -9,34 +9,39 @@ function loadCSS() {
       document.write('<link href="css/style.css" rel="stylesheet" type="text/css" media="screen" />');
       $('#select').removeClass('selectpicker');
     } else {
-      document.write('<link  href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,300,400,500,700&display=swap" rel="stylesheet preload" type="text/css" media="screen" />');
+      document.write('<link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,300,400,500,700&display=swap" rel="stylesheet" media="screen" async>');
     }
   }
 
   loadCSS();
 
-    $('html').niceScroll({
 
-    cursorcolor: "#ccc",
-    //preservenativescrolling:false,
-    //enablemousewheel:false,
-    zindex: "9",
-    cursorborder: false,
-    cursorminheight: 64,
-    cursordragontouch: true,
-    scrollspeed: 100,
-    mousescrollstep: 45, // 鼠標滾輪的滾動速度 (像素)
-    railpadding: {
-        top: 0,
-        right: 0,
-        left: 0,
-        bottom: -50
-    },
-    autohidemode: false,
-    smoothscroll: true,
-    horizrailenabled: false,
+  
+//   $('html').niceScroll({
 
-});
+//     cursorcolor: "#ccc",
+//     //preservenativescrolling:false,
+//     //enablemousewheel:false,
+//     zindex: "200",
+//     cursorborder: false,
+//     cursorminheight: 32,
+//     cursordragontouch: true,
+//     scrollspeed: 100,
+//     sensitiverail: true,
+//     boxzoom: true,
+//     mousescrollstep: 45, // 鼠標滾輪的滾動速度 (像素)
+//     railpadding: {
+//         top: 0,
+//         right: 0,
+//         left: 0,
+//         bottom: -50
+//     },
+//     autohidemode: false,
+//     smoothscroll: true,
+//     nativeparentscrolling: true,
+//     horizrailenabled: false,
+    
+//     });
 
 
 
@@ -87,20 +92,20 @@ $('#lg-bn-box ul').owlCarousel({
 
 
 
-$('#leftmain').niceScroll({
+// $('#leftmain').niceScroll({
 
-    cursorcolor: "#dcdddd",
-    cursorwidth: "20px", // cursor width in pixel (you can also write "5px")
-    scrollspeed: 60,
-    smoothscroll: true,
-    zindex: "1", 
-    background: "#efefef", // change css for rail background
-    cursorborder: false,
-    cursordragontouch: true,
-    autohidemode: false,
-    horizrailenabled: false,
+//     cursorcolor: "#dcdddd",
+//     cursorwidth: "20px", // cursor width in pixel (you can also write "5px")
+//     scrollspeed: 60,
+//     smoothscroll: true,
+//     zindex: "1", 
+//     background: "#efefef", // change css for rail background
+//     cursorborder: false,
+//     cursordragontouch: true,
+//     autohidemode: false,
+//     horizrailenabled: false,
 
-});
+// });
 
 
 
@@ -519,26 +524,26 @@ function allsearch() {
 
 
 //判斷RWD
-function isMobile() {
+// function isMobile() {
 
-    try {
-        document.createEvent("TouchEvent");
-        return true;
-    } catch (e) {
-        return false;
-    }
-
-
-
-}
+//     try {
+//         document.createEvent("TouchEvent");
+//         return true;
+//     } catch (e) {
+//         return false;
+//     }
 
 
 
-if (isMobile()) {
+// }
 
-    $('html').getNiceScroll().remove();
 
-}
+
+// if (isMobile()) {
+
+//     $('html').getNiceScroll().remove();
+
+// }
 
 
 
