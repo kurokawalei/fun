@@ -35,6 +35,8 @@
      <link href="css/owl.carousel.min.css" rel="stylesheet" async>
      <link href="css/animate.css" rel="stylesheet" async>
      <link href="css/checkbix.min.css" rel="stylesheet" defer>
+     <link rel="preload" href="webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 
 
 </head>
@@ -323,12 +325,17 @@
 
                 <!--預告搶先看-->
 
-
-
                 <div id="step3">
                     <h2><i class="fas fa-caret-right"></i>預告搶先看</h2>
 
-                    <div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" src="https://www.youtube.com/embed/3QEe7pmFA8M" frameborder="0" allowfullscreen=""></iframe></div>
+                    <div class="embed-responsive embed-responsive-16by9">
+
+                        <!--填寫3QEe7pmFA8M若未填寫則不顯示-->
+                        
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/3QEe7pmFA8M" frameborder="0" allowfullscreen="">
+                        </iframe>
+
+                    </div>
 
                 </div>
 
