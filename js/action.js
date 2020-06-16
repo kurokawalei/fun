@@ -180,6 +180,7 @@ $('.slide-images-box ul').owlCarousel({
     items: 1,
     loop: true,
     autoplay: true,
+    lazyLoad:true,
     autoHeight: true,
     autoplayTimeout: 5000,
     autoplayHoverPause: true
