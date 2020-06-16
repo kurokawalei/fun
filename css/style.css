@@ -592,6 +592,11 @@ input.btn.btn-outline-light.btn-lg:focus {
   padding: 30px 15px;
 }
 @media (max-width: 769px) {
+  .inside-main-block .tip-info-box {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 769px) {
   .inside-main-block .tip-info-box .deputy-images {
     margin-bottom: 25px;
   }
@@ -673,6 +678,11 @@ input.btn.btn-outline-light.btn-lg:focus {
 .store-info li a {
   color: #707070;
   text-decoration: underline;
+}
+@media (max-width: 351px) {
+  .store-info li a {
+    display: block;
+  }
 }
 .store-info li span {
   width: 90px;
@@ -995,6 +1005,17 @@ input.btn.btn-outline-light.btn-lg:focus {
   color: #fff;
   padding: 5px 10px;
   border-radius: 8px;
+}
+@media (max-width: 769px) {
+  .activity-title {
+    display: block;
+    background: #f00;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 8px;
+    width: 50%;
+    margin: 0 auto 15px;
+  }
 }
 
 .slide-images-box ul {
@@ -2405,6 +2426,7 @@ body {
   font-family: "Noto Sans TC", "Microsoft JhengHei", sans-serif;
   -webkit-overflow-scrolling: touch;
   height: 100vh;
+  overflow-x: hidden;
 }
 
 ::-moz-selection {
@@ -3911,6 +3933,11 @@ figure.theweather-images {
     display: none;
   }
 
+  video#video-box {
+    width: 60%;
+    height: auto;
+  }
+
   #main {
     margin-left: 0;
   }
@@ -3954,7 +3981,7 @@ figure.theweather-images {
 
   header#header {
     position: fixed;
-    top: -120vh;
+    top: -150vh;
     left: 0;
     width: 100vw;
     height: 100vh;

@@ -18,10 +18,6 @@ function waether() {
 
         var str = JSON.parse(xhr.responseText);
 
-        console.log(str);
-
-
-
         // console.log(city[0].locationName);
         //22個縣市
 

@@ -14,6 +14,7 @@ html {
 
     body {
 
+
         .toplinkzone {
             @include mob(){
                 display: none !important;
@@ -28,6 +29,7 @@ body {
     font-family: 'Noto Sans TC', "Microsoft JhengHei", sans-serif;
     -webkit-overflow-scrolling: touch;
     height: 100vh;
+    overflow-x: hidden;
 
 }
 
@@ -1678,6 +1680,11 @@ figure.theweather-images {
         display: none;
     }
 
+    video#video-box {
+        width: 60%;
+        height: auto;
+    }
+
 
     #main {
 
@@ -1739,7 +1746,7 @@ figure.theweather-images {
     header#header {
         
         position: fixed;
-        top: -120vh;
+        top: -150vh;
         left: 0;
         width: 100vw;
         height: 100vh;

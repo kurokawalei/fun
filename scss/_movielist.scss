@@ -152,6 +152,20 @@
     color: #fff;
     padding: 5px 10px;
     border-radius: 8px;
+
+    @include mob(){
+     
+            display: block;
+            background: #f00;
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 8px;
+          
+            width: 50%;
+            margin: 0 auto 15px;
+      
+
+    }
 }
 
 

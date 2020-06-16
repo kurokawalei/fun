@@ -37,11 +37,9 @@
      <link href="css/fontawesome-all.min.css" rel="stylesheet" async>
      <link href="css/owl.carousel.min.css" rel="stylesheet" async>
      <link href="css/animate.css" rel="stylesheet" defer>
-    
+     <link rel="preload" href="webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+     <link rel="preload" href="webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 
-	<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-	 <!--直接引用Google Fonts API-->
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,400,700,900&display=swap" rel="stylesheet">
 
 </head>
 
@@ -50,111 +48,117 @@
 	<section class="container-fluid" id="warp">
 	
 		<header id="header">
-			<nav id="left_fixed_nav">
-				<h1>
-				<figure id="logo">
-					<a href="index.html" title="fun中台灣"><img alt="fun中台灣" class="img-fluid" src="images/logo.png"></a>
-				</figure>
-				</h1>
-				<ul>
-					<li>
-						<a href="javascript:;"title="最新活動"><i class="fab fa-hotjar"></i>最新活動</a>
-					</li>
-					<li class="pr">
-						<a href="javascript:;" title="人氣美食"><i class="fas fa-coffee"></i>人氣美食</a> <i class="fas fa-chevron-down"></i>
-						<ul class="an">
-							<li>
-								<a href="#" title="台中美食">台中美食</a>
-							</li>
-							<li>
-								<a href="#" title="彰化美食">彰化美食</a>
-							</li>
-							<li>
-								<a href="#" title="南投美食">南投美食</a>
-							</li>
-							<li>
-								<a href="#" title="雲林美食">雲林美食</a>
-							</li>
-							<li>
-								<a href="#" title="嘉義美食">嘉義美食</a>
-							</li>
-						</ul>
-					</li>
-					<li class="pr">
-						<a href="javascript:;" title="熱門景點"><i class="fas fa-tree"></i>熱門景點</a> <i class="fas fa-chevron-down"></i>
-						<ul class="an">
-							<li>
-								<a href="#" title="台中景點">台中景點</a>
-							</li>
-							<li>
-								<a href="#" title="彰化景點">彰化景點</a>
-							</li>
-							<li>
-								<a href="#" title="南投景點">南投景點</a>
-							</li>
-							<li>
-								<a href="#" title="雲林景點">雲林景點</a>
-							</li>
-							<li>
-								<a href="#" title="嘉義景點">嘉義景點</a>
-							</li>
-						</ul>
-					</li>
-					<li class="pr">
-						<a href="javascript:;" title="推薦住宿"><i class="fas fa-home"></i>推薦住宿</a> <i class="fas fa-chevron-down"></i>
-						<ul class="an">
-							<li>
-								<a href="#" title="台中住宿">台中住宿</a>
-							</li>
-							<li>
-								<a href="#" title="彰化住宿">彰化住宿</a>
-							</li>
-							<li>
-								<a href="#" title="南投住宿">南投住宿</a>
-							</li>
-							<li>
-							<a href="#" title="雲林住宿">雲林住宿</a>
-							</li>
-							<li>
-							<a href="#" title="嘉義住宿">嘉義住宿</a>
-							</li>
-						</ul>
-					</li>
-				</ul><span class="line-style"></span>
-				<ul>
-					<li>
-						<a href="#" title="收藏文章"><i class="fas fa-copy"></i>收藏文章</a>
-					</li>
-				</ul>
-				<div class="collection-box">
-					<ul>
-						
-						
-						
-					</ul>
-					<p class="collection-total">目前已收藏<span>
-					<a href="#" data-container="body" data-toggle="popover" data-placement="bottom" data-content="點擊後可查看目前收藏的文章唷!"></a></span>筆</p>
-					
-				     <p class="collection-notice"><a href="stroke.html">我的旅遊行程</a></p>
-				</div>
-				
-		
-				
-				
-			
-				
-				<ul class="m-else-link d-md-none">
-					<li>
-						<a href="#">我想刊登</a>
-					</li>
-					<li>
-						<a href="#">異業合作</a>
-					</li>
-					<li>
-						<a href="https://central.1111.com.tw" title="1111中台灣">中台灣網站</a>
-					</li>
-				</ul>
-			</nav>
+		    <nav id="left_fixed_nav">
+                <h1>
+                    <figure id="logo">
+                        <a href="index.html" title="fun中台灣"><img alt="fun中台灣" class="img-fluid lazyload" src="images/Rolling-1s-15px.svg" data-src="images/logo.png"></a>
+                    </figure>
+                </h1>
+                <ul>
+                    <li>
+                        <a href="javascript:;" title="最新活動"><i class="fab fa-hotjar"></i>最新活動</a>
+                    </li>
+                    <li class="pr">
+                        <a href="javascript:;" title="人氣美食">
+                            <i class="fas fa-coffee"></i>人氣美食
+                            <i class="fas fa-chevron-down"></i>
+                        </a> 
+                        <ul class="an">
+                            <li>
+                                <a href="#" title="台中美食">台中美食</a>
+                            </li>
+                            <li>
+                                <a href="#" title="彰化美食">彰化美食</a>
+                            </li>
+                            <li>
+                            <a href="#" title="南投美食">南投美食</a>
+                            </li>
+                            <li>
+                            <a href="#" title="雲林美食">雲林美食</a>
+                            </li>
+                            <li>
+                            <a href="#" title="嘉義美食">嘉義美食</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="pr">
+                        <a href="javascript:;" title="熱門景點">
+                            <i class="fas fa-tree"></i>熱門景點
+                            <i class="fas fa-chevron-down"></i>
+                        </a> 
+                        <ul class="an">
+                            <li>
+                                <a href="#" title="台中景點">台中景點</a>
+                            </li>
+                            <li>
+                                <a href="#" title="彰化景點">彰化景點</a>
+                            </li>
+                            <li>
+                                <a href="#" title="南投景點">南投景點</a>
+                            </li>
+                            <li>
+                                <a href="#" title="雲林景點">雲林景點</a>
+                            </li>
+                            <li>
+                                <a href="#" title="嘉義景點">嘉義景點</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="pr">
+                        <a href="javascript:;" title="推薦住宿">
+                            
+                            <i class="fas fa-home"></i>推薦住宿
+                            <i class="fas fa-chevron-down"></i>
+                        </a> 
+                        <ul class="an">
+                            <li>
+                                <a href="#" title="台中住宿">台中住宿</a>
+                            </li>
+                            <li>
+                                <a href="#" title="彰化住宿">彰化住宿</a>
+                            </li>
+                            <li>
+                                <a href="#" title="南投住宿">南投住宿</a>
+                            </li>
+                            <li>
+                                <a href="#" title="雲林住宿">雲林住宿</a>
+                            </li>
+                            <li>
+                                <a href="#" title="嘉義住宿">嘉義住宿</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul><span class="line-style"></span>
+                <ul>
+                    <li>
+                        <a href="#" title="收藏文章"><i class="fas fa-copy"></i>收藏文章</a>
+                    </li>
+                </ul>
+                <div class="collection-box">
+                    <ul>
+                    </ul>
+                    
+                    <p class="collection-total">目前已收藏<span>
+                    <a href="javascript:;" data-container="body" data-toggle="popover" data-placement="bottom" data-content="點擊列表後可查看目前收藏的文章唷!"></a></span>筆</p>
+                    
+                    <p class="collection-notice"><a href="stroke.html">我的旅遊行程</a></p>
+                    
+                </div>
+
+
+
+                <ul class="m-else-link d-md-none">
+                    <li>
+                        <a href="#">我想刊登</a>
+                    </li>
+                    <li>
+                        <a href="#">異業合作</a>
+                    </li>
+                    <li>
+                        <a href="https://central.1111.com.tw" title="1111中台灣">中台灣網站</a>
+                    </li>
+                </ul>
+            </nav>
 		</header>
 		
 		<main id="main" >
@@ -1363,6 +1367,12 @@
   <div class="top2-layer top2-layer--4"></div>
   <div class="top2-layer top2-layer--5"></div>
 
+   
+    
+
+	
+	 <!--直接引用Google Fonts API-->
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,400,700,900&display=swap" rel="stylesheet">
   <script type="text/javascript" src="/includesU/toplink/topLink2018.asp"></script>
 
 						

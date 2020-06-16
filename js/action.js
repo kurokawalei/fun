@@ -3,6 +3,10 @@
 $("img.lazyload").lazyload();
 
 
+
+
+
+
 function loadCSS() {
 
     if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|wOSBrowser|BrowserNG|WebOS)/i))) {

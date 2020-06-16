@@ -36,6 +36,12 @@
         background: #eee;
         padding: 30px 15px;
 
+        @include mob(){
+            font-size: 0.9rem;
+            
+
+        }
+
         .deputy-images {
           @include mob(){
             margin-bottom: 25px;
@@ -207,6 +213,9 @@
         a {
             color: #707070;
             text-decoration: underline;
+            @include sm-mob(){
+                display: block;
+            }
         }
 
         span{

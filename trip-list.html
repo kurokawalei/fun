@@ -28,17 +28,16 @@
     <link rel="bookmark" href="../fun/images/favicon.ico"/>
      -->
 
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/owl.carousel.css" rel="stylesheet">
-    <link href="css/owl.theme.default.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/fontawesome.min.css" rel="stylesheet">
-    <link href="css/fontawesome-all.min.css" rel="stylesheet">
-    <link href="css/animate.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-    <!--直接引用Google Fonts API-->
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,400,700,900&display=swap" rel="stylesheet">
-
+     <link href="css/bootstrap.min.css" rel="stylesheet" async>
+     <link href="css/style.css" rel="stylesheet">
+ 
+      <!--非同步-->
+     <link href="css/fontawesome-all.min.css" rel="stylesheet" async>
+     <link href="css/owl.carousel.min.css" rel="stylesheet" async>
+     <link href="css/animate.css" rel="stylesheet" defer>
+     <link rel="preload" href="webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+     <link rel="preload" href="webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+ 
 </head>
 
 <body>
@@ -52,7 +51,7 @@
             <nav id="left_fixed_nav">
                 <h1>
                     <figure id="logo">
-                        <a href="index.html" title="fun中台灣"><img alt="fun中台灣" class="img-fluid" src="images/logo.png"></a>
+                        <a href="index.html" title="fun中台灣"><img alt="fun中台灣" class="img-fluid lazyload" src="images/Rolling-1s-15px.svg" data-src="images/logo.png"></a>
                     </figure>
                 </h1>
                 <ul>
@@ -60,7 +59,10 @@
                         <a href="javascript:;" title="最新活動"><i class="fab fa-hotjar"></i>最新活動</a>
                     </li>
                     <li class="pr">
-                        <a href="javascript:;" title="人氣美食"><i class="fas fa-coffee"></i>人氣美食</a> <i class="fas fa-chevron-down"></i>
+                        <a href="javascript:;" title="人氣美食">
+                            <i class="fas fa-coffee"></i>人氣美食
+                            <i class="fas fa-chevron-down"></i>
+                        </a> 
                         <ul class="an">
                             <li>
                                 <a href="#" title="台中美食">台中美食</a>
@@ -69,18 +71,21 @@
                                 <a href="#" title="彰化美食">彰化美食</a>
                             </li>
                             <li>
-                                <a href="#" title="南投美食">南投美食</a>
+                            <a href="#" title="南投美食">南投美食</a>
                             </li>
                             <li>
-                                <a href="#" title="雲林美食">雲林美食</a>
+                            <a href="#" title="雲林美食">雲林美食</a>
                             </li>
                             <li>
-                                <a href="#" title="嘉義美食">嘉義美食</a>
+                            <a href="#" title="嘉義美食">嘉義美食</a>
                             </li>
                         </ul>
                     </li>
                     <li class="pr">
-                        <a href="javascript:;" title="熱門景點"><i class="fas fa-tree"></i>熱門景點</a> <i class="fas fa-chevron-down"></i>
+                        <a href="javascript:;" title="熱門景點">
+                            <i class="fas fa-tree"></i>熱門景點
+                            <i class="fas fa-chevron-down"></i>
+                        </a> 
                         <ul class="an">
                             <li>
                                 <a href="#" title="台中景點">台中景點</a>
@@ -100,7 +105,11 @@
                         </ul>
                     </li>
                     <li class="pr">
-                        <a href="javascript:;" title="推薦住宿"><i class="fas fa-home"></i>推薦住宿</a> <i class="fas fa-chevron-down"></i>
+                        <a href="javascript:;" title="推薦住宿">
+                            
+                            <i class="fas fa-home"></i>推薦住宿
+                            <i class="fas fa-chevron-down"></i>
+                        </a> 
                         <ul class="an">
                             <li>
                                 <a href="#" title="台中住宿">台中住宿</a>
@@ -127,12 +136,15 @@
                 </ul>
                 <div class="collection-box">
                     <ul>
-                     
                     </ul>
+                    
                     <p class="collection-total">目前已收藏<span>
-                            <a href="#" data-container="body" data-toggle="popover" data-placement="bottom" data-content="點擊後可查看目前收藏的文章唷!"></a></span>筆</p>
-                        <p class="collection-notice"><a href="stroke.html">我的旅遊行程</a></p>
+                    <a href="javascript:;" data-container="body" data-toggle="popover" data-placement="bottom" data-content="點擊列表後可查看目前收藏的文章唷!"></a></span>筆</p>
+                    
+                    <p class="collection-notice"><a href="stroke.html">我的旅遊行程</a></p>
+                    
                 </div>
+
 
 
                 <ul class="m-else-link d-md-none">
@@ -1367,7 +1379,8 @@
     <div class="top2-layer top2-layer--4"></div>
     <div class="top2-layer top2-layer--5"></div>
 
-
+   	 <!--直接引用Google Fonts API-->
+     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,400,700,900&display=swap" rel="stylesheet">
     <script type="text/javascript" src="/includesU/toplink/topLink2018.asp"></script>
 
 

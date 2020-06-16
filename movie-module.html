@@ -55,7 +55,10 @@
                         <a href="javascript:;" title="最新活動"><i class="fab fa-hotjar"></i>最新活動</a>
                     </li>
                     <li class="pr">
-                        <a href="javascript:;" title="人氣美食"><i class="fas fa-coffee"></i>人氣美食</a> <i class="fas fa-chevron-down"></i>
+                        <a href="javascript:;" title="人氣美食">
+                            <i class="fas fa-coffee"></i>人氣美食
+                            <i class="fas fa-chevron-down"></i>
+                        </a> 
                         <ul class="an">
                             <li>
                                 <a href="#" title="台中美食">台中美食</a>
@@ -75,7 +78,10 @@
                         </ul>
                     </li>
                     <li class="pr">
-                        <a href="javascript:;" title="熱門景點"><i class="fas fa-tree"></i>熱門景點</a> <i class="fas fa-chevron-down"></i>
+                        <a href="javascript:;" title="熱門景點">
+                            <i class="fas fa-tree"></i>熱門景點
+                            <i class="fas fa-chevron-down"></i>
+                        </a> 
                         <ul class="an">
                             <li>
                                 <a href="#" title="台中景點">台中景點</a>
@@ -95,7 +101,11 @@
                         </ul>
                     </li>
                     <li class="pr">
-                        <a href="javascript:;" title="推薦住宿"><i class="fas fa-home"></i>推薦住宿</a> <i class="fas fa-chevron-down"></i>
+                        <a href="javascript:;" title="推薦住宿">
+                            
+                            <i class="fas fa-home"></i>推薦住宿
+                            <i class="fas fa-chevron-down"></i>
+                        </a> 
                         <ul class="an">
                             <li>
                                 <a href="#" title="台中住宿">台中住宿</a>
@@ -148,64 +158,74 @@
         </header>
 
         <main id="main">
+
+
+         
         
-        <aside id="top-block" class="inside-top-block">
-                <div class="row">
-                    <a class="d-lg-none sm-menu" href="javascript:;"><i class="fas fa-bars"></i></a>
-                    <form class="col-xl-2 col-lg col-md-3 align-self-center d-md-none " id="search-form" name="search-form">
-                        <div class="row">
-                            <input class="form-control form-control-sm col-9" placeholder="請輸入關鍵字.." type="text"> <a class="searchstyle col-3" href="#"><i class="fas fa-search"></i></a>
-                        </div>
-                    </form>
-                    <div class="col-xl-6 col-12 align-self-center running d-none d-md-block">
-                        <div class="row no-gutters">
-                            <div class="col-12 col-md-2 col align-self-center hot-link-title">
-                                熱門連結
-                            </div>
-                            <div class="col align-self-center">
-                                <ul id="hot-link">
-                                    <li>
-                                        <a href="#" title="抓標題">上班族找工作</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" title="抓標題">連假賞花好趣處</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" title="抓標題">小書房浮誇登場</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" title="抓標題">上班族找工作</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-5 col-lg-7 col-md-7 align-self-center d-none d-md-block">
-                        <ul id="else-link">
-                            <li>
-                                <a href="#">我想刊登</a>
-                            </li>
-                            <li>
-                                <a href="#">異業合作</a>
-                            </li>
-                            <li>
-                                <a href="#">中台灣網站</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-xl-1 col-lg-2 col-md-2 align-self-center d-none d-md-block" style="padding: 0;">
-                        <ul id="message-link">
-                            <li>
-                                <a href="http://www.facebook.com/central1111/" target="_blank" title="1111中台灣"><i class="fab fa-facebook"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://www.instagram.com/bff_1111central/" target="_blank" title="1111中台灣instagram"><i class="fab fa-instagram"></i></a>
-                            </li>
-                          
-                        </ul>
-                    </div>
+        <aside id="top-block">
+          <div class="row">
+            <a class="d-lg-none sm-menu" href="javascript:;">
+              <i class="fas fa-bars"></i>
+            </a>
+            <form class="col-xl-2 col-lg col-md-3 align-self-center" id="search-form" name="searchform" action="search.html" method="get">
+              <div class="row">
+                <input class="form-control form-control-sm col-md-9 col-7" placeholder="請輸入關鍵字.." type="text" name="keys">
+                <a class="searchstyle col-3" onclick="allsearch()">
+                  <i class="fas fa-search" style="cursor: pointer;"></i>
+                </a>
+                <div class="col-2 align-self-center d-md-none">
+                  <i class="fas fa-cloud-sun"></i>
                 </div>
-            </aside>
+              </div>
+            </form>
+            <div class="col-xl-6 c align-self-center running">
+              <div class="row no-gutters">
+                <div class="col-md-2 align-self-center hot-link-title">熱門連結</div>
+                <div class="col-md-10 align-self-center">
+                  <ul id="hot-link">
+                    <li>
+                      <a href="#" title="抓標題">上班族找工作</a></li>
+                    <li>
+                      <a href="#" title="抓標題">連假賞花好趣處</a></li>
+                    <li>
+                      <a href="#" title="抓標題">小書房浮誇登場</a></li>
+                    <li>
+                      <a href="#" title="抓標題">上班族找工作</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-7 col-md-7 align-self-center d-none d-md-block">
+              <ul id="else-link">
+                <li>
+                  <a href="#">我想刊登</a></li>
+                <li>
+                  <a href="#">異業合作</a></li>
+                <li>
+                  <a href="#">中台灣網站</a></li>
+              </ul>
+            </div>
+            <div class="col-xl-1 col-lg-2 col-md-2 align-self-center d-none d-md-block" style="padding: 0;">
+              <ul id="message-link">
+                <li>
+                  <a href="http://www.facebook.com/central1111/" target="_blank" title="1111中台灣">
+                    <i class="fab fa-facebook"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/bff_1111central/" target="_blank" title="1111中台灣instagram">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </li>
+                <li>
+                  <a data-target="#exampleModal2" data-toggle="modal" href="javascript:;" title="查看天氣">
+                    <i class="fas fa-cloud-sun"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </aside>
 
 
         
