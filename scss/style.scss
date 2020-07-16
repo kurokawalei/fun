@@ -14,7 +14,6 @@ html {
 
     body {
 
-
         .toplinkzone {
             @include mob(){
                 display: none !important;
@@ -26,6 +25,7 @@ html {
 }
 
 body {
+
     font-family: 'Noto Sans TC', "Microsoft JhengHei", sans-serif;
     -webkit-overflow-scrolling: touch;
     height: 100vh;
@@ -72,6 +72,7 @@ header#header {
 }
 
 .center {
+
     text-align: center;
 }
 
@@ -92,17 +93,11 @@ nav#left_fixed_nav {
         overflow: hidden;
 
         @include mob(){
-
-            max-height: initial;
-           
-            
+            max-height: initial;       
         }
-
-       
 
         
         li {
-
             margin-bottom: 8px;
             position: relative;
             @include xl(){
@@ -113,11 +108,11 @@ nav#left_fixed_nav {
             }
 
             i {
-
                 margin-right: 10px;
             }
 
             i.fas.fa-chevron-down {
+
                 position: absolute;
                 right: 15px;
                 top: 5px;

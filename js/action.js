@@ -17,7 +17,7 @@ function loadCSS() {
     }
   }
 
-  loadCSS();
+    loadCSS();
 
 
   
@@ -240,7 +240,11 @@ $('.collection-total a').hover(function() {
 
 
 
-//var xd = $('.collection-box li').find('span').append('<i class="fas fa-times"></i>');
+//首頁加入收藏(參考用)
+
+
+
+
 
 var total = document.querySelectorAll('.collection-box ul li').length;
 var num = document.querySelector('p.collection-total span a');
@@ -263,7 +267,7 @@ list.addEventListener('click', toggleDone, false);
 
  sendData.click(function (e) {   
 
-  
+   
 
     e.toElement.innerText = "已收藏"
 
@@ -289,21 +293,9 @@ list.addEventListener('click', toggleDone, false);
 
         //判斷重復收藏
 
+
       
 
-
-
-    
-   
-   
-
-     
-
-
- 
-
-     
-  
 
 
 
