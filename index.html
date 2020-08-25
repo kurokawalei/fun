@@ -29,13 +29,14 @@
     <link href="css/bootstrap.min.css" rel="stylesheet" >
     <link href="css/style.css" rel="stylesheet">
     <!--非同步-->
-    
     <link href="css/bootstrap-select.min.css" rel="stylesheet" async>
     <link href="css/over.css" rel="stylesheet" async>
-    <link rel="preload" href="webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-    <link rel="preload" href="webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com/"  crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com"  crossorigin>
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com/">
+    <!-- <link rel="preload" href="webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin="anonymous"> -->
   </head>
-
   <body>
     
     <section class="container-fluid" id="warp">
@@ -323,7 +324,7 @@
             <div class="article-box">
               <figure class="article-images">
                 <a href="activity-inside.html" title="抓標題" itemprop="url">
-                  <img class="img-fluid lazyload" src="images/loading.svg" data-src="images/actvice.jpg" itemprop="image">
+                  <img class="img-fluid " src="images/actvice.jpg" itemprop="image">
                   <!--隱藏內文-->
                   <div class="article-main">
                     <div class="row no-gutters">
@@ -362,7 +363,7 @@
             <div class="article-box">
               <figure class="article-images">
                 <a href="activity-inside.html" title="抓標題" itemprop="url">
-                  <img class="img-fluid lazyload" src="images/loading.svg" data-src="images/actvice.jpg" itemprop="image">
+                  <img class="img-fluid " src="images/actvice.jpg" itemprop="image">
                   <!--隱藏內文-->
                   <div class="article-main">
                     <div class="row no-gutters">
@@ -401,7 +402,7 @@
             <div class="article-box">
               <figure class="article-images">
                 <a href="activity-inside.html" title="抓標題" itemprop="url">
-                  <img class="img-fluid lazyload" src="images/loading.svg" data-src="images/actvice.jpg" itemprop="image">
+                  <img class="img-fluid " src="images/actvice.jpg" itemprop="image">
                   <!--隱藏內文-->
                   <div class="article-main">
                     <div class="row no-gutters">
@@ -949,23 +950,13 @@
           <div class="col-xl-5 col-md-4 align-self-center center">
 
            <img src="images/loading.svg" data-src="" class="img-fluid lazyload" id="weatherimages"> 
-          
-
-           <!-- <video autoplay loop muted id="video-box">  
-             
-            <source src="images/weather_02.webm"  type="video/webm" id="weatherimages">   
          
-          </video>   -->
-
-
           </div>
+  <!--天氣預報結束-->
+
 
 
           <div class="col-xl-4 col-md-5 align-self-center">
-
-
-
-           
 
             <div id="area-box">
               
@@ -1003,13 +994,14 @@
       </div>
     </section>
 
+    
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,300,400,500,700&display=swap&subset=chinese-traditional" rel="stylesheet">
     <script type="text/javascript" src="/includesU/toplink/topLink2018.asp"></script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="https://kit.fontawesome.com/096ca5f76d.js" crossorigin="anonymous"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/wow.min.js" ></script>
     <script src="js/lazyload.min.js"></script>
@@ -1018,6 +1010,7 @@
     <script src="js/jquery.cookie.js"></script>
     <script src="js/action.js"></script>
     <script src="js/weather.min.js"></script>
+    <script src="https://kit.fontawesome.com/096ca5f76d.js" crossorigin="anonymous"></script>
     <script type="application/ld+json">[{
         "@context": "http://schema.org/",
         "@type": "WebSite ",
