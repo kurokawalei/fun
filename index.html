@@ -36,6 +36,32 @@
     <link rel="dns-prefetch" href="https://fonts.googleapis.com/">
     <link rel="preload" href="webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" href="webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-955962091"></script>
+    <script>
+     window.dataLayer = window.dataLayer || [];
+     function gtag(){dataLayer.push(arguments);}
+     gtag('js', new Date());
+     
+     gtag('config', 'AW-955962091');
+     </script>
+     
+ 
+     <script>
+             function gtag_report_conversion(url) {
+           var callback = function () {
+             if (typeof(url) != 'undefined') {
+               window.location = url;
+             }
+           };
+           gtag('event', 'conversion', {
+               'send_to': 'AW-955962091/NRVHCO607ukBEOul68cD',
+               'transaction_id': '',
+               'event_callback': callback
+           });
+           return false;
+         }
+ 
+     </script>
   </head>
   <body>
     
@@ -44,8 +70,8 @@
         <nav id="left_fixed_nav">
           <h1>
             <figure id="logo">
-              <a href="index.html" title="fun中台灣">
-                <img alt="fun中台灣" class="img-fluid lazyload" src="images/Rolling-1s-15px.svg" data-src="images/logo.png"></a>
+              <a href="index.html" title="fun中台灣"  onclick="return gtag_report_conversion('https://kurokawalei.github.io/fun/');">
+                <img alt="fun中台灣" class="img-fluid" src="images/logo.png"></a>
             </figure>
           </h1>
           <ul itemscope itemtype="http://www.schema.org/SiteNavigationElement">
@@ -1002,7 +1028,7 @@
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
-    <script src="js/wow.min.js" ></script>
+    <script src="js/wow.min.js"></script>
     <script src="js/lazyload.min.js"></script>
     <script src="js/sweetalert.min.js" async ></script>
     <script src="js/bootstrap-select.min.js" async ></script>
@@ -1045,10 +1071,10 @@
       <script type="application/ld+json">
 
         { "@context": "http://schema.org", "@type": "BreadcrumbList", "itemListElement": [ 
-        { "@type": "ListItem", "position": 1, "item": { "@id": "https://kurokawalei.github.io/fun/", "name": "fun中台灣" } }, 
-        { "@type": "ListItem", "position": 2, "item": { "@id": "https://central.1111.com.tw/fun/activity-list.asp*", "name": "最新活動" } },
+        { "@type": "ListItem", "position": 1, "item": { "@id": "https://central.1111.com.tw/fun/", "name": "fun中台灣" } }, 
+        { "@type": "ListItem", "position": 2, "item": { "@id": "https://central.1111.com.tw/fun/activity-list.asp", "name": "最新活動" } },
         { "@type": "ListItem", "position": 3, "item": { "@id": "https://central.1111.com.tw/fun/food-list.asp", "name": "人氣美食" } },
-        { "@type": "ListItem", "position": 4, "item": { "@id": "https://central.1111.com.tw/14sp/highsalary/manager.asp?st=1&sa0=40000*&tt=16", "name": "中高階主管職" } },
+        { "@type": "ListItem", "position": 4, "item": { "@id": "https://central.1111.com.tw/fun/trip-list.asp", "name": "旅遊推薦" } },
         { "@type": "ListItem", "position": 5, "item": { "@id": "https://central.1111.com.tw/fun/stay-list.asp", "name": "住宿推薦" } }        
         ] }
       
@@ -1056,12 +1082,10 @@
 
       <script>
 
-
         //判斷有無yes
 
         $('#weather').fadeIn(300);
       
-
          var s = $.cookie('the_cookie');
          
          if (s == 'yes') {
@@ -1072,10 +1096,6 @@
 
       </script>
 
-    
 
-   
-      
-  
 
 </html>

@@ -13,7 +13,7 @@ function loadCSS() {
       document.write('<link href="css/style.css" rel="stylesheet" type="text/css" media="screen" />');
       $('#select').removeClass('selectpicker');
     } else {
-      document.write('<link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,300,400,500,700&display=swap&subset=chinese-traditional" rel="stylesheet" media="screen" async>');
+      document.write('<link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,300,400,500&display=swap&subset=chinese-traditional" rel="stylesheet" media="screen" async>');
     }
   }
 
